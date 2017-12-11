@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let a = m
+        let a = 0.1
 //        test
         // Do any additional setup after loading the view, typically from a nib.
     }
