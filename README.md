@@ -1,5 +1,5 @@
 # SoHow
-Elastic pull to refresh compontent developed in Swift
+Easy way in Swift
 
 
 
