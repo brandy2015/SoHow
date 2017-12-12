@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D679C7581FDF7EFA0095B08C /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D679C7571FDF7EFA0095B08C /* SoHow.podspec */; };
+		D679C75A1FDF80590095B08C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D679C7591FDF80590095B08C /* LICENSE */; };
+		D679C75C1FDF805C0095B08C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D679C75B1FDF805C0095B08C /* README.md */; };
 		D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */; };
 		D6B1AAC61FDEBBF30007CB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */; };
 		D6B1AAC91FDEBBF30007CB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AAC71FDEBBF30007CB03 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D679C7571FDF7EFA0095B08C /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
+		D679C7591FDF80590095B08C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D679C75B1FDF805C0095B08C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D6B1AAC01FDEBBF30007CB03 /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,9 @@
 		D6B1AAB71FDEBBF30007CB03 = {
 			isa = PBXGroup;
 			children = (
+				D679C7571FDF7EFA0095B08C /* SoHow.podspec */,
+				D679C7591FDF80590095B08C /* LICENSE */,
+				D679C75B1FDF805C0095B08C /* README.md */,
 				D6B1AAC21FDEBBF30007CB03 /* SoHow */,
 				D6B1AAC11FDEBBF30007CB03 /* Products */,
 			);
@@ -123,9 +132,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D679C75C1FDF805C0095B08C /* README.md in Resources */,
 				D6B1AACE1FDEBBF30007CB03 /* LaunchScreen.storyboard in Resources */,
+				D679C7581FDF7EFA0095B08C /* SoHow.podspec in Resources */,
 				D6B1AACB1FDEBBF30007CB03 /* Assets.xcassets in Resources */,
 				D6B1AAC91FDEBBF30007CB03 /* Main.storyboard in Resources */,
+				D679C75A1FDF80590095B08C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
