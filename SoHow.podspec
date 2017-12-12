@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
+ s.swift-version = "4.0"
  s.source_files  = "SoHow"#, "SoHow/**/*.{h,m}"
 #  s.exclude_files = "Classes/Exclude"
 
