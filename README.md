@@ -11,7 +11,7 @@ Elastic pull to refresh compontent developed in Swift
 
 ## Demo
 
-Open and run the DGElasticPullToRefreshExample project in Xcode to see DGElasticPullToRefresh in action.
+
 
 ## Installation
 
