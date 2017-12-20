@@ -9,7 +9,19 @@
 import UIKit
 import AVFoundation
 
-var url = URL(fileURLWithPath: "")
+public func 取绝对值(数值:Double) -> Double{
+    var 返回值 = 0.0
+    返回值 = 数值
+    
+    if 数值 <= 0{
+        
+        返回值 = -数值
+    }
+    return 返回值
+}
+
+
+public var url = URL(fileURLWithPath: "")
 // MARK://读取当前登录用户的方法 func 当前登录用户() -> String
 public func 颜色(red:CGFloat,green:CGFloat,blue:CGFloat,alpha:CGFloat = 1.0) -> UIColor {
     return UIColor(red:red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
