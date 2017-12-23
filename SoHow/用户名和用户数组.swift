@@ -87,13 +87,13 @@ public func d从文件读取数组(路径:String = "") -> [String:String] {
 
 
 
-func 读取好友列表() -> [String] {
+public func 读取好友列表() -> [String] {
     let _FriendsList = UserDefaults.standard.array(forKey: "FriendsList") as? [String]
     return _FriendsList ?? [""]
 }
 
 
-func j计算时间差剩余保护时间(时间保护的时间:Date) -> String  {
+public func j计算时间差剩余保护时间(时间保护的时间:Date) -> String  {
     //获取现在的时间
     let date1 = Date()
     let interval:TimeInterval = 时间保护的时间.timeIntervalSince(date1)
@@ -101,7 +101,7 @@ func j计算时间差剩余保护时间(时间保护的时间:Date) -> String  {
 }
 
 
-func j计算时间差和返回是否受时间保护(时间保护的时间:Date) -> Bool  {
+public func j计算时间差和返回是否受时间保护(时间保护的时间:Date) -> Bool  {
     
     var 是否受保护 = true
     //获取现在的时间
@@ -116,7 +116,7 @@ func j计算时间差和返回是否受时间保护(时间保护的时间:Date) 
 
 
 
-func d读取图片(图片名字:String) -> UIImage  {
+public func d读取图片(图片名字:String) -> UIImage  {
     let userDefault = UserDefaults.standard
     let objData = userDefault.object(forKey: 图片名字) as? Data
     let 解包objData = objData ?? userDefault.object(forKey: "default") as? Data
@@ -126,7 +126,7 @@ func d读取图片(图片名字:String) -> UIImage  {
 
 
 
-func b保存string到本地(保存的内容:String,文件名称:String)  {
+public func b保存string到本地(保存的内容:String,文件名称:String)  {
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
@@ -145,7 +145,7 @@ func b保存string到本地(保存的内容:String,文件名称:String)  {
 }
 
 
-func b保存数组array到本地(保存的内容:Array<String>,文件名称:String)  {
+public func b保存数组array到本地(保存的内容:Array<String>,文件名称:String)  {
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
@@ -157,7 +157,7 @@ func b保存数组array到本地(保存的内容:Array<String>,文件名称:Stri
 }
 
 
-func d从文件读取数组返回数组(文件名称:String = "") -> Array<String> {
+public func d从文件读取数组返回数组(文件名称:String = "") -> Array<String> {
     var url2 = URL(fileURLWithPath: "")
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
@@ -171,7 +171,7 @@ func d从文件读取数组返回数组(文件名称:String = "") -> Array<Strin
     return array1 ?? []
 }
 
-func b保存字典dic到本地(保存的内容:Dictionary<String,String>,文件名称:String)  {
+public func b保存字典dic到本地(保存的内容:Dictionary<String,String>,文件名称:String)  {
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.plist")
@@ -182,7 +182,7 @@ func b保存字典dic到本地(保存的内容:Dictionary<String,String>,文件�
     }
 }
 
-func d从文件读取字典返回字典(文件名称:String = "") -> [String:String] {
+public func d从文件读取字典返回字典(文件名称:String = "") -> [String:String] {
     
     var url2 = URL(fileURLWithPath: "")
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)

@@ -51,19 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D60A399B1FEE3AD400B7C558 /* 双指开合放大照片 */ = {
+		D60A399C1FEE3D4600B7C558 /* 双指开合 */ = {
 			isa = PBXGroup;
 			children = (
-				D60A39991FEE3AD100B7C558 /* YSZoomView.swift */,
 			);
-			name = "双指开合放大照片";
+			path = "双指开合";
 			sourceTree = "<group>";
 		};
 		D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */ = {
 			isa = PBXGroup;
 			children = (
-				D666106C1FEE34AF00834E7C /* ImageHelper.swift */,
-				D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */,
 			);
 			path = "对于图片的处理库ImageHelper";
 			sourceTree = "<group>";
@@ -90,7 +87,10 @@
 		D6B1AAC21FDEBBF30007CB03 /* SoHow */ = {
 			isa = PBXGroup;
 			children = (
-				D60A399B1FEE3AD400B7C558 /* 双指开合放大照片 */,
+				D60A399C1FEE3D4600B7C558 /* 双指开合 */,
+				D60A39991FEE3AD100B7C558 /* YSZoomView.swift */,
+				D666106C1FEE34AF00834E7C /* ImageHelper.swift */,
+				D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */,
 				D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */,
 				D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */,
 				D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */,
