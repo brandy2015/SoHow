@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60A399A1FEE3AD100B7C558 /* YSZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A39991FEE3AD100B7C558 /* YSZoomView.swift */; };
 		D637DDCB1FDFCBBC002E5208 /* BriefFunctionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D637DDCA1FDFCBBC002E5208 /* BriefFunctionSwift.swift */; };
 		D666106B1FEE34AB00834E7C /* ImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */; };
 		D666106D1FEE34AF00834E7C /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666106C1FEE34AF00834E7C /* ImageHelper.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60A39991FEE3AD100B7C558 /* YSZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoomView.swift; sourceTree = "<group>"; };
 		D637DDCA1FDFCBBC002E5208 /* BriefFunctionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefFunctionSwift.swift; sourceTree = "<group>"; };
 		D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVIewExtension.swift; sourceTree = "<group>"; };
 		D666106C1FEE34AF00834E7C /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D60A399B1FEE3AD400B7C558 /* 双指开合放大照片 */ = {
+			isa = PBXGroup;
+			children = (
+				D60A39991FEE3AD100B7C558 /* YSZoomView.swift */,
+			);
+			name = "双指开合放大照片";
+			sourceTree = "<group>";
+		};
 		D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		D6B1AAC21FDEBBF30007CB03 /* SoHow */ = {
 			isa = PBXGroup;
 			children = (
+				D60A399B1FEE3AD400B7C558 /* 双指开合放大照片 */,
 				D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */,
 				D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */,
 				D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */,
@@ -173,6 +184,7 @@
 				D6B1AAC61FDEBBF30007CB03 /* ViewController.swift in Sources */,
 				D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */,
 				D637DDCB1FDFCBBC002E5208 /* BriefFunctionSwift.swift in Sources */,
+				D60A399A1FEE3AD100B7C558 /* YSZoomView.swift in Sources */,
 				D666106D1FEE34AF00834E7C /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
