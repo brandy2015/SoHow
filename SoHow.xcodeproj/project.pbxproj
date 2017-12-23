@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D637DDCB1FDFCBBC002E5208 /* BriefFunctionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D637DDCA1FDFCBBC002E5208 /* BriefFunctionSwift.swift */; };
+		D666106B1FEE34AB00834E7C /* ImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */; };
+		D666106D1FEE34AF00834E7C /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666106C1FEE34AF00834E7C /* ImageHelper.swift */; };
 		D67758E11FEA4B27008F6076 /* 用户名和用户数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67758E01FEA4B27008F6076 /* 用户名和用户数组.swift */; };
 		D679C7581FDF7EFA0095B08C /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D679C7571FDF7EFA0095B08C /* SoHow.podspec */; };
 		D679C75A1FDF80590095B08C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D679C7591FDF80590095B08C /* LICENSE */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		D637DDCA1FDFCBBC002E5208 /* BriefFunctionSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefFunctionSwift.swift; sourceTree = "<group>"; };
+		D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVIewExtension.swift; sourceTree = "<group>"; };
+		D666106C1FEE34AF00834E7C /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		D67758E01FEA4B27008F6076 /* 用户名和用户数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "用户名和用户数组.swift"; sourceTree = "<group>"; };
 		D679C7571FDF7EFA0095B08C /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D679C7591FDF80590095B08C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D666106C1FEE34AF00834E7C /* ImageHelper.swift */,
+				D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */,
+			);
+			path = "对于图片的处理库ImageHelper";
+			sourceTree = "<group>";
+		};
 		D6B1AAB71FDEBBF30007CB03 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +80,7 @@
 		D6B1AAC21FDEBBF30007CB03 /* SoHow */ = {
 			isa = PBXGroup;
 			children = (
+				D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */,
 				D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */,
 				D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */,
 				D6B1AAC71FDEBBF30007CB03 /* Main.storyboard */,
@@ -154,10 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D666106B1FEE34AB00834E7C /* ImageVIewExtension.swift in Sources */,
 				D67758E11FEA4B27008F6076 /* 用户名和用户数组.swift in Sources */,
 				D6B1AAC61FDEBBF30007CB03 /* ViewController.swift in Sources */,
 				D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */,
 				D637DDCB1FDFCBBC002E5208 /* BriefFunctionSwift.swift in Sources */,
+				D666106D1FEE34AF00834E7C /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
