@@ -212,8 +212,8 @@ public func 返回设备信息() -> (设备类型:String,设备名称:String,系
 
 
 //MARK: - 压缩图片大小
-public func y压缩imageCompress(originalImage: UIImage) -> UIImage{
-    guard let imageData = UIImageJPEGRepresentation(originalImage, 0.5) else{
+public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5) -> UIImage{
+    guard let imageData = UIImageJPEGRepresentation(originalImage, 压缩比) else{
         return originalImage
     }
     let compressImage = UIImage(data: imageData)!
@@ -386,7 +386,10 @@ public func afterDelay(_ seconds: Double, closure: @escaping () -> ()) {
     let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
     DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
 }
-
+public func 延迟调用(_ seconds: Double, closure: @escaping () -> ()) {
+    let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+    DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
+}
 
 class BriefFunctionSwift: UIViewController {
     

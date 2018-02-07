@@ -1,5 +1,6 @@
 # SoHow
 Easy way in Swift
+各种各样的方法
 
 
 
@@ -26,4 +27,34 @@ pod 'SoHow'
 Add SoHow folder into your project.
 
 ## Example usage
-
+Import SoHow
+ 1、取绝对值(数值: <#T##Double#>)
+ 2、颜色(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>)
+       颜色(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+ 3、时间格式的调整(date: <#T##Date#>)//默认是"yyyy年MM月dd日 HH:mm:ss"
+       时间格式的调整(date: <#T##Date#>, format: <#T##String#>)
+ 4、返回设备类型()   //返回值是String，设备类型
+ 5、返回设备信息()   //返回String分别为(设备类型:String,设备名称:String,系统版本号:String,设备唯一标识符:String,设备的大类型:String,App的版本号:String,App的build版本:String,App的build版本:String,appName:[String])
+ 6、压缩照片（默认压缩比为0.5）
+      y压缩imageCompress(originalImage: <#T##UIImage#>)
+      y压缩imageCompress(originalImage: <#T##UIImage#>, 压缩比: <#T##CGFloat#>)
+ 7、弹出分享界面//返回值为UIActivityViewController需要用present(activityController, animated: true, completion: nil)
+      share分享功能(文件地址: <#T##String#>)
+8、处理头像圆角
+      处理头像圆角(处理的ImageView: <#T##UIImageView#>)//默认为处理成圆形
+      处理头像圆角(处理的ImageView: <#T##UIImageView#>, 圆角大小: <#T##CGFloat#>)
+ 
+ 9、使用系统库发音
+      f发音内容(内容: <#T##String#>)
+ 10、打开网页(网路WebView: <#T##UIWebView#>, 地址: <#T##String#>)
+ 
+ 11、延迟调用
+       afterDelay(<#T##seconds: Double##Double#>) {}
+       延迟调用（<#T##seconds: Double##Double#>）{}
+    
+12、 将照片添加毛玻璃处理
+    要处理的图片直接后缀加.applyDarkEffect()
+    要处理的图片直接后缀加.applyLightEffect()
+    UIImage().applyDarkEffect()
+    UIImage().applyLightEffect()
+       

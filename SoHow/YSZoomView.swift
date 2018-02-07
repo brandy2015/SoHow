@@ -1,9 +1,12 @@
 //
 //  YSZoomView.swift
-//  图片浏览Swift
 //
-//  Created by 张延深 on 16/5/6.
-//  Copyright © 2016年 宜信. All rights reserved.
+
+//  SoHow
+//
+//  Created by 张子豪 on 2017/12/11.
+//  Copyright © 2017年 张子豪. All rights reserved.
+//
 //  图片预览控件
 
 import UIKit

@@ -16,7 +16,6 @@
 		D679C75A1FDF80590095B08C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D679C7591FDF80590095B08C /* LICENSE */; };
 		D679C75C1FDF805C0095B08C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D679C75B1FDF805C0095B08C /* README.md */; };
 		D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */; };
-		D6B1AAC61FDEBBF30007CB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */; };
 		D6B1AAC91FDEBBF30007CB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AAC71FDEBBF30007CB03 /* Main.storyboard */; };
 		D6B1AACB1FDEBBF30007CB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AACA1FDEBBF30007CB03 /* Assets.xcassets */; };
 		D6B1AACE1FDEBBF30007CB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AACC1FDEBBF30007CB03 /* LaunchScreen.storyboard */; };
@@ -33,7 +32,6 @@
 		D679C75B1FDF805C0095B08C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D6B1AAC01FDEBBF30007CB03 /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6B1AAC81FDEBBF30007CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6B1AACA1FDEBBF30007CB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6B1AACD1FDEBBF30007CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */,
 				D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */,
 				D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */,
-				D6B1AAC51FDEBBF30007CB03 /* ViewController.swift */,
 				D6B1AAC71FDEBBF30007CB03 /* Main.storyboard */,
 				D6B1AACA1FDEBBF30007CB03 /* Assets.xcassets */,
 				D6B1AACC1FDEBBF30007CB03 /* LaunchScreen.storyboard */,
@@ -181,7 +178,6 @@
 			files = (
 				D666106B1FEE34AB00834E7C /* ImageVIewExtension.swift in Sources */,
 				D67758E11FEA4B27008F6076 /* 用户名和用户数组.swift in Sources */,
-				D6B1AAC61FDEBBF30007CB03 /* ViewController.swift in Sources */,
 				D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */,
 				D637DDCB1FDFCBBC002E5208 /* BriefFunctionSwift.swift in Sources */,
 				D60A399A1FEE3AD100B7C558 /* YSZoomView.swift in Sources */,

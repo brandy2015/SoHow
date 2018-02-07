@@ -4,8 +4,11 @@
 //  ImageHelper
 //  Version 3.2.2
 //
-//  Created by Melvin Rivera on 7/5/14.
-//  Copyright (c) 2014 All Forces. All rights reserved.
+//  //  SoHow
+//
+//  Created by 张子豪 on 2017/12/11.
+//  Copyright © 2017年 张子豪. All rights reserved.
+//
 //
 
 import Foundation
