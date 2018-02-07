@@ -28,6 +28,7 @@ Add SoHow folder into your project.
 
 ## Example usage
 Import SoHow
+
  1、取绝对值(数值: Double)
  
  2、颜色(red: CGFloat, green: CGFloat, blue: CGFloat)
