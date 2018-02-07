@@ -1,3 +1,5 @@
+[![CocoaPods]
+
 # SoHow
 Easy way in Swift
 各种各样的方法
