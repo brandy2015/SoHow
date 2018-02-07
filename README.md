@@ -1,4 +1,4 @@
-[![CocoaPods]
+[![CocoaPods](http://img.shields.io/cocoapods/v/FitRefresh.svg?style=flat)](http://cocoapods.org/?q=FitRefresh)
 
 # SoHow
 Easy way in Swift
