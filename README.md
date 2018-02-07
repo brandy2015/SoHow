@@ -1,6 +1,6 @@
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/cywd/FitRefresh/blob/master/LICENSE) 
-[![CocoaPods](http://img.shields.io/cocoapods/v/FitRefresh.svg?style=flat)](http://cocoapods.org/?q=FitRefresh) 
-[![CocoaPods](http://img.shields.io/cocoapods/p/FitRefresh.svg?style=flat)](http://cocoapods.org/?q=FitRefresh) 
+[![CocoaPods](http://img.shields.io/cocoapods/v/FitRefresh.svg?style=flat)](http://cocoapods.org/?q=Sohow) 
+[![CocoaPods](http://img.shields.io/cocoapods/p/FitRefresh.svg?style=flat)](http://cocoapods.org/?q=Sohow) 
 
 
 # SoHow
