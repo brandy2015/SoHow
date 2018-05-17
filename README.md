@@ -35,8 +35,17 @@ Add SoHow folder into your project.
 ## Example usage
 Import SoHow
 
- 1、取绝对值(数值: Double)
- 
+1、 将照片添加毛玻璃处理
+
+要处理的图片直接后缀加.applyDarkEffect()
+
+要处理的图片直接后缀加.applyLightEffect()
+
+UIImage().applyDarkEffect()
+
+UIImage().applyLightEffect()
+
+
  2、颜色(red: CGFloat, green: CGFloat, blue: CGFloat)
  
    颜色(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
@@ -76,13 +85,3 @@ Import SoHow
         
        延迟调用（seconds:Double）{}
     
-12、 将照片添加毛玻璃处理
-
-    要处理的图片直接后缀加.applyDarkEffect()
-    
-    要处理的图片直接后缀加.applyLightEffect()
-    
-    UIImage().applyDarkEffect()
-    
-    UIImage().applyLightEffect()
-       
