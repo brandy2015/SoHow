@@ -15,6 +15,7 @@
 		D679C7581FDF7EFA0095B08C /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D679C7571FDF7EFA0095B08C /* SoHow.podspec */; };
 		D679C75A1FDF80590095B08C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D679C7591FDF80590095B08C /* LICENSE */; };
 		D679C75C1FDF805C0095B08C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D679C75B1FDF805C0095B08C /* README.md */; };
+		D69A47382030623B0074F9EF /* BriefActionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A47372030623B0074F9EF /* BriefActionAlert.swift */; };
 		D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */; };
 		D6B1AAC91FDEBBF30007CB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AAC71FDEBBF30007CB03 /* Main.storyboard */; };
 		D6B1AACB1FDEBBF30007CB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AACA1FDEBBF30007CB03 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		D679C7571FDF7EFA0095B08C /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D679C7591FDF80590095B08C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D679C75B1FDF805C0095B08C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D69A47372030623B0074F9EF /* BriefActionAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefActionAlert.swift; sourceTree = "<group>"; };
 		D6B1AAC01FDEBBF30007CB03 /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B1AAC31FDEBBF30007CB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B1AAC81FDEBBF30007CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		D6B1AAC21FDEBBF30007CB03 /* SoHow */ = {
 			isa = PBXGroup;
 			children = (
+				D69A47372030623B0074F9EF /* BriefActionAlert.swift */,
 				D60A399C1FEE3D4600B7C558 /* 双指开合 */,
 				D60A39991FEE3AD100B7C558 /* YSZoomView.swift */,
 				D666106C1FEE34AF00834E7C /* ImageHelper.swift */,
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D666106B1FEE34AB00834E7C /* ImageVIewExtension.swift in Sources */,
+				D69A47382030623B0074F9EF /* BriefActionAlert.swift in Sources */,
 				D67758E11FEA4B27008F6076 /* 用户名和用户数组.swift in Sources */,
 				D6B1AAC41FDEBBF30007CB03 /* AppDelegate.swift in Sources */,
 				D637DDCB1FDFCBBC002E5208 /* BriefFunctionSwift.swift in Sources */,
