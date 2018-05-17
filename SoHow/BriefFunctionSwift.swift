@@ -9,16 +9,6 @@
 import UIKit
 import AVFoundation
 
-public func 取绝对值(数值:Double) -> Double{
-    var 返回值 = 0.0
-    返回值 = 数值
-    
-    if 数值 <= 0{
-        
-        返回值 = -数值
-    }
-    return 返回值
-}
 
 
 public var url = URL(fileURLWithPath: "")
