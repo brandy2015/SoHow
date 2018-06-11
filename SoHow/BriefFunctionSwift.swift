@@ -71,6 +71,9 @@ public func 返回设备类型() -> String{
         case "iPhone7,1":                               return "iPhone 6 Plus"
         case "iPhone8,1":                               return "iPhone 6s"
         case "iPhone8,2":                               return "iPhone 6s Plus"
+            
+        case "iPhone8,4":                               return "iPhone SE"
+            
         case "iPhone9,1":                               return "iPhone 7 (CDMA)"
         case "iPhone9,3":                               return "iPhone 7 (GSM)"
         case "iPhone9,2":                               return "iPhone 7 Plus (CDMA)"
