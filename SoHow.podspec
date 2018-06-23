@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SoHow"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -46,30 +46,21 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.swift_version = '4.3'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.3' }
+  s.swift_version = '4.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+# s.dependency 'FileKit'
+
   s.ios.deployment_target = '10.1'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
   s.author             = { "Brandy" => "" }
 
 
+  s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
+  s.platform     = :ios, "10.3"
+  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "1.1.2"}
+  s.source_files = "SoHow/*"
 
 
-
-  # Or just: s.author    = "Brandy"
-   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   # s.social_media_url   = "http://twitter.com/Brandy"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,7 +73,7 @@ Pod::Spec.new do |s|
 
 
 
-   s.platform     = :ios, "10.3"
+
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -97,8 +88,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "1.1.1"}
-  s.source_files = "SoHow/*"
+
 
 #{ :git => "http://EXAMPLE/SoHow.git", :tag => "#{s.version}" }
 
