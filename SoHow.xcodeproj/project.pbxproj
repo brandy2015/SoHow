@@ -43,20 +43,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D60A399C1FEE3D4600B7C558 /* 双指开合 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "双指开合";
-			sourceTree = "<group>";
-		};
-		D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "对于图片的处理库ImageHelper";
-			sourceTree = "<group>";
-		};
 		D6B1AAB71FDEBBF30007CB03 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				D69A47372030623B0074F9EF /* BriefActionAlert.swift */,
-				D60A399C1FEE3D4600B7C558 /* 双指开合 */,
 				D60A39991FEE3AD100B7C558 /* YSZoomView.swift */,
 				D666106C1FEE34AF00834E7C /* ImageHelper.swift */,
 				D666106A1FEE34AB00834E7C /* ImageVIewExtension.swift */,
-				D66610691FEE349300834E7C /* 对于图片的处理库ImageHelper */,
 				D6B1AACF1FDEBBF30007CB03 /* Info.plist */,
 				D637DDCA1FDFCBBC002E5208 /* BriefFunctionSwift.swift */,
 				D67758E01FEA4B27008F6076 /* 用户名和用户数组.swift */,

@@ -227,7 +227,16 @@ public func share分享功能(文件地址:URL,测试:Bool = false,显示的框:
     return activityController
 }
 
-
+public func share批量分享功能(文件地址:[URL],显示的框:UIView) -> UIActivityViewController?{
+    //    let fileURL = 文件地址
+    let activityController = UIActivityViewController(activityItems: 文件地址, applicationActivities: nil)
+    let excludedActivities = [UIActivityType.postToFlickr, UIActivityType.postToWeibo, UIActivityType.message, UIActivityType.mail, UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.assignToContact, UIActivityType.saveToCameraRoll, UIActivityType.addToReadingList, UIActivityType.postToFlickr, UIActivityType.postToVimeo, UIActivityType.postToTencentWeibo]
+    activityController.excludedActivityTypes = excludedActivities
+    activityController.popoverPresentationController?.sourceRect = CGRect(x: 4.0, y: 0.0, width: 1.0, height: 1.0)
+    activityController.popoverPresentationController?.sourceView = 显示的框
+    
+    return activityController
+}
 //public func share分享功能(文件地址:String,测试:Bool = false) -> UIActivityViewController{
 //    //    if let
 //    var fileURL:URL? = URL(fileURLWithPath: "")
