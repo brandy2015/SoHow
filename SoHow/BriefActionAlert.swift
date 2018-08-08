@@ -112,11 +112,13 @@ class SoHowAlert {
 //        (title:title,meg: meg, btn1: 按钮名称, btn2: nil, handler: nil)
     }
     
-    func cornerRadius处理Image的圆角(layer: CALayer,cornerRadius:CGFloat = 20)  {
-        layer.masksToBounds = true
-        layer.cornerRadius = cornerRadius
-    }
+   
     
     
 }
 
+
+func cornerRadius处理Image的圆角(layer: CALayer,cornerRadius:CGFloat = 20)  {
+    layer.masksToBounds = true
+    layer.cornerRadius = cornerRadius
+}
