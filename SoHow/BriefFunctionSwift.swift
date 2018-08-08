@@ -216,46 +216,6 @@ public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5)
     return compressImage
 }
 
-public func share分享功能(文件地址:URL,测试:Bool = false,显示的框:UIView) -> UIActivityViewController?{
-    let fileURL = 文件地址
-    let activityController = UIActivityViewController(activityItems: [fileURL], applicationActivities: nil)
-    let excludedActivities = [UIActivityType.postToFlickr, UIActivityType.postToWeibo, UIActivityType.message, UIActivityType.mail, UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.assignToContact, UIActivityType.saveToCameraRoll, UIActivityType.addToReadingList, UIActivityType.postToFlickr, UIActivityType.postToVimeo, UIActivityType.postToTencentWeibo]
-    activityController.excludedActivityTypes = excludedActivities
-    activityController.popoverPresentationController?.sourceRect = CGRect(x: 4.0, y: 0.0, width: 1.0, height: 1.0)
-    activityController.popoverPresentationController?.sourceView = 显示的框
-    
-    return activityController
-}
-
-public func share批量分享功能(文件地址:[URL],显示的框:UIView) -> UIActivityViewController?{
-    //    let fileURL = 文件地址
-    let activityController = UIActivityViewController(activityItems: 文件地址, applicationActivities: nil)
-    let excludedActivities = [UIActivityType.postToFlickr, UIActivityType.postToWeibo, UIActivityType.message, UIActivityType.mail, UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.assignToContact, UIActivityType.saveToCameraRoll, UIActivityType.addToReadingList, UIActivityType.postToFlickr, UIActivityType.postToVimeo, UIActivityType.postToTencentWeibo]
-    activityController.excludedActivityTypes = excludedActivities
-    activityController.popoverPresentationController?.sourceRect = CGRect(x: 4.0, y: 0.0, width: 1.0, height: 1.0)
-    activityController.popoverPresentationController?.sourceView = 显示的框
-    
-    return activityController
-}
-//public func share分享功能(文件地址:String,测试:Bool = false) -> UIActivityViewController{
-//    //    if let
-//    var fileURL:URL? = URL(fileURLWithPath: "")
-//    
-//    if 测试{
-//        fileURL = fileToURL(文件地址)
-//    }else{
-//        
-//        fileURL = URL(fileURLWithPath: 文件地址)
-//    }
-//    
-//    
-//    let activityController = UIActivityViewController(activityItems: [fileURL!], applicationActivities: nil)
-//    let excludedActivities = [UIActivityType.postToFlickr, UIActivityType.postToWeibo, UIActivityType.message, UIActivityType.mail, UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.assignToContact, UIActivityType.saveToCameraRoll, UIActivityType.addToReadingList, UIActivityType.postToFlickr, UIActivityType.postToVimeo, UIActivityType.postToTencentWeibo]
-//    
-//    activityController.excludedActivityTypes = excludedActivities
-//    //        present(activityController, animated: true, completion: nil)
-//    return activityController
-//}
 
 
 public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
@@ -390,12 +350,6 @@ public extension String{
 }
 
 
-//func HUD(添加到的窗口:UIView,LabelText:String,消失时间:Double = 3.0)  {
-//    let hud = MBProgressHUD.showAdded(to: 添加到的窗口, animated: true)
-//    hud.label.text = LabelText
-//    hud.hide(animated: true, afterDelay: 消失时间)
-//}
-
 //延迟调用
 
 public func afterDelay(_ seconds: Double, closure: @escaping () -> ()) {
@@ -407,29 +361,7 @@ public func 延迟调用(_ seconds: Double, closure: @escaping () -> ()) {
     DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
 }
 
-class BriefFunctionSwift: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-}
+
+
+
 
