@@ -117,8 +117,3 @@ class SoHowAlert {
     
 }
 
-
-func cornerRadius处理Image的圆角(layer: CALayer,cornerRadius:CGFloat = 20)  {
-    layer.masksToBounds = true
-    layer.cornerRadius = cornerRadius
-}
