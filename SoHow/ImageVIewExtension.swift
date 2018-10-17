@@ -38,8 +38,13 @@ public extension UIImageView {
             if fadeIn {
                 let transition = CATransition()
                 transition.duration = 0.5
-                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-                transition.type = kCATransitionFade
+                
+                
+                transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+                
+                
+//                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                transition.type = CATransitionType.fade //kCATransitionFade
                 self.layer.add(transition, forKey: nil)
             }
             closure?(image)

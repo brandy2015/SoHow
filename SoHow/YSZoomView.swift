@@ -100,11 +100,11 @@ open class YSZoomView: UIControl, UIScrollViewDelegate {
     // 单击手势事件
     @objc func singleTapClick(_ tap: UITapGestureRecognizer) {
         self.scrollView?.setZoomScale(self.minScale, animated: false)
-        UIView.animate(withDuration: self.animDuration, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+        UIView.animate(withDuration: self.animDuration, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
                 self.imageView?.frame = self.originFrame
                 self.scrollView?.backgroundColor = UIColor.clear
                 // 把keyWindow的windowLevel设置为UIWindowLevelNormal
-                UIApplication.shared.keyWindow?.windowLevel = UIWindowLevelNormal
+            UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.normal
             }) { (finished) in
                 self.alpha = 0
                 self.scrollView?.backgroundColor = UIColor.black
@@ -169,7 +169,7 @@ open class YSZoomView: UIControl, UIScrollViewDelegate {
     
     open func show() {
         self.scrollView?.backgroundColor = UIColor.black
-        UIView.animate(withDuration: self.animDuration, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+        UIView.animate(withDuration: self.animDuration, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
                 self.imageView?.bounds = CGRect(x: 0, y: 0, width: self.screenWidth, height: self.image!.size.height / self.image!.size.width * self.screenWidth)
                 self.imageView?.center = (self.scrollView?.center)!
                 self.alpha = 1.0

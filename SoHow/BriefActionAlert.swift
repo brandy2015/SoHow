@@ -21,9 +21,9 @@ public func SoHowAlertSingleAction(title:String,message:String,actiontitle:Strin
 
 func 添加过渡动画(持续时间:Double = 0.5) -> CATransition {
     let transition = CATransition()
-    transition.type = kCATransitionFade
+    transition.type = CATransitionType.fade
     transition.duration = CFTimeInterval(持续时间)
-    transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseOut)
+    transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeOut)
     return transition
 //    view.layer.add(添加过渡动画(), forKey: nil)具体使用方法
 }
@@ -48,10 +48,10 @@ public func 加载主文件夹中HTML文件到WebView(名称:String,加载到的
 func getCurrentVC()->UIViewController?{
     var result:UIViewController?
     var window = UIApplication.shared.keyWindow
-    if window?.windowLevel != UIWindowLevelNormal{
+    if window?.windowLevel != UIWindow.Level.normal{
         let windows = UIApplication.shared.windows
         for tmpWin in windows{
-            if tmpWin.windowLevel == UIWindowLevelNormal{
+            if tmpWin.windowLevel == UIWindow.Level.normal{
                 window = tmpWin
                 break
             }

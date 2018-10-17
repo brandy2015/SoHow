@@ -585,7 +585,7 @@ public extension UIImage {
         
         
         let hasBlur = blurRadius > CGFloat(Float.ulpOfOne)
-        let hasSaturationChange = fabs(saturationDeltaFactor - 1.0) > CGFloat(Float.ulpOfOne)
+        let hasSaturationChange = abs(saturationDeltaFactor - 1.0) > CGFloat(Float.ulpOfOne)
         if (hasBlur || hasSaturationChange) {
             
             UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

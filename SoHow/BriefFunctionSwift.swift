@@ -209,7 +209,8 @@ public func 返回设备信息() -> (设备类型:String,设备名称:String,系
 
 //MARK: - 压缩图片大小
 public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5) -> UIImage{
-    guard let imageData = UIImageJPEGRepresentation(originalImage, 压缩比) else{
+    
+    guard let imageData = originalImage.jpegData(compressionQuality: 压缩比)else{
         return originalImage
     }
     let compressImage = UIImage(data: imageData)!
@@ -283,7 +284,9 @@ public func 处理http(httpstring: String,标志:String) -> String {
 
 public func f发音内容(内容:String)  {
     let audioSession = AVAudioSession.sharedInstance()
-    do {try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+    do {
+        try audioSession.setCategory(.playback, mode: .default, options: .allowAirPlay)
+        
     }catch let error as NSError{
         print(error.code)}
     let av = AVSpeechSynthesizer.init()
