@@ -7,6 +7,43 @@
 //
 
 import UIKit
+public class AlertPresentObject: NSObject {
+    
+    public static var current = AlertPresentObject()
+    
+    public var alert = UIAlertController()
+    public var vc : UITableViewController? = nil
+    
+    public func 正在导入Alert(completion: @escaping ()->Void)  {
+        print("准备弹出")
+        
+        self.alert = UIAlertController(title: "正在导入", message: "请稍等", preferredStyle: .alert)
+        
+        self.alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { (_) in
+            self.alert.dismiss(animated: true, completion: nil)
+        }))
+        vc?.present(self.alert, animated: true, completion: {
+            completion()
+        })
+        
+        
+    }
+    
+    public func 显示百分比(百分比:Float,completion: @escaping ()->Void)  {
+        
+        //        百分比需要保留两位小数
+        
+        self.alert = UIAlertController(title: "正在导入", message: "进度\(百分比)", preferredStyle: .alert)
+        vc?.present(self.alert, animated: true, completion: {
+            completion()
+        })
+    }
+}
+
+
+
+
+
 
 public func SoHowAlertSingleAction(title:String,message:String,actiontitle:String) -> UIAlertController {
     let alert = UIAlertController(title: title,

@@ -21,6 +21,7 @@
 		D62AFC03217726F50013974F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC00217726F50013974F /* README.md */; };
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
+		D63BFFBF21B1310600422BFD /* UITableView+RealmChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D62AFC00217726F50013974F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RealmChanges.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				D62AFBF8217726EA0013974F /* BriefActionAlert.swift */,
+				D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */,
 				D62AFBF4217726E90013974F /* YSZoomView.swift */,
 				D62AFBF5217726EA0013974F /* ImageHelper.swift */,
 				D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */,
@@ -169,6 +172,7 @@
 				D62AFBFE217726EB0013974F /* BriefActionAlert.swift in Sources */,
 				D62AFBFA217726EB0013974F /* YSZoomView.swift in Sources */,
 				D62AFBE5217726890013974F /* xxxsohow.swift in Sources */,
+				D63BFFBF21B1310600422BFD /* UITableView+RealmChanges.swift in Sources */,
 				D62AFBE3217726890013974F /* xxxssohow.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
 				D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */,

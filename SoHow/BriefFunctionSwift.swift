@@ -10,6 +10,36 @@ import UIKit
 import AVFoundation
 
 
+public func 跳转到系统相册()  {
+    //跳转
+    let urlStr = decode("cGhvdG9zLXJlZGlyZWN0Oi8v")
+    if let url = URL(string:urlStr) {
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: Dictionary(), completionHandler: nil)
+        } else { UIApplication.shared.openURL(url)}}
+}
+
+//base64解码
+public func decode(_ string: String) -> String {
+    let data = Data(base64Encoded: string, options: [])
+    let decodedStr = String(data: data ?? Data(), encoding: .utf8)
+    return decodedStr ?? ""
+}
+
+
+
+
+
+public extension String{
+    public var withoutExtension: String{
+        return String.去文件后缀x(x: self)
+    }
+    public static func 去文件后缀x(x s:String) -> String {
+        var 空 = ""
+        for i in s { if i != "."{ 空.append(i)}else{ break}}
+        return 空
+    }
+}
 
 public var url = URL(fileURLWithPath: "")
 // MARK://读取当前登录用户的方法 func 当前登录用户() -> String
