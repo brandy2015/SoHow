@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SoHow"
-  s.version      = "1.2.3"
+  s.version      = "1.2.4"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    第一次尝试做Pod，不断升级这个pod，希望能让很多人喜欢
+                    简洁调用一些方法
 
                    DESC
 
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "1.2.3"}
+  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "1.2.4"}
   s.source_files = "SoHow/*"
 
 

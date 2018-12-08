@@ -362,7 +362,7 @@ public func 打开网页(网路WebView:UIWebView,地址:String)  {
 
 public extension String{
     
-    public func transformToPinYin() -> String{//(String,String){
+    public func transformToPinYin(取代空格的东西:String = "") -> String{//(String,String){
         
         let mutableString = NSMutableString(string: self)
         
@@ -375,7 +375,7 @@ public extension String{
         CFStringTransform(mutableString, nil, kCFStringTransformStripDiacritics, false)
         let string = String(mutableString)
         //去掉空格
-        let 去掉空格 = string.replacingOccurrences(of: " ", with: "")
+        let 去掉空格 = string.replacingOccurrences(of: " ", with: 取代空格的东西)
         return 去掉空格//(去掉空格//,没有去掉音标 as String)
         
     }
