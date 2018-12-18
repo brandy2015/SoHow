@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SoHow"
-  s.version      = "1.2.6"
+  s.version      = "1.2.7"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -57,8 +57,8 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "1.2.6"}
-  s.source_files = "SoHow/*"
+  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "1.2.7"}
+  s.source_files = "SoHow/Source/*"
 
 
   # s.social_media_url   = "http://twitter.com/Brandy"

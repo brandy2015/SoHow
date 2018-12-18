@@ -8,7 +8,8 @@
 
 import UIKit
 import AVFoundation
-
+import MobileCoreServices            //picker.mediaTypes的类型
+import PhotosUI                      //LivePhoto使用的依赖库
 
 
 public extension UIImage{
