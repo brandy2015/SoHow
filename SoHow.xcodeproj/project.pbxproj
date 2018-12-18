@@ -77,6 +77,7 @@
 		D62AFBE1217726890013974F /* SoHow */ = {
 			isa = PBXGroup;
 			children = (
+				D6B63DEF21C7E7590087B44D /* New Group */,
 				D62AFBF8217726EA0013974F /* BriefActionAlert.swift */,
 				D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */,
 				D62AFBF4217726E90013974F /* YSZoomView.swift */,
@@ -84,14 +85,21 @@
 				D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */,
 				D62AFBF6217726EA0013974F /* BriefFunctionSwift.swift */,
 				D62AFBF7217726EA0013974F /* 用户名和用户数组.swift */,
-				D62AFBE2217726890013974F /* xxxssohow.swift */,
-				D62AFBE4217726890013974F /* xxxsohow.swift */,
 				D62AFBE6217726890013974F /* Main.storyboard */,
 				D62AFBE92177268A0013974F /* Assets.xcassets */,
 				D62AFBEB2177268A0013974F /* LaunchScreen.storyboard */,
 				D62AFBEE2177268A0013974F /* SoHow-Info.plist */,
 			);
 			path = SoHow;
+			sourceTree = "<group>";
+		};
+		D6B63DEF21C7E7590087B44D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D62AFBE2217726890013974F /* xxxssohow.swift */,
+				D62AFBE4217726890013974F /* xxxsohow.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
