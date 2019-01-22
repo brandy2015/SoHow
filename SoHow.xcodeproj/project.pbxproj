@@ -7,27 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D62AFBE3217726890013974F /* xxxssohow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE2217726890013974F /* xxxssohow.swift */; };
-		D62AFBE5217726890013974F /* xxxsohow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE4217726890013974F /* xxxsohow.swift */; };
+		D62AFBE3217726890013974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE2217726890013974F /* AppDelegate.swift */; };
+		D62AFBE5217726890013974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE4217726890013974F /* ViewController.swift */; };
 		D62AFBE8217726890013974F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AFBE6217726890013974F /* Main.storyboard */; };
 		D62AFBEA2177268A0013974F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62AFBE92177268A0013974F /* Assets.xcassets */; };
 		D62AFBED2177268A0013974F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AFBEB2177268A0013974F /* LaunchScreen.storyboard */; };
 		D62AFBFA217726EB0013974F /* YSZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF4217726E90013974F /* YSZoomView.swift */; };
 		D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF5217726EA0013974F /* ImageHelper.swift */; };
 		D62AFBFC217726EB0013974F /* BriefFunctionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF6217726EA0013974F /* BriefFunctionSwift.swift */; };
-		D62AFBFD217726EB0013974F /* 用户名和用户数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF7217726EA0013974F /* 用户名和用户数组.swift */; };
 		D62AFBFE217726EB0013974F /* BriefActionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF8217726EA0013974F /* BriefActionAlert.swift */; };
 		D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */; };
 		D62AFC03217726F50013974F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC00217726F50013974F /* README.md */; };
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
 		D63BFFBF21B1310600422BFD /* UITableView+RealmChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */; };
+		D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36A21F6F30E00E6A990 /* XYZJump.swift */; };
+		D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */; };
+		D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36E21F711A200E6A990 /* XYZGCD.swift */; };
+		D653F37121F711BD00E6A990 /* XYZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37021F711BD00E6A990 /* XYZString.swift */; };
+		D653F37321F7120100E6A990 /* XYZDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37221F7120100E6A990 /* XYZDate.swift */; };
+		D653F37521F7175D00E6A990 /* XYZImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37421F7175D00E6A990 /* XYZImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D62AFBDF217726890013974F /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D62AFBE2217726890013974F /* xxxssohow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xxxssohow.swift; sourceTree = "<group>"; };
-		D62AFBE4217726890013974F /* xxxsohow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xxxsohow.swift; sourceTree = "<group>"; };
+		D62AFBE2217726890013974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D62AFBE4217726890013974F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D62AFBE7217726890013974F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D62AFBE92177268A0013974F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D62AFBEC2177268A0013974F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,13 +40,18 @@
 		D62AFBF4217726E90013974F /* YSZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoomView.swift; sourceTree = "<group>"; };
 		D62AFBF5217726EA0013974F /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		D62AFBF6217726EA0013974F /* BriefFunctionSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefFunctionSwift.swift; sourceTree = "<group>"; };
-		D62AFBF7217726EA0013974F /* 用户名和用户数组.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "用户名和用户数组.swift"; sourceTree = "<group>"; };
 		D62AFBF8217726EA0013974F /* BriefActionAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefActionAlert.swift; sourceTree = "<group>"; };
 		D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVIewExtension.swift; sourceTree = "<group>"; };
 		D62AFC00217726F50013974F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RealmChanges.swift"; sourceTree = "<group>"; };
+		D653F36A21F6F30E00E6A990 /* XYZJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZJump.swift; sourceTree = "<group>"; };
+		D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
+		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
+		D653F37021F711BD00E6A990 /* XYZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString.swift; sourceTree = "<group>"; };
+		D653F37221F7120100E6A990 /* XYZDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDate.swift; sourceTree = "<group>"; };
+		D653F37421F7175D00E6A990 /* XYZImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,8 @@
 		D62AFBE1217726890013974F /* SoHow */ = {
 			isa = PBXGroup;
 			children = (
-				D62AFBE2217726890013974F /* xxxssohow.swift */,
-				D62AFBE4217726890013974F /* xxxsohow.swift */,
+				D62AFBE2217726890013974F /* AppDelegate.swift */,
+				D62AFBE4217726890013974F /* ViewController.swift */,
 				D6B63DEF21C7E7590087B44D /* Source */,
 				D62AFBE6217726890013974F /* Main.storyboard */,
 				D62AFBE92177268A0013974F /* Assets.xcassets */,
@@ -91,13 +101,18 @@
 		D6B63DEF21C7E7590087B44D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
+				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
+				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
+				D653F37021F711BD00E6A990 /* XYZString.swift */,
+				D653F37221F7120100E6A990 /* XYZDate.swift */,
+				D653F37421F7175D00E6A990 /* XYZImage.swift */,
+				D62AFBF6217726EA0013974F /* BriefFunctionSwift.swift */,
 				D62AFBF8217726EA0013974F /* BriefActionAlert.swift */,
 				D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */,
 				D62AFBF4217726E90013974F /* YSZoomView.swift */,
 				D62AFBF5217726EA0013974F /* ImageHelper.swift */,
 				D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */,
-				D62AFBF6217726EA0013974F /* BriefFunctionSwift.swift */,
-				D62AFBF7217726EA0013974F /* 用户名和用户数组.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -176,12 +191,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62AFBFD217726EB0013974F /* 用户名和用户数组.swift in Sources */,
+				D653F37121F711BD00E6A990 /* XYZString.swift in Sources */,
+				D653F37321F7120100E6A990 /* XYZDate.swift in Sources */,
+				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
+				D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */,
 				D62AFBFE217726EB0013974F /* BriefActionAlert.swift in Sources */,
 				D62AFBFA217726EB0013974F /* YSZoomView.swift in Sources */,
-				D62AFBE5217726890013974F /* xxxsohow.swift in Sources */,
+				D62AFBE5217726890013974F /* ViewController.swift in Sources */,
+				D653F37521F7175D00E6A990 /* XYZImage.swift in Sources */,
 				D63BFFBF21B1310600422BFD /* UITableView+RealmChanges.swift in Sources */,
-				D62AFBE3217726890013974F /* xxxssohow.swift in Sources */,
+				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
+				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
 				D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */,
 				D62AFBFC217726EB0013974F /* BriefFunctionSwift.swift in Sources */,

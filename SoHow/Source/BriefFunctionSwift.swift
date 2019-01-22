@@ -11,59 +11,8 @@ import AVFoundation
 import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
-
-
-
-
-public func 跳转到系统相册()  {
-    //跳转
-    let urlStr = decode("cGhvdG9zLXJlZGlyZWN0Oi8v")
-    if let url = URL(string:urlStr) {
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: Dictionary(), completionHandler: nil)
-        } else { UIApplication.shared.openURL(url)}}
-}
-
-//base64解码
-public func decode(_ string: String) -> String {
-    let data = Data(base64Encoded: string, options: [])
-    let decodedStr = String(data: data ?? Data(), encoding: .utf8)
-    return decodedStr ?? ""
-}
-
-
-
-
-
-public extension String{
-    public var withoutExtension: String{
-        return String.去文件后缀x(x: self)
-    }
-    public static func 去文件后缀x(x s:String) -> String {
-        var 空 = ""
-        for i in s { if i != "."{ 空.append(i)}else{ break}}
-        return 空
-    }
-}
-
-public var url = URL(fileURLWithPath: "")
+//public var url = URL(fileURLWithPath: "")
 // MARK://读取当前登录用户的方法 func 当前登录用户() -> String
-public func 颜色(red:CGFloat,green:CGFloat,blue:CGFloat,alpha:CGFloat = 1.0) -> UIColor {
-    return UIColor(red:red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
-}
-
-
-
-public func 时间格式的调整(date:Date,format:String = "yyyy年MM月dd日 HH:mm:ss") -> String  {
-    // 创建一个日期格式器
-    let dformatter = DateFormatter()
-    // 为日期格式器设置格式字符串
-    dformatter.dateFormat = format
-    // 使用日期格式器格式化日期、时间
-    let datestr = dformatter.string(from: date)
-    let message =  "\(datestr)"
-    return message
-}
 
 //添加一个+=的方法让两个词典可以融合
 public func += <KeyType, ValueType> ( left: inout Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>) {
@@ -83,204 +32,6 @@ public func 时间格式的调整2只剩年月日时间创建录音(date:Date) -
     return message
 }
 
-public func 返回设备类型() -> String{
-    
-    var modelName: String {
-        var systemInfo = utsname()
-        uname(&systemInfo)
-        let machineMirror = Mirror(reflecting: systemInfo.machine)
-        let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8, value != 0 else { return identifier }
-            return identifier + String(UnicodeScalar(UInt8(value)))
-        }
-        
-        switch identifier {
-        case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
-        case "iPhone4,1":                               return "iPhone 4s"
-        case "iPhone5,1", "iPhone5,2":                  return "iPhone 5"
-        case "iPhone5,3", "iPhone5,4":                  return "iPhone 5c"
-        case "iPhone6,1", "iPhone6,2":                  return "iPhone 5s"
-        case "iPhone7,2":                               return "iPhone 6"
-        case "iPhone7,1":                               return "iPhone 6 Plus"
-        case "iPhone8,1":                               return "iPhone 6s"
-        case "iPhone8,2":                               return "iPhone 6s Plus"
-        case "iPhone8,4":                               return "iPhone SE"
-        case "iPhone9,1", "iPhone9,3":                  return "iPhone 7"
-        case "iPhone9,2", "iPhone9,4":                  return "iPhone 7 Plus"
-        case "iPhone10,1", "iPhone10,4":                return "iPhone 8"
-        case "iPhone10,2", "iPhone10,5":                return "iPhone 8 Plus"
-        case "iPhone10,3", "iPhone10,6":                return "iPhone X"
-        case "iPhone11,8":                              return "iPhone XR"
-        case "iPhone11,2":                              return "iPhone XS"
-        case "iPhone11,6", "iPhone11,4":                return "iPhone XS Max"
-        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
-        case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad 3"
-        case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad 4"
-        case "iPad4,1", "iPad4,2", "iPad4,3":           return "iPad Air"
-        case "iPad5,3", "iPad5,4":                      return "iPad Air 2"
-        case "iPad2,5", "iPad2,6", "iPad2,7":           return "iPad Mini"
-        case "iPad4,4", "iPad4,5", "iPad4,6":           return "iPad Mini 2"
-        case "iPad4,7", "iPad4,8", "iPad4,9":           return "iPad Mini 3"
-        case "iPad5,1", "iPad5,2":                      return "iPad Mini 4"
-        case "iPad6,7", "iPad6,8":                      return "iPad Pro 12.9inch"
-        case "iPad6,3", "iPad6,4":                      return "iPad Pro 9.7inch"
-        case "iPad6,11", "iPad6,12":                    return "iPad 5"
-        case "iPad7,1", "iPad7,2":                      return "iPad Pro 12.9inch G2"
-        case "iPad7,3", "iPad7,4":                      return "iPad Pro 10.5inch"
-        case "iPad7,5", "iPad7,6":                      return "iPad 6"
-        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11inch"
-        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9inch G3"
-        case "iPod1,1":                                 return "iPod touch"
-        case "iPod2,1":                                 return "iPod touch 2"
-        case "iPod3,1":                                 return "iPod touch 3"
-        case "iPod4,1":                                 return "iPod touch 4"
-        case "iPod5,1":                                 return "iPod touch 5"
-        case "iPod7,1":                                 return "iPod touch 6"
-        case "Watch1,1", "Watch1,2":                    return "Apple Watch 1"
-        case "Watch2,6", "Watch2,7":                    return "Apple Watch Series 1"
-        case "Watch2,3", "Watch2,4":                    return "Apple Watch Series 2"
-        case "Watch3,1", "Watch3,2", "Watch3,3", "Watch3,4":return "Apple Watch Series 3"
-        case "Watch4,1", "Watch4,2", "Watch4,3", "Watch4,4":return "Apple Watch Series 4"
-        case "AudioAccessory1,1", "AudioAccessory1,2":  return "HomePod"
-        case "AppleTV1,1":                              return "Apple TV"
-        case "AppleTV2,1":                              return "Apple TV 2"
-        case "AppleTV3,1", "AppleTV3,2":                return "Apple TV 3"
-        case "AppleTV5,3":                              return "Apple TV 4"
-        case "AppleTV6,2":                              return "Apple TV 4K"
-        case "AirPods1,1":                              return "AirPods"
-        case "i386", "x86_64":                          return "Simulator"
-        default:                                        return identifier
-        }
-     
-    }
-    return modelName
-}
-
-
-
-
-
-public extension UIDevice {
-    public var modelName: String {
-        var systemInfo = utsname()
-        uname(&systemInfo)
-        let machineMirror = Mirror(reflecting: systemInfo.machine)
-        let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8, value != 0 else { return identifier }
-            return identifier + String(UnicodeScalar(UInt8(value)))
-        }
-        
-        switch identifier {
-        case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
-        case "iPhone4,1":                               return "iPhone 4s"
-        case "iPhone5,1", "iPhone5,2":                  return "iPhone 5"
-        case "iPhone5,3", "iPhone5,4":                  return "iPhone 5c"
-        case "iPhone6,1", "iPhone6,2":                  return "iPhone 5s"
-        case "iPhone7,2":                               return "iPhone 6"
-        case "iPhone7,1":                               return "iPhone 6 Plus"
-        case "iPhone8,1":                               return "iPhone 6s"
-        case "iPhone8,2":                               return "iPhone 6s Plus"
-        case "iPhone8,4":                               return "iPhone SE"
-        case "iPhone9,1", "iPhone9,3":                  return "iPhone 7"
-        case "iPhone9,2", "iPhone9,4":                  return "iPhone 7 Plus"
-        case "iPhone10,1", "iPhone10,4":                return "iPhone 8"
-        case "iPhone10,2", "iPhone10,5":                return "iPhone 8 Plus"
-        case "iPhone10,3", "iPhone10,6":                return "iPhone X"
-        case "iPhone11,8":                              return "iPhone XR"
-        case "iPhone11,2":                              return "iPhone XS"
-        case "iPhone11,6", "iPhone11,4":                return "iPhone XS Max"
-        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
-        case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad 3"
-        case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad 4"
-        case "iPad4,1", "iPad4,2", "iPad4,3":           return "iPad Air"
-        case "iPad5,3", "iPad5,4":                      return "iPad Air 2"
-        case "iPad2,5", "iPad2,6", "iPad2,7":           return "iPad Mini"
-        case "iPad4,4", "iPad4,5", "iPad4,6":           return "iPad Mini 2"
-        case "iPad4,7", "iPad4,8", "iPad4,9":           return "iPad Mini 3"
-        case "iPad5,1", "iPad5,2":                      return "iPad Mini 4"
-        case "iPad6,7", "iPad6,8":                      return "iPad Pro 12.9inch"
-        case "iPad6,3", "iPad6,4":                      return "iPad Pro 9.7inch"
-        case "iPad6,11", "iPad6,12":                    return "iPad 5"
-        case "iPad7,1", "iPad7,2":                      return "iPad Pro 12.9inch G2"
-        case "iPad7,3", "iPad7,4":                      return "iPad Pro 10.5inch"
-        case "iPad7,5", "iPad7,6":                      return "iPad 6"
-        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11inch"
-        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9inch G3"
-        case "iPod1,1":                                 return "iPod touch"
-        case "iPod2,1":                                 return "iPod touch 2"
-        case "iPod3,1":                                 return "iPod touch 3"
-        case "iPod4,1":                                 return "iPod touch 4"
-        case "iPod5,1":                                 return "iPod touch 5"
-        case "iPod7,1":                                 return "iPod touch 6"
-        case "Watch1,1", "Watch1,2":                    return "Apple Watch 1"
-        case "Watch2,6", "Watch2,7":                    return "Apple Watch Series 1"
-        case "Watch2,3", "Watch2,4":                    return "Apple Watch Series 2"
-        case "Watch3,1", "Watch3,2", "Watch3,3", "Watch3,4":return "Apple Watch Series 3"
-        case "Watch4,1", "Watch4,2", "Watch4,3", "Watch4,4":return "Apple Watch Series 4"
-        case "AudioAccessory1,1", "AudioAccessory1,2":  return "HomePod"
-        case "AppleTV1,1":                              return "Apple TV"
-        case "AppleTV2,1":                              return "Apple TV 2"
-        case "AppleTV3,1", "AppleTV3,2":                return "Apple TV 3"
-        case "AppleTV5,3":                              return "Apple TV 4"
-        case "AppleTV6,2":                              return "Apple TV 4K"
-        case "AirPods1,1":                              return "AirPods"
-        case "i386", "x86_64":                          return "Simulator"
-        default:                                        return identifier
-        }
-        
-    }
-    
-}
-
-public func 返回设备信息() -> (设备类型:String,设备名称:String,系统版本号:String,设备唯一标识符:String,设备的大类型:String,App的版本号:String,App的build版本:String,App的build版本:String,appName:[String]){
-    
-    var 返回数组:[String] = []
-    let UIDeviceCurrent = UIDevice.current
-    
-    //获取设备名称
-    let modelName = "设备类型" + ":  " + UIDeviceCurrent.modelName
-    //获取设备名称
-    let deviceName = "设备名称" + ":  " + UIDeviceCurrent.name
-    //获取系统版本号
-    let sysVersion = "系统版本号" + ":  " + UIDeviceCurrent.systemVersion
-    //获取设备唯一标识符
-    let deviceUUID = "设备唯一标识符" + ":  " + (UIDeviceCurrent.identifierForVendor?.uuidString)!
-    //获取设备的型号
-    let deviceModel = "设备的大类型" + ":  " + UIDeviceCurrent.model
-    //获取App相关的信息
-    let infoDic = Bundle.main.infoDictionary
-    // 获取App的版本号
-    let appVersion = "App的版本号" + ":  " + (infoDic?["CFBundleShortVersionString"] as! String) + "beta"
-    // 获取App的build版本
-    let appBuildVersion = "App的build版本" + ":  " +  (infoDic?["CFBundleVersion"] as! String)
-    // 获取App的名称
-    let appName = "App的名称" + ":  " + ((infoDic?["CFBundleDisplayName"] as? String) ?? "")
-    
-    
-    返回数组.append(modelName)
-    返回数组.append(deviceName)
-    返回数组.append(sysVersion)
-    返回数组.append(deviceUUID)
-    返回数组.append(deviceModel)
-    返回数组.append(appVersion)
-    返回数组.append(appBuildVersion)
-    返回数组.append(appName)
-    
-    
-    return  (modelName,deviceName,sysVersion,deviceUUID,deviceModel,appVersion,appBuildVersion,appName,返回数组)
-    
-}
-
-
-//MARK: - 压缩图片大小
-public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5) -> UIImage{
-    
-    guard let imageData = originalImage.jpegData(compressionQuality: 压缩比)else{
-        return originalImage
-    }
-    let compressImage = UIImage(data: imageData)!
-    return compressImage
-}
 
 
 
@@ -289,21 +40,14 @@ public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFlo
     处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小
 }
 
-public func sendTime发布时间转文字方法(发布时间:Date) -> String {
-    let date = DateFormatter()
-    date.dateFormat = "Y.M.d H:mm"
-    let datetostring = date.string(from: 发布时间)
-    return datetostring
-}
+
 
 public func fileToURL(_ file: String) -> URL? {
     // Get the full path of the file
     let fileComponents = file.components(separatedBy: ".")
-    
     if let filePath = Bundle.main.path(forResource: fileComponents[0], ofType: fileComponents[1]) {
         return URL(fileURLWithPath: filePath)
     }
-    
     return nil
 }
 
@@ -391,49 +135,182 @@ public func 打开网页(网路WebView:UIWebView,地址:String)  {
     网路WebView.loadRequest(request)
     //    websiteTextField.resignFirstResponder()
 }
-
-
-
-
-public extension String{
-    
-    public func transformToPinYin(取代空格的东西:String = "") -> String{//(String,String){
-        
-        let mutableString = NSMutableString(string: self)
-        
-        //把汉字转为拼音
-        
-        CFStringTransform(mutableString, nil, kCFStringTransformToLatin, false)
-        //去掉拼音的音标
-        //        let 没有去掉音标 = mutableString
-        
-        CFStringTransform(mutableString, nil, kCFStringTransformStripDiacritics, false)
-        let string = String(mutableString)
-        //去掉空格
-        let 去掉空格 = string.replacingOccurrences(of: " ", with: 取代空格的东西)
-        return 去掉空格//(去掉空格//,没有去掉音标 as String)
-        
-    }
-    
-}
-
-
-//延迟调用
-
-public func afterDelay(_ seconds: Double, closure: @escaping () -> ()) {
-    let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
-    DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
-}
-public func 延迟调用(_ seconds: Double, closure: @escaping () -> ()) {
-    let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
-    DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
-}
-
-
 public func cornerRadius处理Image的圆角(layer: CALayer,cornerRadius:CGFloat = 20)  {
     layer.masksToBounds = true
     layer.cornerRadius = cornerRadius
 }
 
 
+
+
+
+var  url :URL! = nil
+public func b保存图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
+    if 是否保存{
+        let userDefault = UserDefaults.standard
+        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
+        userDefault.set(imageData, forKey: 图片名称)
+    }else{ print("没有保存")}
+}
+
+
+
+
+public func b保存GIF图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
+    if 是否保存{
+        let userDefault = UserDefaults.standard
+        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
+        userDefault.set(imageData, forKey: 图片名称)
+        print("\n\n\n\n\n\n\n\n")
+        print("保存了GIF" + 图片名称)
+        
+        print("\n\n\n\n\n\n\n\n")
+    }else{ print("没有保存")}
+}
+
+
+
+
+
+public func d读取图片地址(图片名字:String) -> String  {  //未真正启用
+    let userDefault = UserDefaults.standard
+    var objData = userDefault.object(forKey: 图片名字) as? Data
+    if let objData1 = objData {
+        objData = objData1
+    }else{
+        objData = userDefault.object(forKey: "default") as? Data
+    }
+    let myImage = ""
+    return myImage
+}
+
+
+
+
+
+public func b保存数组到文件testSaveDicPlist(字典:[String:String],写入地址:String = ""){
+    let filePath:String = NSHomeDirectory() + "/Documents/" + 写入地址 + "tfDic.plist"
+    NSDictionary(dictionary: 字典).write(to: URL(fileURLWithPath: filePath), atomically: true)
+}
+
+public func d从文件读取数组(路径:String = "") -> [String:String] {
+    let 路径2 = NSHomeDirectory() + "/Documents/tfDic.plist"
+    let dict = NSDictionary(contentsOfFile: 路径2) as? [String:String]
+    return dict ?? [:]
+}
+
+
+
+public func 读取好友列表() -> [String] {
+    let _FriendsList = UserDefaults.standard.array(forKey: "FriendsList") as? [String]
+    return _FriendsList ?? [""]
+}
+
+
+public func j计算时间差剩余保护时间(时间保护的时间:Date) -> String  {
+    //获取现在的时间
+    let date1 = Date()
+    let interval:TimeInterval = 时间保护的时间.timeIntervalSince(date1)
+    return "\(interval)"
+}
+
+
+public func j计算时间差和返回是否受时间保护(时间保护的时间:Date) -> Bool  {
+    
+    var 是否受保护 = true
+    //获取现在的时间
+    let date1 = Date()
+    let interval:TimeInterval = 时间保护的时间.timeIntervalSince(date1)
+    if (interval as Double) <= 0{是否受保护 = false}
+    return 是否受保护
+}
+
+
+
+
+
+
+public func d读取图片(图片名字:String) -> UIImage  {
+    let userDefault = UserDefaults.standard
+    let objData = userDefault.object(forKey: 图片名字) as? Data
+    let 解包objData = objData ?? userDefault.object(forKey: "default") as? Data
+    let myImage = NSKeyedUnarchiver.unarchiveObject(with: 解包objData ?? Data()) as? UIImage
+    return myImage ?? #imageLiteral(resourceName: "default")
+}
+
+
+
+public func b保存string到本地(保存的内容:String,文件名称:String)  {
+    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    if sp.count > 0 {
+        url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
+        print(url)
+        let data = NSMutableData()
+        
+        let x = 保存的内容
+        let m = x.data(using: String.Encoding.utf8, allowLossyConversion:true)!
+        let mtodata = NSData(data: m) as Data
+        
+        
+        data.append(mtodata)
+        data.write(toFile: url.path, atomically: true)
+        print("end")
+    }
+}
+
+
+public func b保存数组array到本地(保存的内容:Array<String>,文件名称:String)  {
+    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    if sp.count > 0 {
+        url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
+        print(url)
+        let m = 保存的内容 as NSArray
+        m.write(toFile: url.path, atomically: true)
+        print("保存文件成功" + 文件名称)
+    }
+}
+
+
+public func d从文件读取数组返回数组(文件名称:String = "") -> Array<String> {
+    var url2 = URL(fileURLWithPath: "")
+    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    if sp.count > 0 {
+        url2 = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
+        print(url2)
+    }
+    
+    let 路径2 = url2.relativeString//NSHomeDirectory() + "/Documents/tfDic.plist"
+    
+    let array1 = NSArray(contentsOfFile: 路径2) as? Array<String>
+    return array1 ?? []
+}
+
+public func b保存字典dic到本地(保存的内容:Dictionary<String,String>,文件名称:String)  {
+    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    if sp.count > 0 {
+        url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.plist")
+        print(url)
+        let m = 保存的内容 as NSDictionary
+        m.write(toFile: url.path, atomically: true)
+        print("保存文件成功" + 文件名称)
+    }
+}
+
+public func d从文件读取字典返回字典(文件名称:String = "") -> [String:String] {
+    
+    var url2 = URL(fileURLWithPath: "")
+    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    if sp.count > 0 {
+        url2 = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.plist")
+        print(url2)
+    }
+    
+    let 路径2 = url2.relativeString//NSHomeDirectory() + "/Documents/tfDic.plist"
+    
+    print("路径2" + 路径2)
+    
+    var dict = NSMutableDictionary(contentsOf: url2) as? [String:String]
+    if dict == nil{dict = [:]}
+    return dict!
+}
 

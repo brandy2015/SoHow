@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func testBTN(_ sender: Any) {
+        XYZJump.To.SettingDetail()
+//        Wallpaper
+//        let m = Bundle.main.infoDictionary
+//        print(UIDevice.current.DeviceType)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        demo()
+      
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
 }
-
