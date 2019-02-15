@@ -7,12 +7,29 @@
 //
 
 import UIKit
+
+public extension UIViewController {
+    
+    public func showExceededMaximumAlert(vc: UIViewController) {
+        let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        vc.present(alert, animated: true, completion: nil)
+    }
+}
+
+
 public class AlertPresentObject: NSObject {
     
     public static var current = AlertPresentObject()
     
     public var alert = UIAlertController()
     public var vc : UITableViewController? = nil
+    
+    
+    
+    public func dismiss(){
+        alert.dismiss(animated: true, completion: nil)
+    }
     
     public func 正在导入Alert(completion: @escaping ()->Void)  {
         print("准备弹出")
