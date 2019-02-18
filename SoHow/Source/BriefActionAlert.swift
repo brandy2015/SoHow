@@ -23,7 +23,7 @@ public class AlertPresentObject: NSObject {
     public static var current = AlertPresentObject()
     
     public var alert = UIAlertController()
-    public var vc : UITableViewController? = nil
+    //    public var vc : UITableViewController? = nil
     
     
     
@@ -31,7 +31,8 @@ public class AlertPresentObject: NSObject {
         alert.dismiss(animated: true, completion: nil)
     }
     
-    public func 正在导入Alert(completion: @escaping ()->Void)  {
+    public func 正在导入Alert(VC:UIViewController,completion: @escaping ()->Void)  {
+        self.alert.dismiss(animated: true, completion: nil)
         print("准备弹出")
         
         self.alert = UIAlertController(title: "正在导入", message: "请稍等", preferredStyle: .alert)
@@ -39,21 +40,24 @@ public class AlertPresentObject: NSObject {
         self.alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { (_) in
             self.alert.dismiss(animated: true, completion: nil)
         }))
-        vc?.present(self.alert, animated: true, completion: {
+        VC.present(self.alert, animated: true, completion: {
             completion()
         })
         
         
     }
     
-    public func 显示百分比(百分比:Float,completion: @escaping ()->Void)  {
+    public func 导入第几个文件(VC:UIViewController,第N个文件:String,completion: @escaping ()->Void)  {
         
         //        百分比需要保留两位小数
         
-        self.alert = UIAlertController(title: "正在导入", message: "进度\(百分比)", preferredStyle: .alert)
-        vc?.present(self.alert, animated: true, completion: {
+        //让alert消失
+        self.alert.dismiss(animated: true, completion: nil)
+        self.alert = UIAlertController(title: "正在导入", message: 第N个文件, preferredStyle: .alert)
+        VC.present(self.alert, animated: true) {
             completion()
-        })
+        }
+        
     }
 }
 
@@ -69,7 +73,7 @@ public func SoHowAlertSingleAction(title:String,message:String,actiontitle:Strin
     let action = UIAlertAction(title: actiontitle, style: .default,
                                handler: nil)
     alert.addAction(action)
-
+    
     return alert
 }
 
@@ -79,7 +83,7 @@ func 添加过渡动画(持续时间:Double = 0.5) -> CATransition {
     transition.duration = CFTimeInterval(持续时间)
     transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeOut)
     return transition
-//    view.layer.add(添加过渡动画(), forKey: nil)具体使用方法
+    //    view.layer.add(添加过渡动画(), forKey: nil)具体使用方法
 }
 
 public func 加载主文件夹中HTML文件到WebView(名称:String,加载到的WebView:UIWebView)  {
@@ -136,37 +140,37 @@ class SoHowAlert {
     static func showAlert(title:String = "提示",meg:String,btn1:String,handler1:((UIAlertAction) -> Void)?,btn2:String?,handler2:((UIAlertAction) -> Void)?){
         guard let vc = getCurrentVC()else{ return }
         
-     
-//        DispatchQueue.main.async(execute: {
+        
+        //        DispatchQueue.main.async(execute: {
         
         
-       
-            let alertController = UIAlertController(title:title,
-                                                    message:meg ,
-                                                    preferredStyle: .alert)
-            let cancelAction = UIAlertAction(title: btn1, style: .cancel) { (action) in
-                handler1?(action)
-            }
+        
+        let alertController = UIAlertController(title:title,
+                                                message:meg ,
+                                                preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: btn1, style: .cancel) { (action) in
+            handler1?(action)
+        }
         
         
-            alertController.addAction(cancelAction)
-            
-            if btn2 != nil{
-                let settingsAction = UIAlertAction(title: btn2, style: .default, handler: { (action) -> Void in
-                    handler2?(action)
-                })
-                alertController.addAction(settingsAction)
-            }
-            vc.present(alertController, animated: true, completion: nil)
-//        })
+        alertController.addAction(cancelAction)
+        
+        if btn2 != nil{
+            let settingsAction = UIAlertAction(title: btn2, style: .default, handler: { (action) -> Void in
+                handler2?(action)
+            })
+            alertController.addAction(settingsAction)
+        }
+        vc.present(alertController, animated: true, completion: nil)
+        //        })
     }
     
     static func showAlert(title:String = "提示",meg:String,按钮名称:String = "确定"){
         showAlert(title: title, meg: meg, btn1: 按钮名称, handler1: nil, btn2: nil, handler2: nil)
-//        (title:title,meg: meg, btn1: 按钮名称, btn2: nil, handler: nil)
+        //        (title:title,meg: meg, btn1: 按钮名称, btn2: nil, handler: nil)
     }
     
-   
+    
     
     
 }
