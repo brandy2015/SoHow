@@ -11,6 +11,12 @@ import UIKit
 class XYZImage: NSObject {
 
 }
+public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
+    处理的ImageView.layer.masksToBounds = true
+    处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小
+}
+
+
 
 //MARK: - 压缩图片大小
 public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5) -> UIImage{

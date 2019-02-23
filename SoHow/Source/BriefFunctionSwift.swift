@@ -21,35 +21,14 @@ public func += <KeyType, ValueType> ( left: inout Dictionary<KeyType, ValueType>
     }
 }
 
-public func 时间格式的调整2只剩年月日时间创建录音(date:Date) -> String  {
-    // 创建一个日期格式器
-    let dformatter = DateFormatter()
-    // 为日期格式器设置格式字符串
-    dformatter.dateFormat = "yyyyMMddHHmmss"
-    // 使用日期格式器格式化日期、时间
-    let datestr = dformatter.string(from: date)
-    let message =  "\(datestr)"
-    return message
-}
 
 
 
 
-public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
-    处理的ImageView.layer.masksToBounds = true
-    处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小
-}
 
 
 
-public func fileToURL(_ file: String) -> URL? {
-    // Get the full path of the file
-    let fileComponents = file.components(separatedBy: ".")
-    if let filePath = Bundle.main.path(forResource: fileComponents[0], ofType: fileComponents[1]) {
-        return URL(fileURLWithPath: filePath)
-    }
-    return nil
-}
+
 
 
 

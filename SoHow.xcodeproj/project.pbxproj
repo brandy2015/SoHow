@@ -24,8 +24,6 @@
 		D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36A21F6F30E00E6A990 /* XYZJump.swift */; };
 		D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */; };
 		D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36E21F711A200E6A990 /* XYZGCD.swift */; };
-		D653F37121F711BD00E6A990 /* XYZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37021F711BD00E6A990 /* XYZString.swift */; };
-		D653F37321F7120100E6A990 /* XYZDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37221F7120100E6A990 /* XYZDate.swift */; };
 		D653F37521F7175D00E6A990 /* XYZImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37421F7175D00E6A990 /* XYZImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +47,6 @@
 		D653F36A21F6F30E00E6A990 /* XYZJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZJump.swift; sourceTree = "<group>"; };
 		D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
 		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
-		D653F37021F711BD00E6A990 /* XYZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString.swift; sourceTree = "<group>"; };
-		D653F37221F7120100E6A990 /* XYZDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDate.swift; sourceTree = "<group>"; };
 		D653F37421F7175D00E6A990 /* XYZImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,8 +100,6 @@
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
-				D653F37021F711BD00E6A990 /* XYZString.swift */,
-				D653F37221F7120100E6A990 /* XYZDate.swift */,
 				D653F37421F7175D00E6A990 /* XYZImage.swift */,
 				D62AFBF6217726EA0013974F /* BriefFunctionSwift.swift */,
 				D62AFBF8217726EA0013974F /* BriefActionAlert.swift */,
@@ -191,8 +185,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D653F37121F711BD00E6A990 /* XYZString.swift in Sources */,
-				D653F37321F7120100E6A990 /* XYZDate.swift in Sources */,
 				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
 				D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */,
 				D62AFBFE217726EB0013974F /* BriefActionAlert.swift in Sources */,

@@ -77,7 +77,7 @@ public func SoHowAlertSingleAction(title:String,message:String,actiontitle:Strin
     return alert
 }
 
-func 添加过渡动画(持续时间:Double = 0.5) -> CATransition {
+public func 添加过渡动画(持续时间:Double = 0.5) -> CATransition {
     let transition = CATransition()
     transition.type = CATransitionType.fade
     transition.duration = CFTimeInterval(持续时间)
@@ -103,7 +103,7 @@ public func 加载主文件夹中HTML文件到WebView(名称:String,加载到的
 }
 
 //为了要当前ViewController
-func getCurrentVC()->UIViewController?{
+public func getCurrentVC()->UIViewController?{
     var result:UIViewController?
     var window = UIApplication.shared.keyWindow
     if window?.windowLevel != UIWindow.Level.normal{
@@ -134,7 +134,7 @@ func getCurrentVC()->UIViewController?{
 //    self.startNewRound()
 //
 //}, btn2: nil, handler2: nil)
-class SoHowAlert {
+public class SoHowAlert {
     
     
     static func showAlert(title:String = "提示",meg:String,btn1:String,handler1:((UIAlertAction) -> Void)?,btn2:String?,handler2:((UIAlertAction) -> Void)?){
@@ -175,3 +175,24 @@ class SoHowAlert {
     
 }
 
+import UIKit
+
+public func userInputAlert(_ title: String, isSecure: Bool = false, text: String? = nil, callback: @escaping (String) -> Void) {
+    let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+    alert.addTextField(configurationHandler: { field in
+        field.isSecureTextEntry = isSecure
+        field.text = text
+    })
+    
+    alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+        guard let text = alert.textFields?.first?.text, !text.isEmpty else {
+            userInputAlert(title, callback: callback)
+            return
+        }
+        
+        callback(text)
+    })
+    
+    let root = UIApplication.shared.keyWindow?.rootViewController
+    root?.present(alert, animated: true, completion: nil)
+}
