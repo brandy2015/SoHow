@@ -11,11 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func testBTN(_ sender: Any) {
-        XYZJump.To.SettingDetail()
+//        XYZJump.To.SettingDetail()
 //        Wallpaper
 //        let m = Bundle.main.infoDictionary
 //        print(UIDevice.current.DeviceType)
-        
+        XYZVolumizer.SwitchState()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
