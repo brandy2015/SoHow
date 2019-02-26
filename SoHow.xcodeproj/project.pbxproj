@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095F28B74827EFA79BC6645F /* Pods_SoHow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */; };
 		D601A8D72223C00300C46021 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601A8D62223C00300C46021 /* XYZVolumizer.swift */; };
 		D62AFBE3217726890013974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE2217726890013974F /* AppDelegate.swift */; };
 		D62AFBE5217726890013974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE4217726890013974F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		D62AFC03217726F50013974F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC00217726F50013974F /* README.md */; };
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
+		D630AD0C2225FAA0004F91E3 /* XYZHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630AD0B2225FA9F004F91E3 /* XYZHUD.swift */; };
 		D63BFFBF21B1310600422BFD /* UITableView+RealmChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */; };
 		D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36A21F6F30E00E6A990 /* XYZJump.swift */; };
 		D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoHow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D601A8D62223C00300C46021 /* XYZVolumizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
 		D62AFBDF217726890013974F /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62AFBE2217726890013974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,11 +48,14 @@
 		D62AFC00217726F50013974F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D630AD0B2225FA9F004F91E3 /* XYZHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZHUD.swift; sourceTree = "<group>"; };
 		D63BFFBE21B1310600422BFD /* UITableView+RealmChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RealmChanges.swift"; sourceTree = "<group>"; };
 		D653F36A21F6F30E00E6A990 /* XYZJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZJump.swift; sourceTree = "<group>"; };
 		D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
 		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
 		D653F37421F7175D00E6A990 /* XYZImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImage.swift; sourceTree = "<group>"; };
+		F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.release.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.release.xcconfig"; sourceTree = "<group>"; };
+		FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.debug.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095F28B74827EFA79BC6645F /* Pods_SoHow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B39EA3038FAED6E2D716138 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF70A23CBFEDB02E0067911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */,
+				F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D62AFBD6217726890013974F = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +96,8 @@
 				D62AFC01217726F50013974F /* SoHow.podspec */,
 				D62AFBE1217726890013974F /* SoHow */,
 				D62AFBE0217726890013974F /* Products */,
+				ADF70A23CBFEDB02E0067911 /* Pods */,
+				4B39EA3038FAED6E2D716138 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +126,7 @@
 		D6B63DEF21C7E7590087B44D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D630AD0B2225FA9F004F91E3 /* XYZHUD.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
@@ -121,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D62AFBF12177268A0013974F /* Build configuration list for PBXNativeTarget "SoHow" */;
 			buildPhases = (
+				05DD95B18EA4CC48429A28AA /* [CP] Check Pods Manifest.lock */,
 				D62AFBDB217726890013974F /* Sources */,
 				D62AFBDC217726890013974F /* Frameworks */,
 				D62AFBDD217726890013974F /* Resources */,
+				C1005EAED38B7F9B9A987A78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +213,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05DD95B18EA4CC48429A28AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoHow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1005EAED38B7F9B9A987A78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoHow/Pods-SoHow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoHow/Pods-SoHow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D62AFBDB217726890013974F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +278,7 @@
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
 				D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */,
 				D62AFBFC217726EB0013974F /* BriefFunctionSwift.swift in Sources */,
+				D630AD0C2225FAA0004F91E3 /* XYZHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +422,7 @@
 		};
 		D62AFBF22177268A0013974F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +442,7 @@
 		};
 		D62AFBF32177268A0013974F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//用于隐藏音量HUD
 
 //这个变量需要添加到AppDelegate.swift
 //var volumizer: Volumizer?
