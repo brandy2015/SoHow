@@ -28,6 +28,10 @@
 		D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */; };
 		D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36E21F711A200E6A990 /* XYZGCD.swift */; };
 		D653F37521F7175D00E6A990 /* XYZImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37421F7175D00E6A990 /* XYZImage.swift */; };
+		D6D6455F2238888600A9BD1A /* XYZNumberAndString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */; };
+		D6D6456122388A8100A9BD1A /* XYZArrayAndDic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */; };
+		D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456222388AAB00A9BD1A /* XYZWeb.swift */; };
+		D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456622388BB200A9BD1A /* XYZSpeech.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
 		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
 		D653F37421F7175D00E6A990 /* XYZImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImage.swift; sourceTree = "<group>"; };
+		D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZNumberAndString.swift; sourceTree = "<group>"; };
+		D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZArrayAndDic.swift; sourceTree = "<group>"; };
+		D6D6456222388AAB00A9BD1A /* XYZWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZWeb.swift; sourceTree = "<group>"; };
+		D6D6456622388BB200A9BD1A /* XYZSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZSpeech.swift; sourceTree = "<group>"; };
 		F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.release.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.release.xcconfig"; sourceTree = "<group>"; };
 		FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.debug.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +92,6 @@
 				FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */,
 				F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +145,10 @@
 				D62AFBF5217726EA0013974F /* ImageHelper.swift */,
 				D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */,
 				D601A8D62223C00300C46021 /* XYZVolumizer.swift */,
+				D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */,
+				D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */,
+				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
+				D6D6456622388BB200A9BD1A /* XYZSpeech.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -266,8 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
+				D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */,
 				D601A8D72223C00300C46021 /* XYZVolumizer.swift in Sources */,
 				D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */,
+				D6D6456122388A8100A9BD1A /* XYZArrayAndDic.swift in Sources */,
+				D6D6455F2238888600A9BD1A /* XYZNumberAndString.swift in Sources */,
 				D62AFBFE217726EB0013974F /* BriefActionAlert.swift in Sources */,
 				D62AFBFA217726EB0013974F /* YSZoomView.swift in Sources */,
 				D62AFBE5217726890013974F /* ViewController.swift in Sources */,
@@ -275,6 +289,7 @@
 				D63BFFBF21B1310600422BFD /* UITableView+RealmChanges.swift in Sources */,
 				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
 				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
+				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
 				D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */,
 				D62AFBFC217726EB0013974F /* BriefFunctionSwift.swift in Sources */,

@@ -8,6 +8,10 @@
 
 import UIKit
 
+import MobileCoreServices            //picker.mediaTypes的类型
+import PhotosUI                      //LivePhoto使用的依赖库
+
+
 class XYZImage: NSObject {
 
 }
@@ -17,6 +21,26 @@ public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFlo
 }
 
 
+public extension UIImageView{
+    public func ToCircle()   {
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius =  self.bounds.width/2
+    }
+    
+}
+//圆角
+public extension UIView{
+    public func CornerRadius(cornerRadius:CGFloat = 20) {
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = cornerRadius
+    }
+    
+    
+}
+//public func cornerRadius处理Image的圆角(layer: CALayer,cornerRadius:CGFloat = 20)  {
+//    layer.masksToBounds = true
+//    layer.cornerRadius = cornerRadius
+//}
 
 //MARK: - 压缩图片大小
 public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5) -> UIImage{
@@ -27,6 +51,132 @@ public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5)
     let compressImage = UIImage(data: imageData)!
     return compressImage
 }
+
+
+public extension URL{
+    public func savePicOrGIFToAlbum()  {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: self)
+        }) { (isSuccess: Bool, error: Error?) in
+            if isSuccess {
+                print("保存成功")
+                
+                
+            } else{ print("保存失败：", error!.localizedDescription)}
+        }
+    }
+}
+
+public extension UIImage{
+    
+    public static func saveGIFTo相册(withURL URLx:URL)  {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: URLx)
+        }) { (isSuccess: Bool, error: Error?) in
+            if isSuccess {
+                print("保存成功")
+                
+                
+            } else{ print("保存失败：", error!.localizedDescription)}
+        }
+    }
+    
+    public static func savePicTo相册(withURL URLx:URL)  {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: URLx)
+        }) { (isSuccess: Bool, error: Error?) in
+            if isSuccess {
+                print("保存成功")
+                
+                
+            } else{ print("保存失败：", error!.localizedDescription)}
+        }
+    }
+    
+    
+    func SaveToAlbum() {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.creationRequestForAsset(from: self)
+        }) { (isSuccess: Bool, error: Error?) in
+            if isSuccess {
+                print("保存成功")
+            } else{ print("保存失败：", error!.localizedDescription)}
+        }
+    }
+}
+
+public extension UIView{
+    public var width :CGFloat { return self.frame.width  }
+    public var height:CGFloat { return self.frame.height }
+    
+    public func widthX(_ separateBy:Double) -> CGFloat {
+        return self.frame.width * CGFloat(separateBy)
+    }
+    public func height(_ separateBy:Double) -> CGFloat {
+        return self.frame.height * CGFloat(separateBy)
+    }
+    public func addShadow(backgroundColor:UIColor = UIColor.white){
+        self.backgroundColor = backgroundColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowRadius = 2
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.5
+    }
+    public func addImage(UIImageX:UIImage?){
+        let RectX = CGRect(x: 0, y: 0, width: self.width, height: self.height)
+        let x = UIImageView(frame: RectX)
+        x.image = UIImageX
+        self.addSubview(x)
+    }
+}
+
+
+public func d读取图片地址(图片名字:String) -> String  {  //未真正启用
+    let userDefault = UserDefaults.standard
+    var objData = userDefault.object(forKey: 图片名字) as? Data
+    if let objData1 = objData {
+        objData = objData1
+    }else{
+        objData = userDefault.object(forKey: "default") as? Data
+    }
+    let myImage = ""
+    return myImage
+}
+
+
+public func b保存图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
+    if 是否保存{
+        let userDefault = UserDefaults.standard
+        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
+        userDefault.set(imageData, forKey: 图片名称)
+    }else{ print("没有保存")}
+}
+
+
+
+
+public func b保存GIF图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
+    if 是否保存{
+        let userDefault = UserDefaults.standard
+        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
+        userDefault.set(imageData, forKey: 图片名称)
+        print("\n\n\n\n\n\n\n\n")
+        print("保存了GIF" + 图片名称)
+        
+        print("\n\n\n\n\n\n\n\n")
+    }else{ print("没有保存")}
+}
+
+
+
+public func d读取图片(图片名字:String) -> UIImage  {
+    let userDefault = UserDefaults.standard
+    let objData = userDefault.object(forKey: 图片名字) as? Data
+    let 解包objData = objData ?? userDefault.object(forKey: "default") as? Data
+    let myImage = NSKeyedUnarchiver.unarchiveObject(with: 解包objData ?? Data()) as? UIImage
+    return myImage ?? #imageLiteral(resourceName: "default")
+}
+
 //
 ////
 ////  ImageContentVC.swift
