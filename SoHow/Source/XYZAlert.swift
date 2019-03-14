@@ -1,20 +1,16 @@
+
 //
-//  BriefActionAlert.swift
-//  TestFirst
+//  XYZAlert.swift
+//  SoHow
 //
-//  Created by 张子豪 on 2018/2/8.
-//  Copyright © 2018年 张子豪. All rights reserved.
+//  Created by 张子豪 on 2019/3/13.
+//  Copyright © 2019 张子豪. All rights reserved.
 //
 
 import UIKit
 
-public extension UIViewController {
-    
-    public func showExceededMaximumAlert(vc: UIViewController) {
-        let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        vc.present(alert, animated: true, completion: nil)
-    }
+class XYZAlert: NSObject {
+
 }
 
 
@@ -195,4 +191,25 @@ public func userInputAlert(_ title: String, isSecure: Bool = false, text: String
     
     let root = UIApplication.shared.keyWindow?.rootViewController
     root?.present(alert, animated: true, completion: nil)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public extension UIViewController {
+    public func showExceededMaximumAlert(vc: UIViewController) {
+        let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        vc.present(alert, animated: true, completion: nil)
+    }
 }

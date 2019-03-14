@@ -23,6 +23,7 @@ public extension Double{
 }
 
 public func b保存string到本地(保存的内容:String,文件名称:String)  {
+    var  url :URL! = nil
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
@@ -39,3 +40,33 @@ public func b保存string到本地(保存的内容:String,文件名称:String)  
         print("end")
     }
 }
+
+
+//extension String {
+//    
+//    /**
+//     根据 正则表达式 截取字符串
+//     
+//     - parameter regex: 正则表达式
+//     
+//     - returns: 字符串数组
+//     */
+//    public func matchesForRegex(regex: String) -> [String]? {
+//        
+//        do {
+//            let regularExpression = try NSRegularExpression(pattern: regex, options: [])
+//            let range = NSMakeRange(0, self.count)
+//            let results = regularExpression.matches(in: self, options: [], range: range)
+//            
+//            return results.map({
+//                NSString.
+//            })
+//            
+//            
+//            let string = self as NSString
+//            return results.map { string.substringWithRange($0.range)}
+//        } catch {
+//            return nil
+//        }
+//    }
+//}

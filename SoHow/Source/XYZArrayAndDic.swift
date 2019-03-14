@@ -25,6 +25,7 @@ public func += <KeyType, ValueType> ( left: inout Dictionary<KeyType, ValueType>
 
 
 public func b保存数组array到本地(保存的内容:Array<String>,文件名称:String)  {
+    var  url :URL! = nil
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
@@ -36,6 +37,7 @@ public func b保存数组array到本地(保存的内容:Array<String>,文件名�
 }
 
 public func b保存字典dic到本地(保存的内容:Dictionary<String,String>,文件名称:String)  {
+    var  url :URL! = nil
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.plist")

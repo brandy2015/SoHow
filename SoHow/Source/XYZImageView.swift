@@ -7,18 +7,17 @@
 //
 
 import UIKit
-
 import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
 
-class XYZImage: NSObject {
+public class XYZImage: NSObject {
 
 }
-public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
-    处理的ImageView.layer.masksToBounds = true
-    处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小
-}
+//public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
+//    处理的ImageView.layer.masksToBounds = true
+//    处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小
+//}
 
 
 public extension UIImageView{
@@ -53,57 +52,8 @@ public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5)
 }
 
 
-public extension URL{
-    public func savePicOrGIFToAlbum()  {
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: self)
-        }) { (isSuccess: Bool, error: Error?) in
-            if isSuccess {
-                print("保存成功")
-                
-                
-            } else{ print("保存失败：", error!.localizedDescription)}
-        }
-    }
-}
 
-public extension UIImage{
-    
-    public static func saveGIFTo相册(withURL URLx:URL)  {
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: URLx)
-        }) { (isSuccess: Bool, error: Error?) in
-            if isSuccess {
-                print("保存成功")
-                
-                
-            } else{ print("保存失败：", error!.localizedDescription)}
-        }
-    }
-    
-    public static func savePicTo相册(withURL URLx:URL)  {
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: URLx)
-        }) { (isSuccess: Bool, error: Error?) in
-            if isSuccess {
-                print("保存成功")
-                
-                
-            } else{ print("保存失败：", error!.localizedDescription)}
-        }
-    }
-    
-    
-    func SaveToAlbum() {
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAsset(from: self)
-        }) { (isSuccess: Bool, error: Error?) in
-            if isSuccess {
-                print("保存成功")
-            } else{ print("保存失败：", error!.localizedDescription)}
-        }
-    }
-}
+
 
 public extension UIView{
     public var width :CGFloat { return self.frame.width  }
