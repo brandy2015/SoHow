@@ -15,10 +15,19 @@ import UIKit
 public var XYZVolumizer = XYZVolumizerObject()
 public class XYZVolumizerObject: NSObject {
     public var volumizer: Volumizer?
+    
+    //应该设置可更改背景
+    
     public let defaultOptions: [VolumizerAppearanceOption] = [ .overlayIsTranslucent(true),
                                                         .overlayBackgroundBlurEffectStyle( .extraLight),
-                                                        .overlayBackgroundColor( .white),
-                                                        .sliderProgressTintColor( .black)]
+                                                        .overlayBackgroundColor( .black),
+                                                        .sliderProgressTintColor( .white)]
+    //这个是白底黑
+    public let defaultOptions2: [VolumizerAppearanceOption] = [ .overlayIsTranslucent(true),
+                                                               .overlayBackgroundBlurEffectStyle( .extraLight),
+                                                               .overlayBackgroundColor( .white),
+                                                               .sliderProgressTintColor( .black)]
+    
     public func SwitchState()  {
         if let volumizer = volumizer {
             defer { self.volumizer = nil }
