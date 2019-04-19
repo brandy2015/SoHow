@@ -29,7 +29,7 @@ public func b保存数组array到本地(保存的内容:Array<String>,文件名�
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
-        print(url)
+        print(url as Any)
         let m = 保存的内容 as NSArray
         m.write(toFile: url.path, atomically: true)
         print("保存文件成功" + 文件名称)
@@ -41,7 +41,7 @@ public func b保存字典dic到本地(保存的内容:Dictionary<String,String>,
     var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
     if sp.count > 0 {
         url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.plist")
-        print(url)
+        print(url as Any)
         let m = 保存的内容 as NSDictionary
         m.write(toFile: url.path, atomically: true)
         print("保存文件成功" + 文件名称)

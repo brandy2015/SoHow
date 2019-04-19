@@ -21,7 +21,7 @@ public class XYZImage: NSObject {
 
 
 public extension UIImageView{
-    public func ToCircle()   {
+    func ToCircle()   {
         self.layer.masksToBounds = true
         self.layer.cornerRadius =  self.bounds.width/2
     }
@@ -29,7 +29,7 @@ public extension UIImageView{
 }
 //圆角
 public extension UIView{
-    public func CornerRadius(cornerRadius:CGFloat = 20) {
+    func CornerRadius(cornerRadius:CGFloat = 20) {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = cornerRadius
     }

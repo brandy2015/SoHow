@@ -22,13 +22,13 @@ class XYZTableView: NSObject {
 
 
 public extension IndexPath {
-    public static func fromRow(_ row: Int) -> IndexPath {
+    static func fromRow(_ row: Int) -> IndexPath {
         return IndexPath(row: row, section: 0)
     }
 }
 
 public extension UITableView {
-    public func applyChanges(deletions: [Int], insertions: [Int], updates: [Int]) {
+    func applyChanges(deletions: [Int], insertions: [Int], updates: [Int]) {
         beginUpdates()
         deleteRows(at: deletions.map(IndexPath.fromRow), with: .automatic)
         insertRows(at: insertions.map(IndexPath.fromRow), with: .automatic)

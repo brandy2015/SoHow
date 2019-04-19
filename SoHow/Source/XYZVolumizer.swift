@@ -285,6 +285,8 @@ open class Volumizer: UIView {
             print("Audio Session Interruption: ended.")
             do { try session.setActive(true) }
             catch { print("Unable to initialize AVAudioSession.") }
+        @unknown default:
+            print("有问题")
         }
     }
     

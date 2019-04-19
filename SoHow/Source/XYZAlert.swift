@@ -207,7 +207,7 @@ public func userInputAlert(_ title: String, isSecure: Bool = false, text: String
 
 
 public extension UIViewController {
-    public func showExceededMaximumAlert(vc: UIViewController) {
+    func showExceededMaximumAlert(vc: UIViewController) {
         let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         vc.present(alert, animated: true, completion: nil)

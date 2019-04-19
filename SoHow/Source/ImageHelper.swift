@@ -222,7 +222,7 @@ public extension UIImage {
     /**
      Returns a copy of the given image, adding an alpha channel if it doesn't already have one.
      */
-   public func applyAlpha() -> UIImage? {
+    func applyAlpha() -> UIImage? {
         if hasAlpha {
             return self
         }

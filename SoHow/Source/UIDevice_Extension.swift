@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIDevice {
 //    返回设备类型
-    public var DeviceType: String {
+    var DeviceType: String {
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -91,19 +91,19 @@ public extension UIDevice {
 //    设备的大类型             model
     
 //    获取App相关的信息
-    public var infoDic: [String : Any]? {
+    var infoDic: [String : Any]? {
         return Bundle.main.infoDictionary
     }
 //    获取App的版本号
-    public var VersionNum:String?{
+    var VersionNum:String?{
         return infoDic?["CFBundleShortVersionString"] as? String
     }
 //    Build号
-    public var BuildVersionNum:String?{
+    var BuildVersionNum:String?{
         return infoDic?["CFBundleVersion"] as? String
     }
 //    App名称
-    public var appName:String?{
+    var appName:String?{
         return infoDic?["CFBundleDisplayName"] as? String
     }
     
