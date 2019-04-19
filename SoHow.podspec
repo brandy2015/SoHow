@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
   s.swift_version = '5.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 # s.dependency 'FileKit'
 
   s.ios.deployment_target = '10.1'
