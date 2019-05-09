@@ -22,3 +22,21 @@ public func afterDelay(_ seconds: Double, closure: @escaping () -> ()) {
 
 //    }
 //     @discardableResult
+
+
+
+//DispatchQueue.global(qos: .background).async {
+//    let objects = messages.map { message in
+//        return Message(from: message.0, text: message.1)
+//    }
+//    let realm = try! Realm()
+//    try! realm.write {
+//        realm.add(objects)
+//    }
+//}
+
+
+
+
+
+//DispatchQueue.global(qos: .background).async {}

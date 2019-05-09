@@ -28,6 +28,25 @@ public class XYZVolumizerObject: NSObject {
                                                                .overlayBackgroundColor( .white),
                                                                .sliderProgressTintColor( .black)]
     
+//    let defaultOptions: [VolumizerAppearanceOption] = [ .overlayIsTranslucent(true),
+//                                                        .overlayBackgroundBlurEffectStyle( .dark),
+//                                                        .overlayBackgroundColor( .clear),
+//                                                        .sliderProgressTintColor( .white),
+//                                                        .sliderTrackTintColor(.black)
+//    ]
+//    //将音量HUD隐藏
+//    //        XYZVolumizer.SwitchState()
+//    
+//    
+//    
+//    
+//    XYZVolumizer.volumizer = Volumizer.configure(defaultOptions)
+//    XYZVolumizer.volumizer?.overlay.backgroundColor = UIColor.clear
+//    XYZVolumizer.volumizer?.overlayBlur.isHidden = false
+//    XYZVolumizer.volumizer?.overlayBlur.effect = .none
+    
+    
+    
     public func SwitchState()  {
         if let volumizer = volumizer {
             defer { self.volumizer = nil }
@@ -86,8 +105,8 @@ open class Volumizer: UIView {
     
     private let session = AVAudioSession.sharedInstance()
     private let volumeView = MPVolumeView(frame: CGRect.zero)
-    private let overlay = UIView()
-    private var overlayBlur = UIVisualEffectView()
+    public let overlay = UIView()
+    public var overlayBlur = UIVisualEffectView()
     private var slider = UIProgressView()
     private var base: UIWindow?
     private var isAppActive = false

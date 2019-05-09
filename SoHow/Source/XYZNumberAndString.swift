@@ -18,7 +18,12 @@ public extension Double{
     var To2位小数Double:Double? {
         return Double(String(format: "%.2f", self))
     }
-    
+    var To1位小数:String  {
+        return String(format: "%.1f", self)
+    }
+    var To1位小数Double:Double? {
+        return Double(String(format: "%.1f", self))
+    }
     
 }
 

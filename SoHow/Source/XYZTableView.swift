@@ -36,3 +36,15 @@ public extension UITableView {
         endUpdates()
     }
 }
+
+
+//tableView.separatorColor = [UIColor clearColor];
+//
+//
+//或者
+//
+//table.separatorStyle = UITableViewCellSeparatorStyleNone;
+
+
+
+//如果要保留分割线 用这个: tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];

@@ -91,20 +91,41 @@ public extension UIDevice {
 //    设备的大类型             model
     
 //    获取App相关的信息
-    var infoDic: [String : Any]? {
+    
+    
+    static var infoDic: [String : Any]? {
         return Bundle.main.infoDictionary
     }
 //    获取App的版本号
-    var VersionNum:String?{
-        return infoDic?["CFBundleShortVersionString"] as? String
+    static var VersionNum:String{
+        return (UIDevice.infoDic?["CFBundleShortVersionString"] as? String) ?? "未知"
     }
 //    Build号
-    var BuildVersionNum:String?{
-        return infoDic?["CFBundleVersion"] as? String
+    static var BuildVersionNum:String{
+        return (UIDevice.infoDic?["CFBundleVersion"] as? String)  ?? "未知"
     }
 //    App名称
-    var appName:String?{
-        return infoDic?["CFBundleDisplayName"] as? String
+    static var appName:String{
+        return (UIDevice.infoDic?["CFBundleDisplayName"] as? String)  ?? "未知"
     }
+    
+    
+    
+    // 获取设备名称
+    static var deviceName:String{return UIDevice.current.name}
+    
+    
+    
+    // 获取系统版本号
+    static var  deviceSystemVer:String{return  UIDevice.current.systemVersion}
+        
+    //        设备类型 // 获取设备的型号
+    
+    static var  deviceModel:String{return UIDevice.current.DeviceType}
+    
+    
+    //    获取设备唯一标识符
+    static var  deviceUUID:String{return   UIDevice.current.identifierForVendor?.uuidString ?? "未知"}
+    
     
 }
