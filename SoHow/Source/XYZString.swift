@@ -12,6 +12,24 @@ class XYZString: NSObject {
 
 }
 
+//XYZQRcode需要
+
+//剪贴板快捷方法
+public extension String{
+    
+    func toPasteboard() {
+        print("已复制进剪贴板")
+        print(self)
+        UIPasteboard.general.string = self
+    }
+    
+    mutating func FromPasteboard() {
+        print("已从剪贴板复制")
+        self = UIPasteboard.general.string ?? "无内容"
+        print(self)
+    }
+    
+}
 
 
 //extension String {

@@ -200,3 +200,12 @@ class XYZRealm: NSObject {
 //        list.append(objectsIn: entries)
 //    }
 //}
+
+
+// MARK: - CRUD methods
+//增加(Create)、读取查询(Retrieve)、更新(Update)和删除(Delete)
+
+// MARK:- Create--(添加)
+// MARK:- Retrieve--(读取查询) All--获取所有数据
+// MARK:- Update--(更新)
+// MARK:- Delete--(删除)

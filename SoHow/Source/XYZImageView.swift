@@ -11,9 +11,65 @@ import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
 
+
 public class XYZImage: NSObject {
 
 }
+
+
+
+//XYZQRCode需要
+
+public extension UIImageView{
+    
+    
+    func addLongPressToSave() {
+        let guesture = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(_ :)))
+        
+        self.isUserInteractionEnabled = true
+        self.addGestureRecognizer(guesture)
+    }
+    
+    @objc func longPress(_ gusture:UILongPressGestureRecognizer){
+        
+        print("长按了")
+        //        // 检测手势阶段
+        if(gusture.state == UIGestureRecognizer.State.began){
+            //要执行的代码
+            XYZResponse.D点按马达震动反馈(style: .heavy)
+            print("开始点按")
+            
+        }else if (gusture.state == UIGestureRecognizer.State.ended){
+            print("停止点按")
+            
+            
+            XYZResponse.D点按马达震动反馈(style: .heavy)
+            if let img = self.image{
+                XYZResponse.D点按马达震动反馈(style: .heavy)
+                print("弹出是否保存")
+                img.SaveToAlbum()
+                
+                XYZJump.To.Album()
+                
+                print(img)
+                //                弹出提示
+                //                img.SaveToAlbum()
+            }else{
+                print("没有照片")
+            }
+            
+        }
+    }
+}
+//                    self.imageViewX.addShadow()
+//                    QRImageX.SaveToAlbum()
+//                    do{
+//                        try QRImageX.pngData()?.write(to: (userDocument + "1.png"))
+
+
+
+
+
 //public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
 //    处理的ImageView.layer.masksToBounds = true
 //    处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小

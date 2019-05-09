@@ -216,6 +216,20 @@ public extension UIViewController {
 
 
 
+//XYZQRCode中需要
+public extension UIViewController{
+    func showMsg(title:String?,message:String?)
+    {
+        let alertController = UIAlertController(title: title, message:message, preferredStyle: UIAlertController.Style.alert)
+        let alertAction = UIAlertAction(title:  "知道了", style: UIAlertAction.Style.default) { (alertAction) -> Void in
+        }
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
+}
+
+
+
 
 
 
