@@ -105,9 +105,11 @@ public extension UIDevice {
         return (UIDevice.infoDic?["CFBundleVersion"] as? String)  ?? "未知"
     }
 //    App名称
-    static var appName:String{
+    static var appName:String{ //更新
         return (UIDevice.infoDic?["CFBundleDisplayName"] as? String)  ?? "未知"
     }
+    
+    
     
     
     
