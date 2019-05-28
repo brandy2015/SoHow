@@ -209,3 +209,7 @@ class XYZRealm: NSObject {
 // MARK:- Retrieve--(读取查询) All--获取所有数据
 // MARK:- Update--(更新)
 // MARK:- Delete--(删除)
+//删除item莫名错误原因，检查线程
+//DispatchQueue.main.async {
+//    realm.delete()
+//}

@@ -16,7 +16,6 @@
 		D62AFBED2177268A0013974F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AFBEB2177268A0013974F /* LaunchScreen.storyboard */; };
 		D62AFBFA217726EB0013974F /* YSZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF4217726E90013974F /* YSZoomView.swift */; };
 		D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF5217726EA0013974F /* ImageHelper.swift */; };
-		D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */; };
 		D62AFC03217726F50013974F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC00217726F50013974F /* README.md */; };
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
@@ -54,7 +53,6 @@
 		D62AFBEE2177268A0013974F /* SoHow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoHow-Info.plist"; sourceTree = "<group>"; };
 		D62AFBF4217726E90013974F /* YSZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoomView.swift; sourceTree = "<group>"; };
 		D62AFBF5217726EA0013974F /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
-		D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVIewExtension.swift; sourceTree = "<group>"; };
 		D62AFC00217726F50013974F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				D65D7F6D22390DE600FC316E /* XYZAlert.swift */,
 				D62AFBF4217726E90013974F /* YSZoomView.swift */,
 				D62AFBF5217726EA0013974F /* ImageHelper.swift */,
-				D62AFBF9217726EB0013974F /* ImageVIewExtension.swift */,
 				D601A8D62223C00300C46021 /* XYZVolumizer.swift */,
 				D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */,
 				D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */,
@@ -325,7 +322,6 @@
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D683641022802794007B0015 /* XYZString.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
-				D62AFBFF217726EB0013974F /* ImageVIewExtension.swift in Sources */,
 				D630AD0C2225FAA0004F91E3 /* XYZHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -303,3 +303,106 @@ public func d读取图片(图片名字:String) -> UIImage  {
 //    
 //    
 //}
+
+import Foundation
+import UIKit
+import QuartzCore
+
+public extension UIImageView {
+    
+    /**
+     Loads an image from a URL. If cached, the cached image is returned. Otherwise, a place holder is used until the image from web is returned by the closure.
+     
+     - Parameter url: The image URL.
+     - Parameter placeholder: The placeholder image.
+     - Parameter fadeIn: Weather the mage should fade in.
+     - Parameter closure: Returns the image from the web the first time is fetched.
+     
+     - Returns A new image
+     */
+    func imageFromURL(_ url: String, placeholder: UIImage, fadeIn: Bool = true, shouldCacheImage: Bool = true, closure: ((_ image: UIImage?) -> ())? = nil)
+    {
+        self.image = UIImage.image(fromURL: url, placeholder: placeholder, shouldCacheImage: shouldCacheImage) {
+            (image: UIImage?) in
+            if image == nil {
+                return
+            }
+            self.image = image
+            if fadeIn {
+                let transition = CATransition()
+                transition.duration = 0.5
+                
+                
+                transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+                
+                
+                //                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                transition.type = CATransitionType.fade //kCATransitionFade
+                self.layer.add(transition, forKey: nil)
+            }
+            closure?(image)
+        }
+    }
+    
+    
+}
+
+//1，扩展UIImage
+//这里先对 UIImage 进行扩展，增加两个方法，分别用于尺寸的重置和大小缩放。
+//
+//原文出自：www.hangge.com  转载请保留原文链接：http://www.hangge.com/blog/cache/detail_1344.html
+//import UIKit
+//
+//extension UIImage {
+//    /**
+//     *  重设图片大小
+//     */
+//    func reSizeImage(reSize:CGSize)->UIImage {
+//        //UIGraphicsBeginImageContext(reSize);
+//        UIGraphicsBeginImageContextWithOptions(reSize,false,UIScreen.mainScreen().scale);
+//        self.drawInRect(CGRectMake(0, 0, reSize.width, reSize.height));
+//        let reSizeImage:UIImage = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+//        return reSizeImage;
+//    }
+//
+//    /**
+//     *  等比率缩放
+//     */
+//    func scaleImage(scaleSize:CGFloat)->UIImage {
+//        let reSize = CGSizeMake(self.size.width * scaleSize, self.size.height * scaleSize)
+//        return reSizeImage(reSize)
+//    }
+//}
+//import UIKit
+//
+//class ViewController: UIViewController {
+//    
+//    let image = UIImage(named:"img.jpg")
+//    
+//    @IBOutlet weak var imageView: UIImageView!
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
+//    
+//    //显示原始图片
+//    @IBAction func btn1Click(sender: AnyObject) {
+//        imageView.image = image
+//    }
+//    
+//    //将图片修改成指定尺寸（160*100）
+//    @IBAction func btn2Click(sender: AnyObject) {
+//        let reSize = CGSize(width: 240, height: 150)
+//        imageView.image = image?.reSizeImage(reSize)
+//    }
+//    
+//    //将图片缩小成原来的一半
+//    @IBAction func btn3Click(sender: AnyObject) {
+//        imageView.image = image?.scaleImage(0.5)
+//    }
+//    
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//    }
+//}

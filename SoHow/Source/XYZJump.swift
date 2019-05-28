@@ -58,7 +58,10 @@ public class XYZJump: NSObject {
         UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
     }
     
-    
+    //跳转到日历
+    func Calendar(){saveJump(To: "calshow://")}
+    //跳转到提醒事项
+    func Reminder(){saveJump(To: "x-apple-reminder://")}
         
 //    public func ()  {saveJump(To: )}
 //    public func ()  {saveJump(To: )}
@@ -79,7 +82,7 @@ public class XYZJump: NSObject {
     
     
     
-    private func saveJump(To code:String) {
+    public func saveJump(To code:String) {
         let x = URL(string: code)!
         print(x)
         UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
