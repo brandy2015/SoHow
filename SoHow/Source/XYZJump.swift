@@ -59,9 +59,9 @@ public class XYZJump: NSObject {
     }
     
     //跳转到日历
-    func Calendar(){saveJump(To: "calshow://")}
+    public func Calendar(){saveJump(To: "calshow://")}
     //跳转到提醒事项
-    func Reminder(){saveJump(To: "x-apple-reminder://")}
+    public func Reminder(){saveJump(To: "x-apple-reminder://")}
         
 //    public func ()  {saveJump(To: )}
 //    public func ()  {saveJump(To: )}

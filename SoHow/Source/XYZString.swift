@@ -212,7 +212,7 @@ import UIKit
 //Swift - String与NSString的区别，以及各自的使用场景
 public extension String{
     
-    func containsString(Contain:String) -> Bool {return NSString(string: self).contains(Contain)}
+//    func containsString(Contain:String) -> Bool {return NSString(string: self).contains(Contain)}
     
     private func StringRange(words:String,start:Int,lens:Int) -> String? {
         if 0 < words.count && lens <= words.count && lens <= words.count && start < words.count && (start + lens) <= words.count {

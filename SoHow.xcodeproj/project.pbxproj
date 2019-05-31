@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,9 +25,9 @@
 		D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36E21F711A200E6A990 /* XYZGCD.swift */; };
 		D653F37521F7175D00E6A990 /* XYZImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37421F7175D00E6A990 /* XYZImageView.swift */; };
 		D65D7F6622390CCD00FC316E /* XYZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6522390CCD00FC316E /* XYZTableView.swift */; };
-		D65D7F6822390D1800FC316E /* XYZRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6722390D1800FC316E /* XYZRealm.swift */; };
 		D65D7F6C22390D6A00FC316E /* WoZaiNeedX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6B22390D6A00FC316E /* WoZaiNeedX.swift */; };
 		D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6D22390DE600FC316E /* XYZAlert.swift */; };
+		D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A8C3922A0960C00375126 /* XYZXib.swift */; };
 		D683641022802794007B0015 /* XYZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683640F22802794007B0015 /* XYZString.swift */; };
 		D69407CE224C6F98009A2489 /* LearnX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69407CD224C6F98009A2489 /* LearnX.swift */; };
 		D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695A164226EFBAA00871AAC /* XYZExample.swift */; };
@@ -62,9 +62,9 @@
 		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
 		D653F37421F7175D00E6A990 /* XYZImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImageView.swift; sourceTree = "<group>"; };
 		D65D7F6522390CCD00FC316E /* XYZTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZTableView.swift; sourceTree = "<group>"; };
-		D65D7F6722390D1800FC316E /* XYZRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZRealm.swift; sourceTree = "<group>"; };
 		D65D7F6B22390D6A00FC316E /* WoZaiNeedX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoZaiNeedX.swift; sourceTree = "<group>"; };
 		D65D7F6D22390DE600FC316E /* XYZAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAlert.swift; sourceTree = "<group>"; };
+		D66A8C3922A0960C00375126 /* XYZXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZXib.swift; sourceTree = "<group>"; };
 		D683640F22802794007B0015 /* XYZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString.swift; sourceTree = "<group>"; };
 		D69407CD224C6F98009A2489 /* LearnX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnX.swift; sourceTree = "<group>"; };
 		D695A164226EFBAA00871AAC /* XYZExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZExample.swift; sourceTree = "<group>"; };
@@ -162,7 +162,6 @@
 				D6D6456622388BB200A9BD1A /* XYZSpeech.swift */,
 				D6D645682238C52400A9BD1A /* XYZDevice.swift */,
 				D65D7F6522390CCD00FC316E /* XYZTableView.swift */,
-				D65D7F6722390D1800FC316E /* XYZRealm.swift */,
 				D65D7F6B22390D6A00FC316E /* WoZaiNeedX.swift */,
 				D6B5AB732239138E00E01695 /* XYZPodX.swift */,
 				D69407CD224C6F98009A2489 /* LearnX.swift */,
@@ -170,6 +169,7 @@
 				D6CBCEEE227173640033A91A /* XYZEnum.swift */,
 				D683640F22802794007B0015 /* XYZString.swift */,
 				D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */,
+				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -275,16 +275,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoHow/Pods-SoHow-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SoHow/Pods-SoHow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SoHow/Pods-SoHow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,9 +297,9 @@
 				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
 				D65D7F6C22390D6A00FC316E /* WoZaiNeedX.swift in Sources */,
 				D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */,
+				D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */,
 				D601A8D72223C00300C46021 /* XYZVolumizer.swift in Sources */,
 				D69407CE224C6F98009A2489 /* LearnX.swift in Sources */,
-				D65D7F6822390D1800FC316E /* XYZRealm.swift in Sources */,
 				D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */,
 				D6CBCEEF227173640033A91A /* XYZEnum.swift in Sources */,
 				D65D7F6622390CCD00FC316E /* XYZTableView.swift in Sources */,

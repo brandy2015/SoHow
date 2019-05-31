@@ -347,6 +347,31 @@ public extension UIImageView {
     
 }
 
+
+//图片添加阴影
+//override func viewDidLoad() {
+//    super.viewDidLoad()
+//
+//    //图片添加阴影
+//    self.imageView1.layer.shadowOpacity = 0.8
+//    self.imageView1.layer.shadowColor = UIColor.blackColor().CGColor
+//    self.imageView1.layer.shadowOffset = CGSize(width: 1, height: 1)
+//
+//    //图片添加阴影(透明背景)
+//    self.imageView2.layer.shadowOpacity = 0.8
+//    self.imageView2.layer.shadowColor = UIColor.blackColor().CGColor
+//    self.imageView2.layer.shadowOffset = CGSize(width: 1, height: 1)
+//    self.imageView2.layer.shadowRadius = 1
+//
+//    //按钮添加阴影
+//    self.button1.layer.shadowOpacity = 0.8
+//    self.button1.layer.shadowColor = UIColor.blackColor().CGColor
+//    self.button1.layer.shadowOffset = CGSize(width: 1, height: 1)
+//}
+
+
+
+
 //1，扩展UIImage
 //这里先对 UIImage 进行扩展，增加两个方法，分别用于尺寸的重置和大小缩放。
 //
