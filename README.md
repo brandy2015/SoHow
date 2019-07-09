@@ -15,7 +15,7 @@ Easy way in Swift
 * iOS 10.1 or higher (may work on previous versions, just did not test it)
 * ARC
 
-Swift 5.0（使用2.0.0）
+Swift 5.0（使用2.0.0+）
 
 * #Swift 4.2（使用1.3.6）
 
