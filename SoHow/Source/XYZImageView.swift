@@ -67,6 +67,15 @@ public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5)
 
 
 
+//        //首先创建一个模糊效果
+//        let blurEffect = UIBlurEffect(style: .light)
+//        //接着创建一个承载模糊效果的视图
+//        let blurView = UIVisualEffectView(effect: blurEffect)
+//        //设置模糊视图的大小（全屏）
+//        blurView.frame.size = CGSize(width: view.frame.width, height: view.frame.height)
+//        //添加模糊视图到页面view上（模糊视图下方都会有模糊效果）
+//        self.view.addSubview(blurView)
+
 
 //
 //public extension UIView{

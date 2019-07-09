@@ -16,7 +16,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        XYZ3DTouch.Add3DTouchDemo()
+        
+        
         return true
+    }
+    
+    //处理3DTouch的回调...
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        print(shortcutItem.type,"点按了")
+//        guard let tabBarVC = window?.rootViewController as? MainViewController else { return }
+//
+//        //根据type唯一标识进行判断跳转, 或者根据localizedTitle判断
+//        switch shortcutItem.type {
+//        case "homeAnchor":
+//            tabBarVC.selectedIndex = 1
+//        case "play":
+//            let username = ShowRoomViewController()
+//            username.hidesBottomBarWhenPushed = true
+//            tabBarVC.selectedViewController?.childViewControllers.first?.present(username, animated: true, completion: nil)
+//        case "username":
+//            let username = NameViewController()
+//            username.hidesBottomBarWhenPushed = true
+//            tabBarVC.selectedViewController?.childViewControllers.last?.navigationController?.pushViewController(username, animated: true)
+//        default:
+//            tabBarVC.selectedIndex = 0
+//        }
+       
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

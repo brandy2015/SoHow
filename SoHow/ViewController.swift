@@ -15,15 +15,28 @@ class ViewController: UIViewController {
 //        Wallpaper
 //        let m = Bundle.main.infoDictionary
 //        print(UIDevice.current.DeviceType)
-        XYZVolumizer.SwitchState()
+//        XYZVolumizer.SwitchState()
+    
+        
+//         XYZAirPrint.PrintPageX(URL: Bundle.main.url(forResource: "demo", withExtension: "pdf"))
+    
     }
+    
+    @IBOutlet weak var imageVIewX: UIImageView!
+    
+    
+    
+    @IBAction func shareActivetyBTN(_ sender: Any) {
+//        printText()
+//        printText2()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        demo()
-      
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
 }
+
+//@available(*, deprecated, message: "This method will be removed soon. Use methods defined in `Swift.Result`.")

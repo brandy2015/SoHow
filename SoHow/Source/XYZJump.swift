@@ -58,6 +58,24 @@ public class XYZJump: NSObject {
         UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
     }
     
+    
+    public func 在AppStore评论(AppURLString:String)  {
+        if let AppURL = URL(string: AppURLString), UIApplication.shared.canOpenURL(AppURL) {
+            UIApplication.shared.open(AppURL, options: [:]) { (succeed) in
+                if succeed{
+                    print("已经打开")
+                }else{
+                    print("打开不开")
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+    
+    
     //跳转到日历
     public func Calendar(){saveJump(To: "calshow://")}
     //跳转到提醒事项

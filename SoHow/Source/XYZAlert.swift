@@ -13,7 +13,7 @@ class XYZAlert: NSObject {
 
 }
 
-
+public var XYZAlertX = AlertPresentObject()
 public class AlertPresentObject: NSObject {
     
     public static var current = AlertPresentObject()
