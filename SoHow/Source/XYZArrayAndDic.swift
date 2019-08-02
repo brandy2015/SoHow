@@ -13,6 +13,19 @@ class XYZArray: NSObject {
 }
 
 
+//用法
+//var ArrayX = Array()
+//ArrayX.unique
+//#数组有序排重
+public extension Array where Element:Hashable{
+    var unique : [Element] {
+        var keys:[Element:()] = [:]
+        return filter{keys.updateValue((), forKey:$0) == nil}
+    }
+}
+
+
+
 
 
 //添加一个+=的方法让两个词典可以融合

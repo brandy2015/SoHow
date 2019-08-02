@@ -19,7 +19,6 @@
 		D62AFC03217726F50013974F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC00217726F50013974F /* README.md */; };
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
-		D630AD0C2225FAA0004F91E3 /* XYZHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630AD0B2225FA9F004F91E3 /* XYZHUD.swift */; };
 		D63C5A2F22B3B09D0064C34E /* XYZAirPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */; };
 		D64C99B922B1ED31008DA791 /* XYZ3DTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C99B822B1ED31008DA791 /* XYZ3DTouch.swift */; };
 		D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36A21F6F30E00E6A990 /* XYZJump.swift */; };
@@ -59,7 +58,6 @@
 		D62AFC00217726F50013974F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D630AD0B2225FA9F004F91E3 /* XYZHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZHUD.swift; sourceTree = "<group>"; };
 		D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAirPrint.swift; sourceTree = "<group>"; };
 		D64C99B822B1ED31008DA791 /* XYZ3DTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZ3DTouch.swift; sourceTree = "<group>"; };
 		D653F36A21F6F30E00E6A990 /* XYZJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZJump.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 		D6B63DEF21C7E7590087B44D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D630AD0B2225FA9F004F91E3 /* XYZHUD.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
@@ -329,7 +326,6 @@
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D683641022802794007B0015 /* XYZString.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
-				D630AD0C2225FAA0004F91E3 /* XYZHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
