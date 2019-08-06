@@ -12,10 +12,6 @@ import PhotosUI                      //LivePhoto使用的依赖库
 
 
 
-public class XYZImage: NSObject {
-
-}
-
 
 
 

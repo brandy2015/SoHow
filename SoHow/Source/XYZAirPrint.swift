@@ -9,16 +9,18 @@
 
 import UIKit
 
-class XYZAirPrint: NSObject {
+public class XYZAirPrint: NSObject {
     
-    static func PrintPageX(URL:URL?) {
+    public static func PrintPageX(URL:URL?,delegate:UIPrintInteractionControllerDelegate) {
         let controller = UIPrintInteractionController.shared
         let completionHandler : UIPrintInteractionController.CompletionHandler = {printController,completed,error in
             if !completed ,let error = error {
                 print("FAILED! Error is \(error)")
             }
         }
-    
+        controller.delegate = delegate
+        
+        
         let printInfo = UIPrintInfo.printInfo()
         printInfo.outputType = .general
         printInfo.jobName = "XYZManager AirPrint"
@@ -26,7 +28,7 @@ class XYZAirPrint: NSObject {
         printInfo.duplex = .longEdge
         controller.printInfo = printInfo
         controller.showsNumberOfCopies = true
-    
+        
         // print(UIPrintInteractionController.printableUTIs)
         guard let pdfURLX = URL else{
             print("路径不可打印")
@@ -36,10 +38,11 @@ class XYZAirPrint: NSObject {
         print(canprintX)
         
         controller.printingItems = [pdfURLX]
+        
+        
         controller.present(animated: true, completionHandler: completionHandler)
     }
 }
-
 //func printText2() {
 //
 //    guard let pdfURLX = Bundle.main.url(forResource: "demo", withExtension: "pdf") else{
