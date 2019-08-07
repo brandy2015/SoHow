@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		095F28B74827EFA79BC6645F /* Pods_SoHow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */; };
 		D601A8D72223C00300C46021 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601A8D62223C00300C46021 /* XYZVolumizer.swift */; };
-		D619756522F9D48500A97B53 /* XYZImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756422F9D48500A97B53 /* XYZImage.swift */; };
 		D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756622F9D5BF00A97B53 /* XYZButton.swift */; };
-		D619756B22F9D6B600A97B53 /* XYZ3DTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756A22F9D6B600A97B53 /* XYZ3DTouch.swift */; };
+		D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */; };
 		D62AFBE3217726890013974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE2217726890013974F /* AppDelegate.swift */; };
 		D62AFBE5217726890013974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE4217726890013974F /* ViewController.swift */; };
 		D62AFBE8217726890013974F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AFBE6217726890013974F /* Main.storyboard */; };
@@ -23,7 +22,6 @@
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
 		D63C5A2F22B3B09D0064C34E /* XYZAirPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */; };
-		D64C99B922B1ED31008DA791 /* XYZ3DTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C99B822B1ED31008DA791 /* XYZ3DTouch.swift */; };
 		D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36A21F6F30E00E6A990 /* XYZJump.swift */; };
 		D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */; };
 		D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36E21F711A200E6A990 /* XYZGCD.swift */; };
@@ -50,9 +48,8 @@
 /* Begin PBXFileReference section */
 		0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoHow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D601A8D62223C00300C46021 /* XYZVolumizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
-		D619756422F9D48500A97B53 /* XYZImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImage.swift; sourceTree = "<group>"; };
 		D619756622F9D5BF00A97B53 /* XYZButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZButton.swift; sourceTree = "<group>"; };
-		D619756A22F9D6B600A97B53 /* XYZ3DTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XYZ3DTouch.swift; path = "../../../../../../../Volumes/4t备份/XCode2019/ios/九件套/XYZManager/未命名文件夹/XYZManager/XYZManager/SelfFunctionForProject/XYZ3DTouch.swift"; sourceTree = "<group>"; };
+		D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZ3DTouch.swift; sourceTree = "<group>"; };
 		D62AFBDF217726890013974F /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62AFBE2217726890013974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62AFBE4217726890013974F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +63,6 @@
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAirPrint.swift; sourceTree = "<group>"; };
-		D64C99B822B1ED31008DA791 /* XYZ3DTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZ3DTouch.swift; sourceTree = "<group>"; };
 		D653F36A21F6F30E00E6A990 /* XYZJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZJump.swift; sourceTree = "<group>"; };
 		D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
 		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
@@ -159,7 +155,7 @@
 		D6B63DEF21C7E7590087B44D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D619756A22F9D6B600A97B53 /* XYZ3DTouch.swift */,
+				D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
@@ -183,10 +179,8 @@
 				D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */,
 				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 				D6F47BE222B1225700180CE6 /* XYZUTIs.swift */,
-				D64C99B822B1ED31008DA791 /* XYZ3DTouch.swift */,
 				D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */,
 				D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */,
-				D619756422F9D48500A97B53 /* XYZImage.swift */,
 				D619756622F9D5BF00A97B53 /* XYZButton.swift */,
 			);
 			path = Source;
@@ -313,7 +307,7 @@
 			files = (
 				D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */,
 				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
-				D64C99B922B1ED31008DA791 /* XYZ3DTouch.swift in Sources */,
+				D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */,
 				D65D7F6C22390D6A00FC316E /* WoZaiNeedX.swift in Sources */,
 				D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */,
 				D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */,
@@ -334,9 +328,7 @@
 				D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */,
 				D62AFBE5217726890013974F /* ViewController.swift in Sources */,
 				D653F37521F7175D00E6A990 /* XYZImageView.swift in Sources */,
-				D619756522F9D48500A97B53 /* XYZImage.swift in Sources */,
 				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
-				D619756B22F9D6B600A97B53 /* XYZ3DTouch.swift in Sources */,
 				D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */,
 				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,

@@ -9,12 +9,12 @@
 import UIKit
 
 
- 
-//XYZ3DTouch.Add3DTouchDemo() 
-public class XYZ3DTouch: NSObject {
 
-//    添加进#didFinishLaunchingWithOptions
-    static func Add3DTouchDemo()  {
+//XYZ3DTouch.Add3DTouchDemo()
+public class XYZ3DTouch: NSObject {
+    
+    //    添加进#didFinishLaunchingWithOptions
+    public static func Add3DTouchDemo()  {
         //3D Touch
         let homeIcon = UIApplicationShortcutIcon(type: .compose)
         let homeItem = UIApplicationShortcutItem(type: "homeAnchor", localizedTitle: "小胡同学", localizedSubtitle: "是不是要这个", icon: homeIcon, userInfo: nil)
@@ -24,8 +24,25 @@ public class XYZ3DTouch: NSObject {
         let userItem = UIApplicationShortcutItem(type: "username", localizedTitle: "用户名", localizedSubtitle: "", icon: userIcon, userInfo: nil)
         
         UIApplication.shared.shortcutItems = [homeItem, playItem, userItem]
-       
+        
     }
+    
+    
+//    public static func AddDeleteAllRealmAndCaches()  {
+//        //3D Touch
+//
+//        let SettingIcon = UIApplicationShortcutIcon(templateImageName: "Setting3DTouch")//UIApplicationShortcutIcon(type: .compose)
+//        let SettingItem = UIApplicationShortcutItem(type: "SettingAnchor", localizedTitle: "急速救援".localized(), localizedSubtitle: "修复闪退清除索引文件".localized(), icon: SettingIcon, userInfo: nil)
+//
+//
+//        let DeleteSnapshotIcon = UIApplicationShortcutIcon(templateImageName: "DeleteSnapshot3DTouch")
+//        let DeleteSnapshotItem = UIApplicationShortcutItem(type: "DeleteSnapshot", localizedTitle: "清除软件Snapshot".localized(), localizedSubtitle: "清理软件悬停时的快照".localized(), icon: DeleteSnapshotIcon, userInfo: nil)
+//        //        let userIcon = UIApplicationShortcutIcon(type: .search)
+//        //        let userItem = UIApplicationShortcutItem(type: "username", localizedTitle: "清除提醒事项的闹钟", localizedSubtitle: "清除全部提醒事项的闹钟不再提醒", icon: userIcon, userInfo: nil)
+//
+//        UIApplication.shared.shortcutItems = [SettingItem,DeleteSnapshotItem]//, playItem, userItem]
+//
+//    }
 }
 
 
