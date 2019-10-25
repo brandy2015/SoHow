@@ -38,6 +38,13 @@ public extension UIDevice {
         case "iPhone11,8":                              return "iPhone XR"
         case "iPhone11,2":                              return "iPhone XS"
         case "iPhone11,6", "iPhone11,4":                return "iPhone XS Max"
+            
+        case "iPhone12,1":return "iPhone 11"
+        case "iPhone12,3":return "iPhone 11 Pro"
+        case "iPhone12,5":return "iPhone 11 Pro Max"
+   
+            
+            
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
         case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad 3"
         case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad 4"
@@ -55,6 +62,13 @@ public extension UIDevice {
         case "iPad7,5", "iPad7,6":                      return "iPad 6"
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11inch"
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9inch G3"
+            
+//        case :return
+//        case :return
+//        case :return
+//        case :return
+//        case :return
+            
         case "iPod1,1":                                 return "iPod touch"
         case "iPod2,1":                                 return "iPod touch 2"
         case "iPod3,1":                                 return "iPod touch 3"
@@ -89,45 +103,76 @@ public extension UIDevice {
 //    获取系统类型             systemName
 //    获取设备唯一标识符  identifierForVendor?.uuidString
 //    设备的大类型             model
-    
 //    获取App相关的信息
-    
-    
     static var infoDic: [String : Any]? {
         return Bundle.main.infoDictionary
     }
-//    获取App的版本号
+    //    获取App的版本号
     static var VersionNum:String{
         return (UIDevice.infoDic?["CFBundleShortVersionString"] as? String) ?? "未知"
     }
-//    Build号
+    //    Build号
     static var BuildVersionNum:String{
         return (UIDevice.infoDic?["CFBundleVersion"] as? String)  ?? "未知"
     }
-//    App名称
+    //    App名称
     static var appName:String{ //更新
         return (UIDevice.infoDic?["CFBundleDisplayName"] as? String)  ?? "未知"
     }
-    
-    
-    
-    
-    
     // 获取设备名称
     static var deviceName:String{return UIDevice.current.name}
-    
-    
-    
     // 获取系统版本号
     static var  deviceSystemVer:String{return  UIDevice.current.systemVersion}
-        
     //        设备类型 // 获取设备的型号
-    
     static var  deviceModel:String{return UIDevice.current.DeviceType}
-    
-    
     //    获取设备唯一标识符
     static var  deviceUUID:String{return   UIDevice.current.identifierForVendor?.uuidString ?? "未知"}
-    
-    
 }
+
+
+//
+////获取设备名称
+//let deviceName = UIDevice.current.name
+//print("deviceName:\(deviceName)")
+////获取系统名称
+//let sysName = UIDevice.current.systemName
+//print("sysName:\(sysName)")
+////获取系统版本
+//let sysVersion = UIDevice.current.systemVersion
+//print("sysVersion:\(sysVersion)")
+////获取设备唯一标识符
+//let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
+//print("deviceUUID:\(deviceUUID!)")
+////获取设备的型号
+//let deviceModel = UIDevice.current.model
+//print("deviceModel:\(deviceModel)")
+////电池电量
+////UIDevice.current.isBatteryMonitoringEnabled 方法必须使用
+//UIDevice.current.isBatteryMonitoringEnabled = true
+//let batteryLevel = UIDevice.current.batteryLevel
+//print("batteryLevel:\(batteryLevel)")
+////电池状态
+//let batteryState = UIDevice.current.batteryState
+//switch batteryState {
+//case .unknown: print("未识别")
+//case .charging: print("充电中")
+//case .full: print("充满状态")
+//case .unplugged: print("非充电状态")
+//}
+//UIDevice.current.isBatteryMonitoringEnabled = false
+//
+//let infoDictionary = Bundle.main.infoDictionary!
+////app版本号
+//if let appVersion = infoDictionary["CFBundleVersion"]{
+//    print("appVersion:\(appVersion)")
+//}
+//
+////app名称
+//if let appName = infoDictionary["CFBundleDisplayName"]{
+//    print("appName:\(appName)")
+//}
+//
+////主程序版本号
+//if let shortVersion = infoDictionary["CFBundleShortVersionString"]{
+//    print("shortVersion:\(shortVersion)")
+//}

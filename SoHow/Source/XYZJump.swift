@@ -46,12 +46,9 @@ public class XYZJump: NSObject {
     }
     public func AppStore(AppURLString:String? = nil)  {
         if let AppURL = AppURLString,AppURL.contains("https"){
-            let x = URL(string: AppURL)!
-            print(x)
+            let x = URL(string: AppURL)!;print(x)
             UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
-        }else{
-            saveJump(To: "itms-apps://")
-        }
+        }else{saveJump(To: "itms-apps://")}
     }
     public func Setting()  {
         let x = URL(string: UIApplication.openSettingsURLString)!

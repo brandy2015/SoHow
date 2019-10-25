@@ -24,7 +24,6 @@ public extension Double{
     var To1位小数Double:Double? {
         return Double(String(format: "%.1f", self))
     }
-    
 }
 
 public func b保存string到本地(保存的内容:String,文件名称:String)  {

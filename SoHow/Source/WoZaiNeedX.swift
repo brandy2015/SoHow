@@ -8,9 +8,6 @@
 
 import UIKit
 
-class WoZaiNeedX: NSObject {
-
-}
 public func 读取好友列表() -> [String] {
     let _FriendsList = UserDefaults.standard.array(forKey: "FriendsList") as? [String]
     return _FriendsList ?? [""]

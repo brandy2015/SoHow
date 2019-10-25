@@ -11,35 +11,23 @@ import UIKit
 
 public class XYZAirPrint: NSObject {
     
-    public static func PrintPageX(URL:URL?,delegate:UIPrintInteractionControllerDelegate) {
+    public static func PrintPageX(URL:URL?,delegate:UIPrintInteractionControllerDelegate,jobName:String = "XYZManager AirPrint") {
         let controller = UIPrintInteractionController.shared
         let completionHandler : UIPrintInteractionController.CompletionHandler = {printController,completed,error in
-            if !completed ,let error = error {
-                print("FAILED! Error is \(error)")
-            }
+            if !completed ,let error = error {print("FAILED! Error is \(error)")}
         }
         controller.delegate = delegate
-        
-        
         let printInfo = UIPrintInfo.printInfo()
         printInfo.outputType = .general
-        printInfo.jobName = "XYZManager AirPrint"
+        printInfo.jobName = jobName
         printInfo.orientation = .portrait
         printInfo.duplex = .longEdge
         controller.printInfo = printInfo
         controller.showsNumberOfCopies = true
-        
         // print(UIPrintInteractionController.printableUTIs)
-        guard let pdfURLX = URL else{
-            print("路径不可打印")
-            return
-        }
-        let canprintX = UIPrintInteractionController.canPrint(pdfURLX)
-        print(canprintX)
-        
+        guard let pdfURLX = URL else{ print("路径不可打印"); return}
+        let canprintX = UIPrintInteractionController.canPrint(pdfURLX);print(canprintX)
         controller.printingItems = [pdfURLX]
-        
-        
         controller.present(animated: true, completionHandler: completionHandler)
     }
 }

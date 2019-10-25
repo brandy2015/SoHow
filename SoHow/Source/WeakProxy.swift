@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 public class WeakProxy: NSObject {
     
     weak public var target: NSObjectProtocol?

@@ -16,66 +16,30 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SoHow"
-  s.version      = "2.0.11"
+  s.version      = "2.0.13"
   s.summary      = "持续升级"
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
                     简洁调用一些方法
 
                    DESC
 
   s.homepage     = "https://github.com/brandy2015/SoHow"
-
-
-
-
+  
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
 
   s.license      = "MIT"
 
   s.swift_version = '5.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
-# s.dependency 'FileKit'
-
-  s.ios.deployment_target = '10.1'
+  s.ios.deployment_target = '12.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "Brandy" => "" }
-
-
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
-  s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "2.0.11"}
+  s.platform     = :ios, "12.0"
+  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "2.0.13"}
   s.source_files = "SoHow/Source/*"
-
-
-    s.dependency 'MBProgressHUD'         #HUD支持
-
-  # s.social_media_url   = "http://twitter.com/Brandy"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # s.platform     = :ios
-
-
-
-
+  s.dependency 'MBProgressHUD'         #HUD支持
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -89,10 +53,6 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
-
-
-#{ :git => "http://EXAMPLE/SoHow.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -145,6 +105,4 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-
 end
