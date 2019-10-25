@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import CryptoKit
-import CommonCrypto
+
 class XYZString: NSObject {
 
 }
