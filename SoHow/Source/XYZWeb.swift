@@ -112,17 +112,17 @@ public func 有没有Htttps(httpstring:String) -> URL? {
     return nil
 }
 
-
-public func 打开网页(网路WebView:UIWebView,地址:String)  {
-    
-    guard let url = 有没有Htttps(httpstring:地址) else{ return}
-    // 2.建立网络请求
-    let request = URLRequest(url: url);
-    // 3.加载网络请求
-    网路WebView.loadRequest(request)
-    //    websiteTextField.resignFirstResponder()
-}
-
+//
+//public func 打开网页(网路WebView:UIWebView,地址:String)  {
+//    
+//    guard let url = 有没有Htttps(httpstring:地址) else{ return}
+//    // 2.建立网络请求
+//    let request = URLRequest(url: url);
+//    // 3.加载网络请求
+//    网路WebView.loadRequest(request)
+//    //    websiteTextField.resignFirstResponder()
+//}
+//
 
 
 

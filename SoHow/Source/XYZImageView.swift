@@ -47,38 +47,38 @@ public func d读取图片地址(图片名字:String) -> String  {  //未真正�
 }
 
 
-public func b保存图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
-    if 是否保存{
-        let userDefault = UserDefaults.standard
-        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
-        userDefault.set(imageData, forKey: 图片名称)
-    }else{ print("没有保存")}
-}
+//public func b保存图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
+//    if 是否保存{
+//        let userDefault = UserDefaults.standard
+//        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
+//        userDefault.set(imageData, forKey: 图片名称)
+//    }else{ print("没有保存")}
+//}
+//
+//
+//
+//
+//public func b保存GIF图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
+//    if 是否保存{
+//        let userDefault = UserDefaults.standard
+//        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
+//        userDefault.set(imageData, forKey: 图片名称)
+//        print("\n\n\n\n\n\n\n\n")
+//        print("保存了GIF" + 图片名称)
+//
+//        print("\n\n\n\n\n\n\n\n")
+//    }else{ print("没有保存")}
+//}
 
 
 
-
-public func b保存GIF图片(image:UIImage,图片名称:String = "imageData",是否保存:Bool){
-    if 是否保存{
-        let userDefault = UserDefaults.standard
-        let imageData:Data = NSKeyedArchiver.archivedData(withRootObject: image)
-        userDefault.set(imageData, forKey: 图片名称)
-        print("\n\n\n\n\n\n\n\n")
-        print("保存了GIF" + 图片名称)
-        
-        print("\n\n\n\n\n\n\n\n")
-    }else{ print("没有保存")}
-}
-
-
-
-public func d读取图片(图片名字:String) -> UIImage  {
-    let userDefault = UserDefaults.standard
-    let objData = userDefault.object(forKey: 图片名字) as? Data
-    let 解包objData = objData ?? userDefault.object(forKey: "default") as? Data
-    let myImage = NSKeyedUnarchiver.unarchiveObject(with: 解包objData ?? Data()) as? UIImage
-    return myImage ?? #imageLiteral(resourceName: "default")
-}
+//public func d读取图片(图片名字:String) -> UIImage  {
+//    let userDefault = UserDefaults.standard
+//    let objData = userDefault.object(forKey: 图片名字) as? Data
+//    let 解包objData = objData ?? userDefault.object(forKey: "default") as? Data
+//    let myImage = NSKeyedUnarchiver.unarchiveObject(with: 解包objData ?? Data()) as? UIImage
+//    return myImage ?? #imageLiteral(resourceName: "default")
+//}
 
 
 

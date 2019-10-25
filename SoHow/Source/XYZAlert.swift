@@ -50,21 +50,21 @@ public func 添加过渡动画(持续时间:Double = 0.5) -> CATransition {
     return transition
 }
 
-public func 加载主文件夹中HTML文件到WebView(名称:String,加载到的WebView:UIWebView)  {
-    if let url = Bundle.main.url(forResource: 名称, withExtension: "html"){
-        
-        if let htmlData = try? Data(contentsOf: url){
-            
-            let baseURL = URL(fileURLWithPath: Bundle.main.bundlePath)
-            print("\n\nbaseURL")
-            print(baseURL)
-            
-            加载到的WebView.load(htmlData, mimeType: "text/html", textEncodingName: "UTF-8", baseURL: baseURL)
-            
-        }
-        
-    }
-}
+//public func 加载主文件夹中HTML文件到WebView(名称:String,加载到的WebView:UIWebView)  {
+//    if let url = Bundle.main.url(forResource: 名称, withExtension: "html"){
+//        
+//        if let htmlData = try? Data(contentsOf: url){
+//            
+//            let baseURL = URL(fileURLWithPath: Bundle.main.bundlePath)
+//            print("\n\nbaseURL")
+//            print(baseURL)
+//            
+//            加载到的WebView.load(htmlData, mimeType: "text/html", textEncodingName: "UTF-8", baseURL: baseURL)
+//            
+//        }
+//        
+//    }
+//}
 
 //为了要当前ViewController
 public func getCurrentVC()->UIViewController?{
