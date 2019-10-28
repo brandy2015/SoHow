@@ -26,24 +26,24 @@ public extension Double{
     }
 }
 
-public func b保存string到本地(保存的内容:String,文件名称:String)  {
-    var  url :URL! = nil
-    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
-    if sp.count > 0 {
-        url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
-        print(url as Any)
-        let data = NSMutableData()
-        
-        let x = 保存的内容
-        let m = x.data(using: String.Encoding.utf8, allowLossyConversion:true)!
-        let mtodata = NSData(data: m) as Data
-        
-        
-        data.append(mtodata)
-        data.write(toFile: url.path, atomically: true)
-        print("end")
-    }
-}
+//public func b保存string到本地(保存的内容:String,文件名称:String)  {
+//    var  url :URL! = nil
+//    var sp = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+//    if sp.count > 0 {
+//        url = URL(fileURLWithPath: "\(sp[0])/" + "\(文件名称)" + "data.txt")
+//        print(url as Any)
+//        let data = NSMutableData()
+//        
+//        let x = 保存的内容
+//        let m = x.data(using: String.Encoding.utf8, allowLossyConversion:true)!
+//        let mtodata = NSData(data: m) as Data
+//        
+//        
+//        data.append(mtodata)
+//        data.write(toFile: url.path, atomically: true)
+//        print("end")
+//    }
+//}
 
 
 //extension String {
