@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SoHow"
-  s.version      = "2.0.17"
+  s.version      = "2.1.1"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -32,12 +32,12 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "Brandy" => "" }
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
-  s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "2.0.17"}
+  s.platform     = :ios, "13.0"
+  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "2.1.1"}
   s.source_files = "SoHow/Source/*"
   s.dependency 'MBProgressHUD'         #HUD支持
 
