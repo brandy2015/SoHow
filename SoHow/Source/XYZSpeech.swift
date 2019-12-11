@@ -9,21 +9,22 @@
 import UIKit
 import AVFoundation
 
-class XYZSpeech: NSObject {
-
+public class XYZSpeech: NSObject {
+    
+    public static func f发音内容(内容:String)  {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playback, mode: .default, options: .allowAirPlay)
+            
+        }catch let error as NSError{
+            print(error.code)}
+        let av = AVSpeechSynthesizer.init()
+        let utterance1 = AVSpeechUtterance(string: 内容)
+        utterance1.postUtteranceDelay = 1
+        utterance1.rate = 0.5
+        av.speak(utterance1)
+    }
 }
 
 
-public func f发音内容(内容:String)  {
-    let audioSession = AVAudioSession.sharedInstance()
-    do {
-        try audioSession.setCategory(.playback, mode: .default, options: .allowAirPlay)
-        
-    }catch let error as NSError{
-        print(error.code)}
-    let av = AVSpeechSynthesizer.init()
-    let utterance1 = AVSpeechUtterance(string: 内容)
-    utterance1.postUtteranceDelay = 1
-    utterance1.rate = 0.5
-    av.speak(utterance1)
-}
+

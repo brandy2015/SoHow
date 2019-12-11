@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		095F28B74827EFA79BC6645F /* Pods_SoHow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */; };
-		D601A8D72223C00300C46021 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601A8D62223C00300C46021 /* XYZVolumizer.swift */; };
 		D6116E8C230BC1D600962BCD /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6116E8B230BC1D600962BCD /* WeakProxy.swift */; };
 		D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756622F9D5BF00A97B53 /* XYZButton.swift */; };
 		D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */; };
@@ -28,7 +27,6 @@
 		D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36E21F711A200E6A990 /* XYZGCD.swift */; };
 		D653F37521F7175D00E6A990 /* XYZImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F37421F7175D00E6A990 /* XYZImageView.swift */; };
 		D65D7F6622390CCD00FC316E /* XYZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6522390CCD00FC316E /* XYZTableView.swift */; };
-		D65D7F6C22390D6A00FC316E /* WoZaiNeedX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6B22390D6A00FC316E /* WoZaiNeedX.swift */; };
 		D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6D22390DE600FC316E /* XYZAlert.swift */; };
 		D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A8C3922A0960C00375126 /* XYZXib.swift */; };
 		D683641022802794007B0015 /* XYZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683640F22802794007B0015 /* XYZString.swift */; };
@@ -38,20 +36,22 @@
 		D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5AB732239138E00E01695 /* XYZPodX.swift */; };
 		D6C92DFC22F9202C008E5A91 /* XYZAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */; };
 		D6CBCEEF227173640033A91A /* XYZEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBCEEE227173640033A91A /* XYZEnum.swift */; };
-		D6CC9DEB239789BA004F7EF4 /* UITabBarController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC9DEA239789BA004F7EF4 /* UITabBarController_Extension.swift */; };
-		D6CC9DED239789CA004F7EF4 /* UINavigationController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC9DEC239789CA004F7EF4 /* UINavigationController_Extension.swift */; };
+		D6CC9DEB239789BA004F7EF4 /* XYZTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */; };
+		D6CC9DED239789CA004F7EF4 /* XYZNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC9DEC239789CA004F7EF4 /* XYZNaviController.swift */; };
 		D6CC9DEF23978A81004F7EF4 /* XYZUIImage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC9DEE23978A81004F7EF4 /* XYZUIImage_Extension.swift */; };
 		D6D6455F2238888600A9BD1A /* XYZNumberAndString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */; };
 		D6D6456122388A8100A9BD1A /* XYZArrayAndDic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */; };
 		D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456222388AAB00A9BD1A /* XYZWeb.swift */; };
 		D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456622388BB200A9BD1A /* XYZSpeech.swift */; };
 		D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D645682238C52400A9BD1A /* XYZDevice.swift */; };
+		D6EACA6123A099700060EB65 /* XYZArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6023A099700060EB65 /* XYZArray.swift */; };
+		D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6223A099920060EB65 /* XYZDictionary.swift */; };
+		D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */; };
 		D6F47BE322B1225700180CE6 /* XYZUTIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F47BE222B1225700180CE6 /* XYZUTIs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BDAB1F9C6DF3317DB77E5A4 /* Pods_SoHow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoHow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D601A8D62223C00300C46021 /* XYZVolumizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
 		D6116E8B230BC1D600962BCD /* WeakProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakProxy.swift; sourceTree = "<group>"; };
 		D619756622F9D5BF00A97B53 /* XYZButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZButton.swift; sourceTree = "<group>"; };
 		D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZ3DTouch.swift; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 		D653F36E21F711A200E6A990 /* XYZGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZGCD.swift; sourceTree = "<group>"; };
 		D653F37421F7175D00E6A990 /* XYZImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZImageView.swift; sourceTree = "<group>"; };
 		D65D7F6522390CCD00FC316E /* XYZTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZTableView.swift; sourceTree = "<group>"; };
-		D65D7F6B22390D6A00FC316E /* WoZaiNeedX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoZaiNeedX.swift; sourceTree = "<group>"; };
 		D65D7F6D22390DE600FC316E /* XYZAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAlert.swift; sourceTree = "<group>"; };
 		D66A8C3922A0960C00375126 /* XYZXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZXib.swift; sourceTree = "<group>"; };
 		D683640F22802794007B0015 /* XYZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString.swift; sourceTree = "<group>"; };
@@ -83,14 +82,17 @@
 		D6B5AB732239138E00E01695 /* XYZPodX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPodX.swift; sourceTree = "<group>"; };
 		D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAudio.swift; sourceTree = "<group>"; };
 		D6CBCEEE227173640033A91A /* XYZEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZEnum.swift; sourceTree = "<group>"; };
-		D6CC9DEA239789BA004F7EF4 /* UITabBarController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController_Extension.swift; sourceTree = "<group>"; };
-		D6CC9DEC239789CA004F7EF4 /* UINavigationController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController_Extension.swift; sourceTree = "<group>"; };
+		D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZTabBarController.swift; sourceTree = "<group>"; };
+		D6CC9DEC239789CA004F7EF4 /* XYZNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZNaviController.swift; sourceTree = "<group>"; };
 		D6CC9DEE23978A81004F7EF4 /* XYZUIImage_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZUIImage_Extension.swift; sourceTree = "<group>"; };
 		D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZNumberAndString.swift; sourceTree = "<group>"; };
 		D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZArrayAndDic.swift; sourceTree = "<group>"; };
 		D6D6456222388AAB00A9BD1A /* XYZWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZWeb.swift; sourceTree = "<group>"; };
 		D6D6456622388BB200A9BD1A /* XYZSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZSpeech.swift; sourceTree = "<group>"; };
 		D6D645682238C52400A9BD1A /* XYZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDevice.swift; sourceTree = "<group>"; };
+		D6EACA6023A099700060EB65 /* XYZArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZArray.swift; sourceTree = "<group>"; };
+		D6EACA6223A099920060EB65 /* XYZDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDictionary.swift; sourceTree = "<group>"; };
+		D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
 		D6F47BE222B1225700180CE6 /* XYZUTIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUTIs.swift; sourceTree = "<group>"; };
 		F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.release.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.release.xcconfig"; sourceTree = "<group>"; };
 		FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.debug.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,11 +169,12 @@
 				D69407CD224C6F98009A2489 /* LearnX.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D6116E8B230BC1D600962BCD /* WeakProxy.swift */,
-				D65D7F6B22390D6A00FC316E /* WoZaiNeedX.swift */,
 				D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */,
 				D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */,
 				D65D7F6D22390DE600FC316E /* XYZAlert.swift */,
 				D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */,
+				D6EACA6223A099920060EB65 /* XYZDictionary.swift */,
+				D6EACA6023A099700060EB65 /* XYZArray.swift */,
 				D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */,
 				D619756622F9D5BF00A97B53 /* XYZButton.swift */,
 				D6D645682238C52400A9BD1A /* XYZDevice.swift */,
@@ -179,6 +182,7 @@
 				D695A164226EFBAA00871AAC /* XYZExample.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
 				D653F37421F7175D00E6A990 /* XYZImageView.swift */,
+				D6CC9DEE23978A81004F7EF4 /* XYZUIImage_Extension.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */,
 				D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */,
@@ -186,11 +190,10 @@
 				D6D6456622388BB200A9BD1A /* XYZSpeech.swift */,
 				D683640F22802794007B0015 /* XYZString.swift */,
 				D65D7F6522390CCD00FC316E /* XYZTableView.swift */,
-				D6CC9DEA239789BA004F7EF4 /* UITabBarController_Extension.swift */,
-				D6CC9DEC239789CA004F7EF4 /* UINavigationController_Extension.swift */,
-				D6CC9DEE23978A81004F7EF4 /* XYZUIImage_Extension.swift */,
+				D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */,
+				D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */,
+				D6CC9DEC239789CA004F7EF4 /* XYZNaviController.swift */,
 				D6F47BE222B1225700180CE6 /* XYZUTIs.swift */,
-				D601A8D62223C00300C46021 /* XYZVolumizer.swift */,
 				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
 				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 				D62AFBF4217726E90013974F /* YSZoomView.swift */,
@@ -317,14 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EACA6123A099700060EB65 /* XYZArray.swift in Sources */,
+				D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */,
 				D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */,
 				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
-				D6CC9DEB239789BA004F7EF4 /* UITabBarController_Extension.swift in Sources */,
+				D6CC9DEB239789BA004F7EF4 /* XYZTabBarController.swift in Sources */,
 				D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */,
-				D65D7F6C22390D6A00FC316E /* WoZaiNeedX.swift in Sources */,
 				D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */,
 				D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */,
-				D601A8D72223C00300C46021 /* XYZVolumizer.swift in Sources */,
 				D69407CE224C6F98009A2489 /* LearnX.swift in Sources */,
 				D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */,
 				D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */,
@@ -332,7 +335,7 @@
 				D6C92DFC22F9202C008E5A91 /* XYZAudio.swift in Sources */,
 				D65D7F6622390CCD00FC316E /* XYZTableView.swift in Sources */,
 				D6F47BE322B1225700180CE6 /* XYZUTIs.swift in Sources */,
-				D6CC9DED239789CA004F7EF4 /* UINavigationController_Extension.swift in Sources */,
+				D6CC9DED239789CA004F7EF4 /* XYZNaviController.swift in Sources */,
 				D653F36D21F70C1A00E6A990 /* UIDevice_Extension.swift in Sources */,
 				D6D6456122388A8100A9BD1A /* XYZArrayAndDic.swift in Sources */,
 				D6D6455F2238888600A9BD1A /* XYZNumberAndString.swift in Sources */,
@@ -350,6 +353,7 @@
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D683641022802794007B0015 /* XYZString.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
+				D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
