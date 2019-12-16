@@ -187,98 +187,11 @@ public class XYZAirPrint: NSObject {
 //
 //    print(canprintX)
 //
-//
-//
-//    // This code uses a custom UIPrintPageRenderer so that it can draw a header and footer.
-//
-//    //                    let myRenderer = UIPrintPageRenderer()
-//    //                    myRenderer.
-//
-//    //                    let viewFormatter = UIViewPrintFormatter()
-//    //                    viewFormatter = self.
-//    //                    myRenderer.jobTitle = printInfo.jobName;
-//    //                    UIViewPrintFormatter *viewFormatter = [self.myWebView viewPrintFormatter];
-//    //
-//    //                    [myRenderer addPrintFormatter:viewFormatter startingAtPageAtIndex:0];
-//    //                    // Set our custom renderer as the printPageRenderer for the print job.
-//    //                    controller.printPageRenderer = myRenderer;
-//    //
-//    //                    [controller printToPrinter:airPrintDic completionHandler:completionHandler];
-//
-//    controller.present(animated: true, completionHandler: completionHandler)
-//}
-//
+
 //
 ////打印网页
-//func printWebPage()  {
-//    if let printerURLShared = printerURLShared{
-//        let airPrintDic = UIPrinter(url: printerURLShared)
-//        airPrintDic.contactPrinter { (available) in
-//            if available{
-//                print("AIRPRINTER AVAILABLE")
-//                let controller = UIPrintInteractionController.shared
 //
-//                let completionHandler : UIPrintInteractionController.CompletionHandler = {printController,completed,error in
-//
-//                    if !completed ,let error = error {
-//                        print("FAILED! Error is \(error)")
-//                    }
-//
-//
-//                }
-//
-//                let printInfo = UIPrintInfo.printInfo()
-//                printInfo.outputType = .general
-//                printInfo.jobName = "XYZManager AirPrint"
-//                printInfo.orientation = .portrait
-//                printInfo.duplex = .longEdge
-//                controller.printInfo = printInfo
-//
-//
-//
-//                controller.showsNumberOfCopies = true
-//
-//                guard let pdfURLX = Bundle.main.url(forResource: "demo", withExtension: "pdf") else{
-//                    return
-//                }
-//
-//                print(UIPrintInteractionController.printableUTIs)
-//
-//                let canprintX = UIPrintInteractionController.canPrint(pdfURLX)
-//
-//                print(canprintX)
-//
-//                let items = [pdfURLX]
-//                controller.printingItem = items
-//
-//                // This code uses a custom UIPrintPageRenderer so that it can draw a header and footer.
-//
-//                //                    let myRenderer = UIPrintPageRenderer()
-//                //                    myRenderer.
-//
-//                //                    let viewFormatter = UIViewPrintFormatter()
-//                //                    viewFormatter = self.
-//                //                    myRenderer.jobTitle = printInfo.jobName;
-//                //                    UIViewPrintFormatter *viewFormatter = [self.myWebView viewPrintFormatter];
-//                //
-//                //                    [myRenderer addPrintFormatter:viewFormatter startingAtPageAtIndex:0];
-//                //                    // Set our custom renderer as the printPageRenderer for the print job.
-//                //                    controller.printPageRenderer = myRenderer;
-//                //
-//                //                    [controller printToPrinter:airPrintDic completionHandler:completionHandler];
-//
-//                controller.present(animated: true, completionHandler: completionHandler)
-//            }else{
-//                print("AIRPRINTER NOT AVAILABLE")
-//                self.selectPrinterPicker()
-//            }
-//        }
-//
-//    }else{
-//        print("没有打印机请选择一个")
-//        self.selectPrinterPicker()
-//    }
-//
+
 //
 //
 //

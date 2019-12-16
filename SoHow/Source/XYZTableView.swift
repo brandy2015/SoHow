@@ -47,6 +47,15 @@ public extension UITableView{
     
 }
 
+public extension UITableView{
+    func TableView的启动后配置(View:UIView)  {
+        // MARK: - //swipe部分
+        self.setClearBackground(View: View, separatorOn: false)
+        //这个重要
+        self.allowsMultipleSelectionDuringEditing = true
+        self.allowsSelection = true
+    }
+}
 
 
 
@@ -65,6 +74,36 @@ public extension UITableView {
         endUpdates()
     }
 }
+
+
+
+
+//XYZTableView
+public extension UITableViewCell{
+    var FatherTableView:UITableView?{
+       return self.superview as? UITableView
+        //return self.next as? UITableView
+    }
+    
+    var FatherTVC:UITableViewController? {
+        return self.next?.next as? UITableViewController
+    }
+    
+    var CellindexPath:IndexPath?{
+        let superTableViewX = self.superview as? UITableView
+        return superTableViewX?.indexPath(for: self)
+    }
+    func reloadTableView()  {
+        DispatchQueue.main.async {
+            self.FatherTableView?.reloadData()
+        }
+    }
+    
+}
+
+
+
+
 
 
 //tableView.separatorColor = [UIColor clearColor];
