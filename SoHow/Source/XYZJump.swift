@@ -76,7 +76,21 @@ public class XYZJump: NSObject {
     //跳转到日历
     public func Calendar(){saveJump(To: "calshow://")}
     //跳转到提醒事项
-    public func Reminder(){saveJump(To: "x-apple-reminder://")}
+    public func Reminder(){
+        if #available(iOS 13.0, *) {
+            
+            //高于 iOS 13.0
+            saveJump(To: "x-apple-reminderkit://")
+        } else {
+            
+            //低于 iOS 13.0
+             saveJump(To: "x-apple-reminder://")
+        }
+       
+        
+        
+        
+    }
         
 //    public func ()  {saveJump(To: )}
 //    public func ()  {saveJump(To: )}

@@ -30,11 +30,14 @@
 		D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D7F6D22390DE600FC316E /* XYZAlert.swift */; };
 		D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A8C3922A0960C00375126 /* XYZXib.swift */; };
 		D683641022802794007B0015 /* XYZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683640F22802794007B0015 /* XYZString.swift */; };
+		D693A4FF23E7A9E000BB2031 /* XYZShadowKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693A4FE23E7A9E000BB2031 /* XYZShadowKit.swift */; };
+		D693A50423E7AA7100BB2031 /* XYZWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693A50323E7AA7100BB2031 /* XYZWebView.swift */; };
 		D69407CE224C6F98009A2489 /* LearnX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69407CD224C6F98009A2489 /* LearnX.swift */; };
 		D6947D4123A7B3C700EBDF12 /* XYZUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */; };
 		D6947D4623A7B5E400EBDF12 /* XYZNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */; };
 		D6947D4A23A7B61B00EBDF12 /* XYZTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */; };
 		D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695A164226EFBAA00871AAC /* XYZExample.swift */; };
+		D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */; };
 		D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */; };
 		D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5AB732239138E00E01695 /* XYZPodX.swift */; };
 		D6C92DFC22F9202C008E5A91 /* XYZAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */; };
@@ -79,11 +82,14 @@
 		D65D7F6D22390DE600FC316E /* XYZAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAlert.swift; sourceTree = "<group>"; };
 		D66A8C3922A0960C00375126 /* XYZXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZXib.swift; sourceTree = "<group>"; };
 		D683640F22802794007B0015 /* XYZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString.swift; sourceTree = "<group>"; };
+		D693A4FE23E7A9E000BB2031 /* XYZShadowKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZShadowKit.swift; sourceTree = "<group>"; };
+		D693A50323E7AA7100BB2031 /* XYZWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZWebView.swift; sourceTree = "<group>"; };
 		D69407CD224C6F98009A2489 /* LearnX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnX.swift; sourceTree = "<group>"; };
 		D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUILabel.swift; sourceTree = "<group>"; };
 		D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZNotification.swift; sourceTree = "<group>"; };
 		D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZTVCell.swift; sourceTree = "<group>"; };
 		D695A164226EFBAA00871AAC /* XYZExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZExample.swift; sourceTree = "<group>"; };
+		D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZToCircle.swift; sourceTree = "<group>"; };
 		D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZLearn.swift; sourceTree = "<group>"; };
 		D6B5AB732239138E00E01695 /* XYZPodX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPodX.swift; sourceTree = "<group>"; };
 		D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAudio.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 				D6116E8B230BC1D600962BCD /* WeakProxy.swift */,
 				D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */,
 				D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */,
+				D693A50323E7AA7100BB2031 /* XYZWebView.swift */,
 				D65D7F6D22390DE600FC316E /* XYZAlert.swift */,
 				D6EACA6023A099700060EB65 /* XYZArray.swift */,
 				D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */,
@@ -197,6 +204,7 @@
 				D6CBCEEE227173640033A91A /* XYZEnum.swift */,
 				D695A164226EFBAA00871AAC /* XYZExample.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
+				D693A4FE23E7A9E000BB2031 /* XYZShadowKit.swift */,
 				D653F37421F7175D00E6A990 /* XYZImageView.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */,
@@ -214,6 +222,7 @@
 				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
 				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 				D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */,
+				D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -337,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */,
 				D6EACA6123A099700060EB65 /* XYZArray.swift in Sources */,
 				D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */,
 				D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */,
@@ -370,10 +380,12 @@
 				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
 				D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */,
 				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
+				D693A4FF23E7A9E000BB2031 /* XYZShadowKit.swift in Sources */,
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D683641022802794007B0015 /* XYZString.swift in Sources */,
 				D62AFBFB217726EB0013974F /* ImageHelper.swift in Sources */,
 				D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */,
+				D693A50423E7AA7100BB2031 /* XYZWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
