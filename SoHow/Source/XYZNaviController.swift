@@ -15,7 +15,9 @@ public extension UINavigationController{
         self.navigationBar.barTintColor = .clear
         self.navigationBar.shadowImage = UIImage()
         self.navigationBar.isTranslucent = true
+        //不加这一句不生效
         self.navigationBar.standardAppearance.configureWithTransparentBackground()//Xcode11.4后必须加
+        
     }
     
     func SetTitleAttributes(FontSize:CGFloat = 20.0)  {
