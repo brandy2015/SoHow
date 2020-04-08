@@ -10,10 +10,12 @@ import UIKit
 public extension UINavigationController{
     func SetNaviClear()  {
         self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.tintColor = .clear
-        self.navigationBar.barTintColor = .clear
-        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.shadowImage   = UIImage()
+        
+        self.navigationBar.barTintColor  = .clear
+        self.navigationBar.tintColor     = .clear
+        
+        self.navigationBar.shadowImage   = UIImage()
         self.navigationBar.isTranslucent = true
         //不加这一句不生效
         self.navigationBar.standardAppearance.configureWithTransparentBackground()//Xcode11.4后必须加
