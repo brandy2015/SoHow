@@ -110,45 +110,7 @@ public extension WKWebView{
     
     
     //    8.添加进度条
-    //
-    //    我们知道UIWebView是无法获取网页加载的进度的,于是也就无法创建进度条了,当然我们可以以某种算法模拟网页加载,自己设置进度条的值。而WKWebView却提供了获取网页加载进度的方法,支持KVO,也就是estimatedProgress。另外还有loading是否正在加载和title页面标题。
-    //    我们得创建一个进度条:
-    //
-    //    var progBar = UIProgressView()
-    //    //以下代码添加到viewDidLoad()
-    //    progBar = UIProgressView(frame: CGRectMake(0, 0, self.view.frame.width, 30))
-    //    progBar.progress = 0.0
-    //    progBar.tintColor = UIColor.redColor()
-    //    self.webview.addSubview(progBar)
-    //    然后给网页添加监听进度,同样在viewDidLoad()里:
-    //
-    //    self.webview.addObserver(self, forKeyPath: "estimatedProgress", options: NSKeyValueObservingOptions.New, context: nil)
-    //    再处理KVO:
-    //
-    //    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-    //        if keyPath == "estimatedProgress" {
-    //            self.progBar.alpha = 1.0
-    //            progBar.setProgress(Float(webview.estimatedProgress), animated: true)
-    //            //进度条的值最大为1.0
-    //            if(self.webview.estimatedProgress >= 1.0) {
-    //                UIView.animateWithDuration(0.3, delay: 0.1, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-    //                    self.progBar.alpha = 0.0
-    //                }, completion: { (finished:Bool) -> Void in
-    //                    self.progBar.progress = 0
-    //                })
-    //            }
-    //        }
-    //    }
-    //    这里设置进度条的值很重要,因为我们发现,其实进度条的值总比网页加载的实际值慢一些,两者并不同步。如果你不添加动画使进度条加载完成后消失,你会发现进度条还没到最右边中途就不见了。所以我们要用个动画来实现。此外,如果把self.progBar.progress = 0这句语句,即清零的功能放到别的方法中去,比如说放到开始导航的时候来清零,你会发现进度条的动画有问题,会来回转。总之,怎么处理进度条的动画很讲究,我试了好多次发现这个方法相对来说稳定一些。所以我建议大家可以换个进度条的样式,即不依赖于值的显示,如可以转圈圈等等。现在有好多第三方库可以使用,大家可以上cocoapods去查找。
-    //
-    //    还有一点别忘了,对于KVO模式，有add一定要remove,否则会崩溃。我们可以在视图消失的时候添加remove:
-    //
-    //    override func viewWillDisappear(animated: Bool) {
-    //        webview.removeObserver(self, forKeyPath: "estimatedProgress")
-    //    }
-    
-    
-    
+ 
     
     
     

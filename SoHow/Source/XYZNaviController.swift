@@ -11,7 +11,11 @@ public extension UINavigationController{
     func SetNaviClear()  {
         self.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationBar.shadowImage = UIImage()
-        
+        self.navigationBar.tintColor = .clear
+        self.navigationBar.barTintColor = .clear
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.isTranslucent = true
+        self.navigationBar.standardAppearance.configureWithTransparentBackground()//Xcode11.4后必须加
     }
     
     func SetTitleAttributes(FontSize:CGFloat = 20.0)  {

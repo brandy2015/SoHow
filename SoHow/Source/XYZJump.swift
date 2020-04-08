@@ -46,13 +46,16 @@ public class XYZJump: NSObject {
     }
     public func AppStore(AppURLString:String? = nil)  {
         if let AppURL = AppURLString,AppURL.contains("https"){
-            let x = URL(string: AppURL)!;print(x)
+            guard let x = URL(string: AppURL) else{return};print(x)
             UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
         }else{saveJump(To: "itms-apps://")}
     }
     public func Setting()  {
-        let x = URL(string: UIApplication.openSettingsURLString)!
-        UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
+        guard let Setting = URL(string: UIApplication.openSettingsURLString) else{return}
+        DispatchQueue.main.async {
+            UIApplication.shared.open(Setting, options: Dictionary(), completionHandler: nil)
+        }
+        
     }
     
     
@@ -112,8 +115,8 @@ public class XYZJump: NSObject {
     
     
     public func saveJump(To code:String) {
-        let x = URL(string: code)!
-        print(x)
+        guard let x = URL(string: code) else{return}
+    
         UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
     }
     
@@ -122,7 +125,9 @@ public class XYZJump: NSObject {
         let urlStr = decode(code)
         if let url = URL(string:urlStr) {
             if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: Dictionary(), completionHandler: nil)
+                DispatchQueue.main.async {
+                    UIApplication.shared.open(url, options: Dictionary(), completionHandler: nil)
+                }
             } else { UIApplication.shared.openURL(url)}}
     }
     
