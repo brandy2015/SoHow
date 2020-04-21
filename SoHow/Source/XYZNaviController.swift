@@ -24,6 +24,8 @@ public extension UINavigationController{
     
     func SetTitleAttributes(FontSize:CGFloat = 20.0)  {
         self.navigationBar.titleTextAttributes =  [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font:UIFont(name: "Heiti SC", size: FontSize)!]
+        self.navigationBar.standardAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font:UIFont(name: "Heiti SC", size: FontSize)!]//Xcode11.4后必须加
+        
     }
     
     func configureNavBarImagePosition() {
