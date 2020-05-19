@@ -35,6 +35,9 @@
 		D6947D4123A7B3C700EBDF12 /* XYZUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */; };
 		D6947D4623A7B5E400EBDF12 /* XYZNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */; };
 		D6947D4A23A7B61B00EBDF12 /* XYZTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */; };
+		D69597332473BF1000856B24 /* XYZVCX_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69597322473BF1000856B24 /* XYZVCX_Extension.swift */; };
+		D69597372473C0F300856B24 /* XYZUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69597362473C0F200856B24 /* XYZUIView.swift */; };
+		D695973C2473C19100856B24 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695973B2473C19100856B24 /* DatePickerDialog.swift */; };
 		D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695A164226EFBAA00871AAC /* XYZExample.swift */; };
 		D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */; };
 		D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */; };
@@ -84,6 +87,9 @@
 		D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUILabel.swift; sourceTree = "<group>"; };
 		D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZNotification.swift; sourceTree = "<group>"; };
 		D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZTVCell.swift; sourceTree = "<group>"; };
+		D69597322473BF1000856B24 /* XYZVCX_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZVCX_Extension.swift; sourceTree = "<group>"; };
+		D69597362473C0F200856B24 /* XYZUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZUIView.swift; sourceTree = "<group>"; };
+		D695973B2473C19100856B24 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		D695A164226EFBAA00871AAC /* XYZExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZExample.swift; sourceTree = "<group>"; };
 		D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZToCircle.swift; sourceTree = "<group>"; };
 		D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZLearn.swift; sourceTree = "<group>"; };
@@ -209,12 +215,15 @@
 				D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */,
 				D65D7F6522390CCD00FC316E /* XYZTableView.swift */,
 				D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */,
+				D69597362473C0F200856B24 /* XYZUIView.swift */,
 				D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */,
 				D6F47BE222B1225700180CE6 /* XYZUTIs.swift */,
 				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
 				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 				D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */,
 				D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */,
+				D69597322473BF1000856B24 /* XYZVCX_Extension.swift */,
+				D695973B2473C19100856B24 /* DatePickerDialog.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -338,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69597332473BF1000856B24 /* XYZVCX_Extension.swift in Sources */,
 				D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */,
 				D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */,
 				D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */,
@@ -366,6 +376,7 @@
 				D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */,
 				D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */,
 				D62AFBE5217726890013974F /* ViewController.swift in Sources */,
+				D695973C2473C19100856B24 /* DatePickerDialog.swift in Sources */,
 				D653F37521F7175D00E6A990 /* XYZImageView.swift in Sources */,
 				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
 				D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */,
@@ -374,6 +385,7 @@
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D62AFBFB217726EB0013974F /* XYZPath_UIImage_ImageHelper.swift in Sources */,
 				D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */,
+				D69597372473C0F300856B24 /* XYZUIView.swift in Sources */,
 				D693A50423E7AA7100BB2031 /* XYZWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

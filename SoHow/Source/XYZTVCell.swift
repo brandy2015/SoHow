@@ -25,8 +25,38 @@ public extension UITableViewCell{
         for i in UIAlertActions ?? [] {
             ActionSheet.addAction(i)
         }
-        
+                  
         
         self.FatherTVC?.present(ActionSheet, animated: true, completion: nil)
     }
+}
+
+
+
+
+//在VR照片中，好看的TableViewcell消失到显示动画
+//XYZAnimation
+public extension UITableViewCell{
+    
+    func XYZAnimation_AddRotationAnimation消失出现()  {
+        var rotation = CATransform3DMakeTranslation(0, 50, 50)
+        rotation = CATransform3DScale(rotation, 0.9, 0.9, 1)
+        rotation.m34 = 1.0 / -600
+        
+        self.layer.shadowColor = UIColor.white.cgColor
+        self.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
+        self.alpha = 0
+        self.layer.transform = rotation
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.layer.transform = CATransform3DIdentity  // 恢复
+            self.alpha = 1
+            self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        }) { (finished) in
+            if finished{
+                
+            }
+        }
+    }
+    
 }
