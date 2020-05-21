@@ -12,9 +12,9 @@ import UIKit
 class XYZVCX_Extension: NSObject {
 
 }
-
+ 
 //文件重命名//需要国际化
-func RenameFileBTN(originalName:String,VC:UIViewController, BackString:@escaping ((String?) -> Void))  {
+public func RenameFileBTN(originalName:String,VC:UIViewController, BackString:@escaping ((String?) -> Void))  {
     let alert        = UIAlertController(title: "重命名", message: "输入新名字", preferredStyle: .alert)
     let cancelAction = UIAlertAction    (title: "不修改", style: .default )  { (_) in  BackString(nil)}
     let jiesuoAction = UIAlertAction    (title: "修改"              , style: .default ) { (action) in  BackString(alert.textFields?.first?.text ?? "未命名")}
