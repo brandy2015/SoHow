@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,7 @@
 		D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456222388AAB00A9BD1A /* XYZWeb.swift */; };
 		D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456622388BB200A9BD1A /* XYZSpeech.swift */; };
 		D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D645682238C52400A9BD1A /* XYZDevice.swift */; };
+		D6D8F1C924B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D8F1C824B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift */; };
 		D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6223A099920060EB65 /* XYZDictionary.swift */; };
 		D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */; };
 		D6F47BE322B1225700180CE6 /* XYZUTIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F47BE222B1225700180CE6 /* XYZUTIs.swift */; };
@@ -103,6 +104,7 @@
 		D6D6456222388AAB00A9BD1A /* XYZWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZWeb.swift; sourceTree = "<group>"; };
 		D6D6456622388BB200A9BD1A /* XYZSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZSpeech.swift; sourceTree = "<group>"; };
 		D6D645682238C52400A9BD1A /* XYZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDevice.swift; sourceTree = "<group>"; };
+		D6D8F1C824B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString_XYZMoney_Ex.swift; sourceTree = "<group>"; };
 		D6EACA6223A099920060EB65 /* XYZDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDictionary.swift; sourceTree = "<group>"; };
 		D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
 		D6F47BE222B1225700180CE6 /* XYZUTIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUTIs.swift; sourceTree = "<group>"; };
@@ -189,12 +191,12 @@
 		D6B63DEF21C7E7590087B44D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D695973B2473C19100856B24 /* DatePickerDialog.swift */,
 				D69407CD224C6F98009A2489 /* LearnX.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D6116E8B230BC1D600962BCD /* WeakProxy.swift */,
 				D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */,
 				D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */,
-				D693A50323E7AA7100BB2031 /* XYZWebView.swift */,
 				D65D7F6D22390DE600FC316E /* XYZAlert.swift */,
 				D6D6456022388A8100A9BD1A /* XYZArrayAndDic.swift */,
 				D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */,
@@ -204,26 +206,27 @@
 				D6CBCEEE227173640033A91A /* XYZEnum.swift */,
 				D695A164226EFBAA00871AAC /* XYZExample.swift */,
 				D653F36E21F711A200E6A990 /* XYZGCD.swift */,
-				D693A4FE23E7A9E000BB2031 /* XYZShadowKit.swift */,
 				D653F37421F7175D00E6A990 /* XYZImageView.swift */,
 				D653F36A21F6F30E00E6A990 /* XYZJump.swift */,
 				D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */,
 				D6CC9DEC239789CA004F7EF4 /* XYZNaviController.swift */,
+				D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */,
 				D6D6455E2238888600A9BD1A /* XYZNumberAndString.swift */,
 				D6B5AB732239138E00E01695 /* XYZPodX.swift */,
+				D693A4FE23E7A9E000BB2031 /* XYZShadowKit.swift */,
 				D6D6456622388BB200A9BD1A /* XYZSpeech.swift */,
+				D6D8F1C824B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift */,
 				D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */,
 				D65D7F6522390CCD00FC316E /* XYZTableView.swift */,
-				D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */,
-				D69597362473C0F200856B24 /* XYZUIView.swift */,
-				D6947D4523A7B5E300EBDF12 /* XYZNotification.swift */,
-				D6F47BE222B1225700180CE6 /* XYZUTIs.swift */,
-				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
-				D66A8C3922A0960C00375126 /* XYZXib.swift */,
-				D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */,
 				D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */,
+				D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */,
+				D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */,
+				D69597362473C0F200856B24 /* XYZUIView.swift */,
+				D6F47BE222B1225700180CE6 /* XYZUTIs.swift */,
 				D69597322473BF1000856B24 /* XYZVCX_Extension.swift */,
-				D695973B2473C19100856B24 /* DatePickerDialog.swift */,
+				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
+				D693A50323E7AA7100BB2031 /* XYZWebView.swift */,
+				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */,
 				D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */,
 				D6CBCEEF227173640033A91A /* XYZEnum.swift in Sources */,
+				D6D8F1C924B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift in Sources */,
 				D6C92DFC22F9202C008E5A91 /* XYZAudio.swift in Sources */,
 				D65D7F6622390CCD00FC316E /* XYZTableView.swift in Sources */,
 				D6F47BE322B1225700180CE6 /* XYZUTIs.swift in Sources */,

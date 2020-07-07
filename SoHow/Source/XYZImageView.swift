@@ -10,6 +10,18 @@ import UIKit
 import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
+//从字符串用作照片名字获取照片UIImage
+public extension String{
+    var ToImg:UIImage?{
+        return UIImage(named: self)
+    }
+    
+    var ToColor:UIColor?{
+        return UIColor(named: self)
+    }
+}
+
+
 //取圆头像
 public extension UIImageView{
     func ToCircle()   {
