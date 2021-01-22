@@ -11,6 +11,7 @@
 		D6116E8C230BC1D600962BCD /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6116E8B230BC1D600962BCD /* WeakProxy.swift */; };
 		D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756622F9D5BF00A97B53 /* XYZButton.swift */; };
 		D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */; };
+		D621EB8324EA698400E304A4 /* XYZPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D621EB8224EA698400E304A4 /* XYZPermission.swift */; };
 		D62AFBE3217726890013974F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE2217726890013974F /* AppDelegate.swift */; };
 		D62AFBE5217726890013974F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AFBE4217726890013974F /* ViewController.swift */; };
 		D62AFBE8217726890013974F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62AFBE6217726890013974F /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		D6116E8B230BC1D600962BCD /* WeakProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakProxy.swift; sourceTree = "<group>"; };
 		D619756622F9D5BF00A97B53 /* XYZButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZButton.swift; sourceTree = "<group>"; };
 		D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZ3DTouch.swift; sourceTree = "<group>"; };
+		D621EB8224EA698400E304A4 /* XYZPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPermission.swift; sourceTree = "<group>"; };
 		D62AFBDF217726890013974F /* SoHow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoHow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62AFBE2217726890013974F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62AFBE4217726890013974F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				D695973B2473C19100856B24 /* DatePickerDialog.swift */,
+				D621EB8224EA698400E304A4 /* XYZPermission.swift */,
 				D69407CD224C6F98009A2489 /* LearnX.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D6116E8B230BC1D600962BCD /* WeakProxy.swift */,
@@ -259,7 +262,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "张子豪";
 				TargetAttributes = {
 					D62AFBDE217726890013974F = {
@@ -342,6 +345,7 @@
 				D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */,
 				D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */,
 				D66A8C3A22A0960C00375126 /* XYZXib.swift in Sources */,
+				D621EB8324EA698400E304A4 /* XYZPermission.swift in Sources */,
 				D69407CE224C6F98009A2489 /* LearnX.swift in Sources */,
 				D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */,
 				D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */,
@@ -424,6 +428,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -485,6 +490,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

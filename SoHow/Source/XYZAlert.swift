@@ -107,21 +107,21 @@ public func 添加过渡动画(持续时间:Double = 0.5) -> CATransition {
 
 import UIKit
 
-//public func userInputAlert(_ title: String, isSecure: Bool = false, text: String? = nil, callback: @escaping (String) -> Void) {
-//    let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-//    alert.addTextField(configurationHandler: { field in
-//        field.isSecureTextEntry = isSecure
-//        field.text = text
-//    })
-//
-//    alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
-//        guard let text = alert.textFields?.first?.text, !text.isEmpty else {
-//            userInputAlert(title, callback: callback);return} ;callback(text)
-//    })
-//
-//    let root = UIApplication.shared.keyWindow?.rootViewController
-//    root?.present(alert, animated: true, completion: nil)
-//}
+public func userInputAlert(VC:UIViewController,title: String, isSecure: Bool = false, text: String? = nil, callback: @escaping (String) -> Void) {
+    let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+    alert.addTextField(configurationHandler: { field in
+        field.isSecureTextEntry = isSecure
+        field.text = text
+    })
+
+    alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+        guard let text = alert.textFields?.first?.text, !text.isEmpty else {
+            userInputAlert(VC:VC ,title: title, callback: callback);return} ;callback(text)
+    })
+
+    //    let root = UIApplication.shared.keyWindow?.rootViewController
+    VC.present(alert, animated: true, completion: nil)
+}
 
 public extension UIViewController {
     func showExceededMaximumAlert(vc: UIViewController) {
