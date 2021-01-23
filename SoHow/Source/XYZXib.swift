@@ -9,7 +9,7 @@
 import UIKit
 
 class XYZXib: NSObject {
-
+    var test:String = ""
 }
 
 

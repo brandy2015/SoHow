@@ -9,6 +9,7 @@
 import UIKit
 
 public extension String{
+    
     func 找出数字算法() -> Double {
         let 输入 = self.花了后面字符串()
         
@@ -107,16 +108,6 @@ public func 买东西条目名称整理(输入:String,关键字:String = "花了
     }
     return 输出
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
