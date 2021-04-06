@@ -11,18 +11,26 @@ import UIKit
 class XYZNumberAndString: NSObject {
 
 }
+
 public extension Double{
     var To2位小数:String  {
         return String(format: "%.2f", self)
     }
-    var To2位小数Double:Double? {
-        return Double(String(format: "%.2f", self))
+    var To2位小数Double:Double {
+        return Double(String(format: "%.2f", self)) ?? 0.0
     }
     var To1位小数:String  {
         return String(format: "%.1f", self)
     }
-    var To1位小数Double:Double? {
-        return Double(String(format: "%.1f", self))
+    var To1位小数Double:Double {
+        return Double(String(format: "%.1f", self)) ?? 0.0
+    }
+}
+
+
+public extension String{
+    var MB_extension:String{
+        return "\(self) MB"
     }
 }
 

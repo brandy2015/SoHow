@@ -20,7 +20,13 @@ public extension Array where Element:Hashable{
     }
 }
 
-
+//Array方法扩展，支持根据索引数组删除
+extension Array {
+    
+    mutating func removeAt(indexes: [Int]) {
+        _ = indexes.sorted(by: >).map { i in self.remove(at: i)}
+    }
+}
 
 
 

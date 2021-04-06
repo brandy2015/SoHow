@@ -45,6 +45,28 @@ public class XYZ3DTouch: NSObject {
 //    }
 }
 
+public extension XYZ3DTouch{
+    
+//    public
+    static func AddDeleteAllRealmAndCaches()  {
+        //3D Touch
+
+        let SettingIcon = UIApplicationShortcutIcon(templateImageName: "Setting3DTouch")//UIApplicationShortcutIcon(type: .compose)
+        let SettingItem = UIApplicationShortcutItem(type: "SettingAnchor", localizedTitle: "急速救援", localizedSubtitle: "修复闪退清除索引文件", icon: SettingIcon, userInfo: nil)
+
+
+        let DeleteSnapshotIcon = UIApplicationShortcutIcon(templateImageName: "DeleteSnapshot3DTouch")
+        let DeleteSnapshotItem = UIApplicationShortcutItem(type: "DeleteSnapshot", localizedTitle: "清除软件Snapshot", localizedSubtitle: "清理软件悬停时的快照", icon: DeleteSnapshotIcon, userInfo: nil)
+        //        let userIcon = UIApplicationShortcutIcon(type: .search)
+        //        let userItem = UIApplicationShortcutItem(type: "username", localizedTitle: "清除提醒事项的闹钟", localizedSubtitle: "清除全部提醒事项的闹钟不再提醒", icon: userIcon, userInfo: nil)
+
+        UIApplication.shared.shortcutItems = [SettingItem,DeleteSnapshotItem]//, playItem, userItem]
+
+    }
+
+    
+}
+
 
 //Swift开发之3DTouch实用
 

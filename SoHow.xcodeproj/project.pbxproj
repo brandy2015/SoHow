@@ -53,6 +53,7 @@
 		D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D6456622388BB200A9BD1A /* XYZSpeech.swift */; };
 		D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D645682238C52400A9BD1A /* XYZDevice.swift */; };
 		D6D8F1C924B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D8F1C824B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift */; };
+		D6DA25DB260EAD0400AB2290 /* XYZDataEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA25DA260EAD0400AB2290 /* XYZDataEncode.swift */; };
 		D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6223A099920060EB65 /* XYZDictionary.swift */; };
 		D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */; };
 		D6F47BE322B1225700180CE6 /* XYZUTIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F47BE222B1225700180CE6 /* XYZUTIs.swift */; };
@@ -108,6 +109,7 @@
 		D6D6456622388BB200A9BD1A /* XYZSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZSpeech.swift; sourceTree = "<group>"; };
 		D6D645682238C52400A9BD1A /* XYZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDevice.swift; sourceTree = "<group>"; };
 		D6D8F1C824B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString_XYZMoney_Ex.swift; sourceTree = "<group>"; };
+		D6DA25DA260EAD0400AB2290 /* XYZDataEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDataEncode.swift; sourceTree = "<group>"; };
 		D6EACA6223A099920060EB65 /* XYZDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDictionary.swift; sourceTree = "<group>"; };
 		D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
 		D6F47BE222B1225700180CE6 /* XYZUTIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUTIs.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				D693A50323E7AA7100BB2031 /* XYZWebView.swift */,
 				D66A8C3922A0960C00375126 /* XYZXib.swift */,
 				D6FE29E825F6045B00653156 /* XYZScreenshot.swift */,
+				D6DA25DA260EAD0400AB2290 /* XYZDataEncode.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
 				D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */,
 				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
+				D6DA25DB260EAD0400AB2290 /* XYZDataEncode.swift in Sources */,
 				D693A4FF23E7A9E000BB2031 /* XYZShadowKit.swift in Sources */,
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D62AFBFB217726EB0013974F /* XYZPath_UIImage_ImageHelper.swift in Sources */,

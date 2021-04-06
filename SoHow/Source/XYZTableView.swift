@@ -85,6 +85,10 @@ public extension UITableViewCell{
         //return self.next as? UITableView
     }
     
+    var FatherVC:UIViewController? {
+         return (self.next as? UITableView)?.firstViewController()
+    }
+    
     var FatherTVC:UITableViewController? {
         return self.next?.next as? UITableViewController
     }
@@ -102,9 +106,20 @@ public extension UITableViewCell{
 }
 
 
-
-
-
+private extension UIView {
+    //返回该view所在VC
+    func firstViewController() -> UIViewController? {
+        for view in sequence(first: self.superview, next: { $0?.superview }) {
+            if let responder = view?.next {
+                if responder.isKind(of: UIViewController.self){
+                    return responder as? UIViewController
+                }
+            }
+        }
+        return nil
+    }
+}
+  
 
 //tableView.separatorColor = [UIColor clearColor];
 //
