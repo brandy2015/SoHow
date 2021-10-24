@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		108C779B88FFF2E4EAA37170608A3992 /* Pods-SoHow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C7F6193AFCAC67F3DB40015FF4E570 /* Pods-SoHow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10E8CAEEC881EEEFD0C93A1A081137B3 /* Pods-SoHow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40652836AE2B63C1A5F59E49283EDCEB /* Pods-SoHow-dummy.m */; };
-		731061D990774139ADB0FAB547C6398B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1CEC78D05E28399FAEAD529B71447101 /* Pods-SoHow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C7F6193AFCAC67F3DB40015FF4E570 /* Pods-SoHow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8975876B81712413B09514F5D330345A /* Pods-SoHow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40652836AE2B63C1A5F59E49283EDCEB /* Pods-SoHow-dummy.m */; };
+		91B4CE53F568323D2F7D144E69C23A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10C7F6193AFCAC67F3DB40015FF4E570 /* Pods-SoHow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SoHow-umbrella.h"; sourceTree = "<group>"; };
-		1A017D98E3CF492E5A8DACB9B289FF78 /* Pods_SoHow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SoHow.framework; path = "Pods-SoHow.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A017D98E3CF492E5A8DACB9B289FF78 /* Pods-SoHow */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SoHow"; path = Pods_SoHow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40652836AE2B63C1A5F59E49283EDCEB /* Pods-SoHow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SoHow-dummy.m"; sourceTree = "<group>"; };
 		671F7AFC87DD40EDBD9F02A295927FF2 /* Pods-SoHow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SoHow.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -27,11 +27,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C0FAC57354B42C293C901135215C112 /* Frameworks */ = {
+		760535F31D370D368EA33C7B2761A5B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731061D990774139ADB0FAB547C6398B /* Foundation.framework in Frameworks */,
+				91B4CE53F568323D2F7D144E69C23A98 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,10 +46,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		51A1D49F8E7698F71FA309DE5ED1FFEE /* Products */ = {
+		31937BCFE681CF126D925D582E03BFD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A017D98E3CF492E5A8DACB9B289FF78 /* Pods_SoHow.framework */,
+				1A017D98E3CF492E5A8DACB9B289FF78 /* Pods-SoHow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +67,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				51A1D49F8E7698F71FA309DE5ED1FFEE /* Products */,
+				31937BCFE681CF126D925D582E03BFD5 /* Products */,
 				1AEAEF834620943FBFCB50736EB35778 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -99,11 +99,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7700548C2B71034ADC928FA8C4D5239D /* Headers */ = {
+		E65592B76B18517BF7931A1FB0ABD1DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				108C779B88FFF2E4EAA37170608A3992 /* Pods-SoHow-umbrella.h in Headers */,
+				1CEC78D05E28399FAEAD529B71447101 /* Pods-SoHow-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,20 +112,20 @@
 /* Begin PBXNativeTarget section */
 		3A8870ABA3E82F5131971C617953DE73 /* Pods-SoHow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3A26EE81C69EB7D353666152E04D0C1 /* Build configuration list for PBXNativeTarget "Pods-SoHow" */;
+			buildConfigurationList = 4C855CCDCA8B3732EA2AB3CB12AD6816 /* Build configuration list for PBXNativeTarget "Pods-SoHow" */;
 			buildPhases = (
-				7700548C2B71034ADC928FA8C4D5239D /* Headers */,
-				759D7792B1FF3CC82D0CB02B6A528051 /* Sources */,
-				9C0FAC57354B42C293C901135215C112 /* Frameworks */,
-				57A03115AA0E7D315EBA65CE295A69AF /* Resources */,
+				E65592B76B18517BF7931A1FB0ABD1DC /* Headers */,
+				45E31DEF1C74BB1373DA9362F4CD786C /* Sources */,
+				760535F31D370D368EA33C7B2761A5B8 /* Frameworks */,
+				8AEEDA4DA7ED869BC2B9DE51DC4EF23C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Pods-SoHow";
-			productName = "Pods-SoHow";
-			productReference = 1A017D98E3CF492E5A8DACB9B289FF78 /* Pods_SoHow.framework */;
+			productName = Pods_SoHow;
+			productReference = 1A017D98E3CF492E5A8DACB9B289FF78 /* Pods-SoHow */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -134,19 +134,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 51A1D49F8E7698F71FA309DE5ED1FFEE /* Products */;
+			productRefGroup = 31937BCFE681CF126D925D582E03BFD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -156,7 +156,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		57A03115AA0E7D315EBA65CE295A69AF /* Resources */ = {
+		8AEEDA4DA7ED869BC2B9DE51DC4EF23C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,18 +166,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		759D7792B1FF3CC82D0CB02B6A528051 /* Sources */ = {
+		45E31DEF1C74BB1373DA9362F4CD786C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E8CAEEC881EEEFD0C93A1A081137B3 /* Pods-SoHow-dummy.m in Sources */,
+				8975876B81712413B09514F5D330345A /* Pods-SoHow-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4EFBCABA908F2072E25BB38AA95089EE /* Debug */ = {
+		6A57C676B427415993917937D76859D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C504D1D5942C6B3A689C65867EEA0CEF /* Pods-SoHow.debug.xcconfig */;
 			buildSettings = {
@@ -280,44 +280,6 @@
 			};
 			name = Debug;
 		};
-		9A5FB6533303F5A4BBBA0438A5BCF394 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 671F7AFC87DD40EDBD9F02A295927FF2 /* Pods-SoHow.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SoHow/Pods-SoHow-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SoHow/Pods-SoHow.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,6 +342,44 @@
 			};
 			name = Release;
 		};
+		E4763F7825F997142AE9A54B3EB496E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671F7AFC87DD40EDBD9F02A295927FF2 /* Pods-SoHow.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SoHow/Pods-SoHow-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SoHow/Pods-SoHow.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,11 +392,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3A26EE81C69EB7D353666152E04D0C1 /* Build configuration list for PBXNativeTarget "Pods-SoHow" */ = {
+		4C855CCDCA8B3732EA2AB3CB12AD6816 /* Build configuration list for PBXNativeTarget "Pods-SoHow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EFBCABA908F2072E25BB38AA95089EE /* Debug */,
-				9A5FB6533303F5A4BBBA0438A5BCF394 /* Release */,
+				6A57C676B427415993917937D76859D2 /* Debug */,
+				E4763F7825F997142AE9A54B3EB496E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
