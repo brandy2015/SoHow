@@ -40,7 +40,7 @@ public extension UIView{
 
 import UIKit
 
-extension UIView{
+public extension UIView{
     //添加View的边缘效果线
     func AddBorder(borderWidth:Double = 1.0,borderColor:UIColor = .lightGray)  {
         self.layer.borderWidth = CGFloat(borderWidth)
@@ -61,7 +61,7 @@ extension UIView{
 }
 
 
-extension UIWindow {
+public extension UIWindow {
     static var key: UIWindow? {
         if #available(iOS 13, *) {
              
@@ -74,7 +74,7 @@ extension UIWindow {
 }
 
 //获取屏幕宽度和高度
-extension UIScreen{
+public extension UIScreen{
     
     static var width: CGFloat {return UIScreen.main.bounds.width}
     static var height: CGFloat {return UIScreen.main.bounds.height}
@@ -112,7 +112,7 @@ public extension UIView{
     }
     
     
-    private func setShadowx(view:UIView,width:CGFloat,bColor:UIColor,
+    func setShadowx(view:UIView,width:CGFloat,bColor:UIColor,
                            sColor:UIColor,offset:CGSize,opacity:Float,radius:CGFloat) {
         view.layer.masksToBounds = false
         //设置视图边框宽度
@@ -130,4 +130,21 @@ public extension UIView{
         //设置阴影偏移量
         view.layer.shadowOffset = offset
     }
+}
+ 
+//返回该view所在VC
+
+public extension UIView{
+   
+    private func rootVC() -> UIViewController? {
+        for view in sequence(first: self.superview, next: { $0?.superview }) {
+            if let responder = view?.next {
+                if responder.isKind(of: UIViewController.self){
+                    return responder as? UIViewController
+                }
+            }
+        }
+        return nil
+    }
+   
 }
