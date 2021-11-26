@@ -24,3 +24,17 @@ public extension UIButton{
         self.layer.add(pulse, forKey: nil)
     }
 }
+
+
+//按钮添加下划线
+public extension UIButton{
+    func SetBottomLine()  {
+        let attributedString = NSMutableAttributedString(string:self.titleLabel?.text ?? "")
+        var range = NSRange()
+        range.location = 0
+        range.length = attributedString.length
+        attributedString.addAttributes([NSAttributedString.Key.underlineStyle : NSNumber(value: NSUnderlineStyle.single.rawValue),NSAttributedString.Key.foregroundColor:UIColor.darkGray], range: range)
+        self.setAttributedTitle(attributedString, for: .normal)
+    }
+}
+

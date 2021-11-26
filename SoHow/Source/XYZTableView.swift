@@ -121,13 +121,12 @@ private extension UIView {
 }
   
 
-//tableView.separatorColor = [UIColor clearColor];
-//
-//
-//或者
-//
-//table.separatorStyle = UITableViewCellSeparatorStyleNone;
-
-
-
-//如果要保留分割线 用这个: tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+public extension UITableView{
+    func FitForBarControllerMask(tabBarController:UITabBarController,height:Int = 80)  {
+        self.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: (tabBarController.tabBar.frame.size.height) - CGFloat(height), right: 0)
+    }
+    func MoveContentVerticalDown(offSet:Int = 150)  {
+        self.contentInset = UIEdgeInsets(top: 0, left: 0, bottom:  CGFloat(offSet), right: 0)
+    }
+    
+}
