@@ -8,8 +8,16 @@
 
 import UIKit
 
-class XYZNumberAndString: NSObject {
-
+//通过记账进出在数字前添加正负
+public extension Bool{
+    var inOutGetString:String{
+        return self ? "+ " : "- "
+    }
+}
+public extension Double{
+    var ToString:String{
+        return "\(self)"
+    }
 }
 
 public extension Double{

@@ -136,7 +136,7 @@ public extension UIView{
 
 public extension UIView{
    
-    private func rootVC() -> UIViewController? {
+    func rootVC() -> UIViewController? {
         for view in sequence(first: self.superview, next: { $0?.superview }) {
             if let responder = view?.next {
                 if responder.isKind(of: UIViewController.self){
@@ -147,4 +147,22 @@ public extension UIView{
         return nil
     }
    
+}
+
+
+//从Nib文件中获取View
+public extension UIView {
+    ///
+    /// Loading view from Nib
+    ///
+    /// Nibname doesn't need to be passed, If empty, the caller's own name
+    ///
+    /// - parameter nibName: Nib View name, can be empty
+    ///
+    /// - returns: View loaded from Nib
+    ///
+    class func loadFromNib(_ nibName: String? = nil) -> UIView {
+        let name = nibName == nil ? "\(self)" : nibName!
+        return Bundle.main.loadNibNamed(name, owner: nil, options: nil)?.first as! UIView
+    }
 }
