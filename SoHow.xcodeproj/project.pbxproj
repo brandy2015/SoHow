@@ -45,6 +45,8 @@
 		D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */; };
 		D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */; };
 		D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5AB732239138E00E01695 /* XYZPodX.swift */; };
+		D6C8636F2768B97B008095FB /* XYZButton_BadgeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8636D2768B97B008095FB /* XYZButton_BadgeBarButtonItem.swift */; };
+		D6C863702768B97B008095FB /* XYZButton_UIButton+badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8636E2768B97B008095FB /* XYZButton_UIButton+badge.swift */; };
 		D6C92DFC22F9202C008E5A91 /* XYZAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */; };
 		D6CBCEEF227173640033A91A /* XYZEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBCEEE227173640033A91A /* XYZEnum.swift */; };
 		D6CC9DEB239789BA004F7EF4 /* XYZTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */; };
@@ -103,6 +105,8 @@
 		D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZToCircle.swift; sourceTree = "<group>"; };
 		D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZLearn.swift; sourceTree = "<group>"; };
 		D6B5AB732239138E00E01695 /* XYZPodX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPodX.swift; sourceTree = "<group>"; };
+		D6C8636D2768B97B008095FB /* XYZButton_BadgeBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XYZButton_BadgeBarButtonItem.swift; path = ../../../BadgeButton/BadgeButton/XYZButton_BadgeBarButtonItem.swift; sourceTree = "<group>"; };
+		D6C8636E2768B97B008095FB /* XYZButton_UIButton+badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XYZButton_UIButton+badge.swift"; path = "../../../BadgeButton/BadgeButton/XYZButton_UIButton+badge.swift"; sourceTree = "<group>"; };
 		D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAudio.swift; sourceTree = "<group>"; };
 		D6CBCEEE227173640033A91A /* XYZEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZEnum.swift; sourceTree = "<group>"; };
 		D6CC9DEA239789BA004F7EF4 /* XYZTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZTabBarController.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 				D69407CD224C6F98009A2489 /* LearnX.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
 				D6116E8B230BC1D600962BCD /* WeakProxy.swift */,
+				D6C8636D2768B97B008095FB /* XYZButton_BadgeBarButtonItem.swift */,
+				D6C8636E2768B97B008095FB /* XYZButton_UIButton+badge.swift */,
 				D619756C22FA4D3200A97B53 /* XYZ3DTouch.swift */,
 				D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */,
 				D65D7F6D22390DE600FC316E /* XYZAlert.swift */,
@@ -348,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D69597332473BF1000856B24 /* XYZVCX_Extension.swift in Sources */,
+				D6C8636F2768B97B008095FB /* XYZButton_BadgeBarButtonItem.swift in Sources */,
 				D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */,
 				D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */,
 				D6FE29E925F6045B00653156 /* XYZScreenshot.swift in Sources */,
@@ -385,6 +392,7 @@
 				D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */,
 				D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */,
 				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
+				D6C863702768B97B008095FB /* XYZButton_UIButton+badge.swift in Sources */,
 				D6DA25DB260EAD0400AB2290 /* XYZDataEncode.swift in Sources */,
 				D693A4FF23E7A9E000BB2031 /* XYZShadowKit.swift in Sources */,
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
