@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SoHow"
-  s.version      = "3.0.10"
+  s.version      = "3.1.2"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -37,10 +37,11 @@ Pod::Spec.new do |s|
   s.author             = { "Brandy" => "" }
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "3.0.10"}
+  s.source       = { :git => "https://github.com/brandy2015/SoHow.git", :tag => "3.1.2"}
   s.source_files = "SoHow/Source/*"
- # s.dependency 'MBProgressHUD'         #HUD支持
-
+ 
+ 
+ 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"

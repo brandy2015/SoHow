@@ -10,6 +10,22 @@ import UIKit
 import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
+
+//如果出现图片颠倒，用这个方法
+public extension UIImage{
+    var GetCorrectPhoto:UIImage?{
+        return  Normalizedimage(image:self)
+    }
+    private func Normalizedimage(image:UIImage)->UIImage{
+        if image.imageOrientation == .up{return image}else{
+            UIGraphicsBeginImageContext(image.size)
+            image.draw(in: CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: image.size))
+            let normalizedimage = UIGraphicsGetImageFromCurrentImageContext()
+            return normalizedimage ?? UIImage()
+        }
+    }
+}
+
 //从字符串用作照片名字获取照片UIImage
 public extension String{
     var ToImg:UIImage?{
