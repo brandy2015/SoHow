@@ -11,6 +11,28 @@ import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
 
+
+import AVFoundation
+public extension UIImageView{
+    func GetPreviewImageWith(URL:URL)  {
+        //需要做异步处理
+        let asset = AVURLAsset.init(url: URL, options: nil)
+        let gen = AVAssetImageGenerator.init(asset: asset)
+        gen.appliesPreferredTrackTransform = true
+        let time = CMTimeMakeWithSeconds(0.0, preferredTimescale: 1)
+        var actualTime : CMTime = CMTimeMakeWithSeconds(0, preferredTimescale: 0)
+        do {
+            let image = try gen.copyCGImage(at: time, actualTime: &actualTime)
+            self.image = UIImage.init(cgImage: image)
+        } catch  {
+            print("错误")
+        }
+    }
+}
+ 
+
+
+
 //如果出现图片颠倒，用这个方法
 public extension UIImage{
     var GetCorrectPhoto:UIImage?{
