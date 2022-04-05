@@ -47,7 +47,10 @@ public extension UIDevice {
         case "iPhone13,2":                              return "iPhone 12"
         case "iPhone13,3":                              return "iPhone 12 Pro"
         case "iPhone13,4":                              return "iPhone 12 Pro Max"
-            
+        case "iPhone14,4":                              return "iPhone 13 mini"
+        case "iPhone14,5":                              return "iiPhone 13"
+        case "iPhone14,2":                              return "iPhone 13 Pro"
+        case "iPhone14,3":                              return "iPhone 13 Pro Max"
             
             
             
@@ -60,20 +63,41 @@ public extension UIDevice {
         case "iPad6,11", "iPad6,12":                    return "iPad 5"
         case "iPad7,5", "iPad7,6":                      return "iPad 6"
         case "iPad7,11", "iPad7,12":                    return "iPad 7"
+        case "iPad11,6","iPad11,7" :                    return "iPad 8"
+        case "iPad12,1","iPad12,2" :                    return "iPad 9"
+                 
+        ///iPad Air
         case "iPad4,1", "iPad4,2", "iPad4,3":           return "iPad Air"
-        case "iPad5,3", "iPad5,4":                      return "iPad Air 2"
-        case "iPad11,3", "iPad11,4":                    return "iPad Air 3"
+        case "iPad5,3","iPad5,4" :                      return "iPad Air 2"
+        case "iPad11,3","iPad11,4" :                    return "iPad Air 3"
+        case "iPad13,1","iPad13,2" :                    return "iPad Air 4"
+                
+                
+                
+        ///iPad Mini
         case "iPad2,5", "iPad2,6", "iPad2,7":           return "iPad Mini"
         case "iPad4,4", "iPad4,5", "iPad4,6":           return "iPad Mini 2"
         case "iPad4,7", "iPad4,8", "iPad4,9":           return "iPad Mini 3"
-        case "iPad5,1", "iPad5,2":                      return "iPad Mini 4"
-        case "iPad11,1", "iPad11,2":                    return "iPad Mini 5"
-        case "iPad6,3", "iPad6,4":                      return "iPad Pro 9.7inch"
-        case "iPad7,3", "iPad7,4":                      return "iPad Pro 10.5 inch"
-        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11 inch"
-        case "iPad6,7", "iPad6,8":                      return "iPad Pro 12.9inch G1"
-        case "iPad7,1", "iPad7,2":                      return "iPad Pro 12.9inch G2"
-        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9inch G3"
+        case "iPad5,1","iPad5,2" :                      return "iPad mini 4"
+        case "iPad11,1","iPad11,2" :                    return "iPad mini 5"
+        case "iPad14,1","iPad14,2" :                    return "iPad mini 6"
+                
+                
+        ///iPad  pro
+        case "iPad6,3","iPad6,4" :                      return "iPad Pro (9.7-inch)"
+        case "iPad6,7","iPad6,8" :                      return "iPad Pro (12.9-inch)"
+        case "iPad7,1","iPad7,2" :                      return "iPad Pro 2(12.9-inch)"
+        case "iPad7,3","iPad7,4" :                      return "iPad Pro (10.5-inch)"
+        case "iPad8,1","iPad8,2","iPad8,3","iPad8,4" :  return "iPad Pro (11-inch)"
+        case "iPad8,5","iPad8,6","iPad8,7","iPad8,8" :  return "iPad Pro 3 (12.9-inch)"
+        case "iPad8,9","iPad8,10" :                     return "iPad Pro 2 (11-inch)"
+        case "iPad8,11","iPad8,12" :                    return "iPad Pro 4 (12.9-inch)"
+        case "iPad13,4","iPad13,5","iPad13,6","iPad13,7"   : return "iPad Pro 4 (11-inch)"
+        case "iPad13,8","iPad13,9","iPad13,10","iPad13,11" : return "iPad Pro 5 (12.9-inch)"
+                      
+                
+                
+                 
         //iPod touch
         case "iPod1,1":                                 return "iPod touch"
         case "iPod2,1":                                 return "iPod touch 2"
@@ -97,6 +121,22 @@ public extension UIDevice {
         case "AppleTV3,1", "AppleTV3,2":                return "Apple TV 3"
         case "AppleTV5,3":                              return "Apple TV 4"
         case "AppleTV6,2":                              return "Apple TV 4K"
+                
+        ///iMac
+        case "iMac21,1","iMac21,2" : return "iMac (24-inch, M1, 2021)"
+
+        ///Mac mini
+        case "Macmini9,1" : return "Mac mini (M1, 2020)"
+
+        ///MacBook Air
+        case "MacBookAir10,1" : return "MacBook Air (Late 2020)"
+
+        ///MacBook Pro
+        case "MacBookPro17,1" : return "MacBook Pro (13-inch, M1, 2020)"
+        case "MacBookPro18,3","MacBookPro18,4" : return "MacBook Pro (14-inch, 2021)"
+        case "MacBookPro18,1","MacBookPro18,2" : return "MacBook Pro (16-inch, 2021)"
+                
+                
         //AirPods
         case "AirPods1,1":                              return "AirPods"
         //Simulator
