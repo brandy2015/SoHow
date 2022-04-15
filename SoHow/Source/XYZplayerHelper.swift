@@ -32,15 +32,15 @@ public class XYZplayerHelper: NSObject {
     
     //第二种使用AVAudioPlayer播放
     // 获取音频会话
-    let session = AVAudioSession.sharedInstance()
-    var player: AVAudioPlayer?
-    var currentURL : URL? 
-    var playingX = false
+    public let session = AVAudioSession.sharedInstance()
+    public var player: AVAudioPlayer?
+    public var currentURL : URL?
+    public var playingX = false
     
     
-    weak var delegateX: AVAudioPlayerDelegate? = nil
+    public weak var delegateX: AVAudioPlayerDelegate? = nil
     
-    override init() {
+    public override init() {
         super.init()
         do{
             //  设置会话类别
@@ -54,7 +54,7 @@ public class XYZplayerHelper: NSObject {
     }
     
     //paly music
-    func playMusic(filePath: String) {
+    public func playMusic(filePath: String) {
         guard let url =  URL(string: filePath) else {
             return//url不存在
         }
@@ -110,29 +110,29 @@ public class XYZplayerHelper: NSObject {
 //    }
     
     // 暂停当前歌曲/pause current music
-    func pauseCurrentMusic() -> () {
+    public func pauseCurrentMusic() -> () {
         player?.pause()
     }
     
     // 继续播放当前歌曲/continue to play current music
-    func resumeCurrentMusic() -> () {
+    public func resumeCurrentMusic() -> () {
         player?.play()
     }
     
     // 播放到指定时间/play music to specified time
-    func seekToTime(time: TimeInterval) -> () {
+    public func seekToTime(time: TimeInterval) -> () {
         player?.currentTime = time
     }
     
     
-    class func getFormatTime(timeInterval: TimeInterval) -> String {
+    public class func getFormatTime(timeInterval: TimeInterval) -> String {
         let min = Int(timeInterval) / 60
         let sec = Int(timeInterval) % 60
         let timeStr = String(format: "%02d:%02d", min, sec)
         return timeStr
     }
     
-    class func getTimeInterval(formatTime: String) -> TimeInterval {
+    public class func getTimeInterval(formatTime: String) -> TimeInterval {
         // 00:00.89 == formatTime
         let minSec = formatTime.components(separatedBy: ":")
         if minSec.count == 2 {

@@ -48,6 +48,8 @@
 		D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */; };
 		D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */; };
 		D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5AB732239138E00E01695 /* XYZPodX.swift */; };
+		D6BAA79928090453003D894B /* XYZUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BAA79828090453003D894B /* XYZUIImage.swift */; };
+		D6BAA79B28090699003D894B /* XYZFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BAA79A28090699003D894B /* XYZFileType.swift */; };
 		D6C863732768BAB4008095FB /* XYZButton_BadgeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C863712768BAB3008095FB /* XYZButton_BadgeBarButtonItem.swift */; };
 		D6C863742768BAB4008095FB /* XYZButton_UIButton+badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C863722768BAB3008095FB /* XYZButton_UIButton+badge.swift */; };
 		D6C92DFC22F9202C008E5A91 /* XYZAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */; };
@@ -111,6 +113,8 @@
 		D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZToCircle.swift; sourceTree = "<group>"; };
 		D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZLearn.swift; sourceTree = "<group>"; };
 		D6B5AB732239138E00E01695 /* XYZPodX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPodX.swift; sourceTree = "<group>"; };
+		D6BAA79828090453003D894B /* XYZUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUIImage.swift; sourceTree = "<group>"; };
+		D6BAA79A28090699003D894B /* XYZFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZFileType.swift; sourceTree = "<group>"; };
 		D6C863712768BAB3008095FB /* XYZButton_BadgeBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZButton_BadgeBarButtonItem.swift; sourceTree = "<group>"; };
 		D6C863722768BAB3008095FB /* XYZButton_UIButton+badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XYZButton_UIButton+badge.swift"; sourceTree = "<group>"; };
 		D6C92DFB22F9202C008E5A91 /* XYZAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAudio.swift; sourceTree = "<group>"; };
@@ -249,6 +253,7 @@
 				D6947D4923A7B61B00EBDF12 /* XYZTVCell.swift */,
 				D6947D4023A7B3C700EBDF12 /* XYZUILabel.swift */,
 				D69597362473C0F200856B24 /* XYZUIView.swift */,
+				D6BAA79828090453003D894B /* XYZUIImage.swift */,
 				D6F47BE222B1225700180CE6 /* XYZUTIs.swift */,
 				D69597322473BF1000856B24 /* XYZVCX_Extension.swift */,
 				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
@@ -257,6 +262,7 @@
 				D658756D27FB1DF10095DEBE /* XYZString.swift */,
 				D658756F27FB1E3E0095DEBE /* XYZActionSheet.swift */,
 				D658757127FBC8240095DEBE /* XYZplayerHelper.swift */,
+				D6BAA79A28090699003D894B /* XYZFileType.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				D6116E8C230BC1D600962BCD /* WeakProxy.swift in Sources */,
 				D6947D4623A7B5E400EBDF12 /* XYZNotification.swift in Sources */,
 				D63C5A2F22B3B09D0064C34E /* XYZAirPrint.swift in Sources */,
+				D6BAA79B28090699003D894B /* XYZFileType.swift in Sources */,
 				D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */,
 				D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */,
 				D62AFBE5217726890013974F /* ViewController.swift in Sources */,
@@ -405,6 +412,7 @@
 				D6D645692238C52400A9BD1A /* XYZDevice.swift in Sources */,
 				D62AFBE3217726890013974F /* AppDelegate.swift in Sources */,
 				D6DA25DB260EAD0400AB2290 /* XYZDataEncode.swift in Sources */,
+				D6BAA79928090453003D894B /* XYZUIImage.swift in Sources */,
 				D693A4FF23E7A9E000BB2031 /* XYZShadowKit.swift in Sources */,
 				D6D6456722388BB200A9BD1A /* XYZSpeech.swift in Sources */,
 				D62AFBFB217726EB0013974F /* XYZPath_UIImage_ImageHelper.swift in Sources */,

@@ -123,13 +123,13 @@ public func userInputAlert(VC:UIViewController,title: String, isSecure: Bool = f
     VC.present(alert, animated: true, completion: nil)
 }
 
-public extension UIViewController {
-    func showExceededMaximumAlert(vc: UIViewController) {
-        let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        vc.present(alert, animated: true, completion: nil)
-    }
-}
+//public extension UIViewController {
+//    func showExceededMaximumAlert(vc: UIViewController) {
+//        let alert = UIAlertController(title: "", message: "Exceed Maximum Number Of Selection", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+//        vc.present(alert, animated: true, completion: nil)
+//    }
+//}
 //XYZQRCode中需要
 public extension UIViewController{
     func showMsg(title:String?,message:String?){
