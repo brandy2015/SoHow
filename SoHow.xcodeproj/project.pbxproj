@@ -66,6 +66,7 @@
 		D6EACA6323A099920060EB65 /* XYZDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6223A099920060EB65 /* XYZDictionary.swift */; };
 		D6EACA6523A09AAE0060EB65 /* XYZVolumizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */; };
 		D6F47BE322B1225700180CE6 /* XYZUTIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F47BE222B1225700180CE6 /* XYZUTIs.swift */; };
+		D6F842B92829EF9700B70D3F /* XYZNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F842B82829EF9700B70D3F /* XYZNetWork.swift */; };
 		D6FE29E925F6045B00653156 /* XYZScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE29E825F6045B00653156 /* XYZScreenshot.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		D6EACA6223A099920060EB65 /* XYZDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDictionary.swift; sourceTree = "<group>"; };
 		D6EACA6423A09AAE0060EB65 /* XYZVolumizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZVolumizer.swift; sourceTree = "<group>"; };
 		D6F47BE222B1225700180CE6 /* XYZUTIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUTIs.swift; sourceTree = "<group>"; };
+		D6F842B82829EF9700B70D3F /* XYZNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZNetWork.swift; sourceTree = "<group>"; };
 		D6FE29E825F6045B00653156 /* XYZScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZScreenshot.swift; sourceTree = "<group>"; };
 		F93CCFDDAEC53230090D7990 /* Pods-SoHow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.release.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.release.xcconfig"; sourceTree = "<group>"; };
 		FC9E0A033FE4C6047F76B9C3 /* Pods-SoHow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoHow.debug.xcconfig"; path = "Target Support Files/Pods-SoHow/Pods-SoHow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				D658756F27FB1E3E0095DEBE /* XYZActionSheet.swift */,
 				D658757127FBC8240095DEBE /* XYZplayerHelper.swift */,
 				D6BAA79A28090699003D894B /* XYZFileType.swift */,
+				D6F842B82829EF9700B70D3F /* XYZNetWork.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				D6C863732768BAB4008095FB /* XYZButton_BadgeBarButtonItem.swift in Sources */,
 				D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */,
 				D619756722F9D5BF00A97B53 /* XYZButton.swift in Sources */,
+				D6F842B92829EF9700B70D3F /* XYZNetWork.swift in Sources */,
 				D6CBCEEF227173640033A91A /* XYZEnum.swift in Sources */,
 				D658757227FBC8240095DEBE /* XYZplayerHelper.swift in Sources */,
 				D6D8F1C924B4140300AC9C5C /* XYZString_XYZMoney_Ex.swift in Sources */,
