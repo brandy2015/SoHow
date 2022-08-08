@@ -37,29 +37,7 @@ public extension UIView{
 }
 
 
-
-import UIKit
-
-public extension UIView{
-    //添加View的边缘效果线
-    func AddBorder(borderWidth:Double = 1.0,borderColor:UIColor = .lightGray)  {
-        self.layer.borderWidth = CGFloat(borderWidth)
-        self.layer.borderColor = borderColor.cgColor
-        
-        //
-        //            // 设置UIView的边框为圆角和展现
-        //
-        //            cell.layer.cornerRadius = 10
-        //
-        //            //自动遮罩不可见区域,超出的不显示
-        //
-        //            cell.layer.masksToBounds = true
-        //
-        //            cell.backgroundColor = UIColor.whiteColor()
-
-    }
-}
-
+ 
 
 public extension UIWindow {
     static var key: UIWindow? {
@@ -166,3 +144,52 @@ public extension UIView {
         return Bundle.main.loadNibNamed(name, owner: nil, options: nil)?.first as! UIView
     }
 }
+
+
+
+public var fullScreenSize :CGSize!{  return UIScreen.main.bounds.size}
+
+
+public extension UIView{
+    //虚线框
+    func swiftDrawBoardDottedLine(width:CGFloat = 5.0,lenth:CGFloat = 8.0,space:CGFloat = 10.0,cornerRadius:CGFloat = 20,color:UIColor = .darkGray,实线边框 :CGFloat = 1.0){
+        self.layer.cornerRadius = cornerRadius
+        let borderLayer =  CAShapeLayer()
+        borderLayer.bounds = self.bounds
+//        borderLayer.position = CGPoint(x: self.bounds.midX, y: self.bounds.midY);
+        borderLayer.position = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
+        borderLayer.path = UIBezierPath(roundedRect: borderLayer.bounds, cornerRadius: cornerRadius).cgPath
+        borderLayer.lineWidth = CGFloat(width) /
+            UIScreen.main.scale
+        //虚线边框---小边框的长度
+        //前边是虚线的长度，后边是虚线之间空隙的长度
+        borderLayer.lineDashPattern = [lenth,space] as [NSNumber]
+        borderLayer.lineDashPhase = 实线边框//实线边框
+        borderLayer.fillColor = UIColor.clear.cgColor
+        borderLayer.strokeColor = color.cgColor
+        self.layer.addSublayer(borderLayer)
+    }
+}
+
+
+public extension UIView{
+    //添加View的边缘效果线
+    func AddBorder(borderWidth:Double = 1.0,borderColor:UIColor = .lightGray)  {
+        self.layer.borderWidth = CGFloat(borderWidth)
+        self.layer.borderColor = borderColor.cgColor
+        
+        //
+        //            // 设置UIView的边框为圆角和展现
+        //
+        //            cell.layer.cornerRadius = 10
+        //
+        //            //自动遮罩不可见区域,超出的不显示
+        //
+        //            cell.layer.masksToBounds = true
+        //
+        //            cell.backgroundColor = UIColor.whiteColor()
+
+    }
+}
+
+  
