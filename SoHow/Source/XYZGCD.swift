@@ -12,14 +12,32 @@ class XYZGCD: NSObject {
 
 }
 
-//延迟调用
+///延迟调用
 public func afterDelay(_ seconds: Double, closure: @escaping () -> ()) {
     let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
     DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
 }
 
-
-
+///延迟调用，使用cacel取消延迟调用
+public var XYZDelayTask = XYZDelayTaskObject()
+public class XYZDelayTaskObject{
+    var task : DispatchWorkItem!
+    //延迟调用
+    public func afterDelay(_ seconds: Double, closure: @escaping () -> ())   {
+        self.task = DispatchWorkItem {
+            closure()
+        }
+        
+        let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: when, execute: task)
+     
+    }
+    
+    func cancelTask()  {
+        task.cancel()
+    }
+}
+  
 
 import UIKit
 
