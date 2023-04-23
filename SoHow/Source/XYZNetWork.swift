@@ -40,15 +40,31 @@ public extension UIDevice{
     
     static func getcname_cid_cip(backBlock: @escaping ((String,String,String)->())){
         DispatchQueue.main.async {
-            let ipURL = URL(string: "https://pv.sohu.com/cityjson?ie=utf-8")
+            
+            guard let url = URL(string: "https://pv.sohu.com/cityjson?ie=utf-8") else{return}
             
             var ip: String? = nil
-            do {
-                if let ipURL = ipURL {
-                    ip = try String(contentsOf: ipURL, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+            
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let data = data, let ipx = String(data: data, encoding: .utf8) {
+                    // 处理获取到的 IP 地址
+                    ip = ipx
+                } else {
+                    // 处理加载失败的情况
                 }
-            } catch {
             }
+            task.resume()
+            
+            
+//            let ipURL = URL(string: "https://pv.sohu.com/cityjson?ie=utf-8")
+//
+//            var ip: String? = nil
+//            do {
+//                if let ipURL = ipURL {
+//                    ip = try String(contentsOf: ipURL, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+//                }
+//            } catch {
+//            }
             //判断返回字符串是否为所需数据
             if ip?.hasPrefix("var returnCitySN = ") ?? false {
                 //对字符串进行处理，然后进行json解析
