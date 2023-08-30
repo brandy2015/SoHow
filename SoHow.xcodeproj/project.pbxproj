@@ -22,6 +22,7 @@
 		D62AFC03217726F50013974F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC00217726F50013974F /* README.md */; };
 		D62AFC04217726F50013974F /* SoHow.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC01217726F50013974F /* SoHow.podspec */; };
 		D62AFC05217726F50013974F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D62AFC02217726F50013974F /* LICENSE */; };
+		D630D2FE2A9F64DD002E66A7 /* XYZTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630D2FD2A9F64DD002E66A7 /* XYZTag.swift */; };
 		D63C5A2F22B3B09D0064C34E /* XYZAirPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */; };
 		D63C92DB28C6035E00CAF467 /* XYZString_trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C92DA28C6035E00CAF467 /* XYZString_trim.swift */; };
 		D653F36B21F6F30E00E6A990 /* XYZJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653F36A21F6F30E00E6A990 /* XYZJump.swift */; };
@@ -90,6 +91,7 @@
 		D62AFC00217726F50013974F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D62AFC01217726F50013974F /* SoHow.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SoHow.podspec; sourceTree = "<group>"; };
 		D62AFC02217726F50013974F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D630D2FD2A9F64DD002E66A7 /* XYZTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZTag.swift; sourceTree = "<group>"; };
 		D63C5A2E22B3B09D0064C34E /* XYZAirPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAirPrint.swift; sourceTree = "<group>"; };
 		D63C92DA28C6035E00CAF467 /* XYZString_trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZString_trim.swift; sourceTree = "<group>"; };
 		D653F36A21F6F30E00E6A990 /* XYZJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZJump.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				D6D6456222388AAB00A9BD1A /* XYZWeb.swift */,
 				D693A50323E7AA7100BB2031 /* XYZWebView.swift */,
 				D66A8C3922A0960C00375126 /* XYZXib.swift */,
+				D630D2FD2A9F64DD002E66A7 /* XYZTag.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				D65D7F6E22390DE600FC316E /* XYZAlert.swift in Sources */,
 				D653F36F21F711A200E6A990 /* XYZGCD.swift in Sources */,
 				D6947D4123A7B3C700EBDF12 /* XYZUILabel.swift in Sources */,
+				D630D2FE2A9F64DD002E66A7 /* XYZTag.swift in Sources */,
 				D6CC9DEB239789BA004F7EF4 /* XYZTabBarController.swift in Sources */,
 				D619756D22FA4D3200A97B53 /* XYZ3DTouch.swift in Sources */,
 				D6D6456322388AAB00A9BD1A /* XYZWeb.swift in Sources */,

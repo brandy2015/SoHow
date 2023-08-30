@@ -174,3 +174,70 @@ enum Validate {
     }
     
 }
+
+
+
+
+
+
+
+//
+
+import UIKit
+
+class WebHandler: NSObject {
+    
+    public func processAndOpenWebsite(website: String) {
+        let websiteString = removeIrrelevantCharacters(from: website.lowercased())
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard Validate.URL(websiteString).isRight else {
+            print("识别结果中不含网址或可能混杂别的字符")
+            return
+        }
+        
+        let url = websiteString.contains("http") ? websiteString : "https://" + websiteString
+        guard let websiteURL = URL(string: url), UIApplication.shared.canOpenURL(websiteURL) else {
+            print("WebsiteURL转换失败")
+            return
+        }
+        UIApplication.shared.open(websiteURL, options: [:], completionHandler: nil)
+    }
+    
+    private func removeIrrelevantCharacters(from string: String) -> String {
+        var result = string
+        if !string.isEmpty {
+            if string.contains("http://") {
+                result = processHttp(httpString: string, prefix: "http://")
+            } else if string.contains("https://") {
+                result = processHttp(httpString: string, prefix: "https://")
+            }
+        }
+        return result
+    }
+    
+    private func processHttp(httpString: String, prefix: String) -> String {
+        var result = httpString
+        if let range = httpString.range(of: prefix) {
+            result.removeSubrange(httpString.startIndex..<range.upperBound)
+        }
+        return result
+    }
+}
+
+enum ValidateX {
+    case URL(_: String)
+    
+    var isRight: Bool {
+        var predicateStr: String!
+        var currObject: String!
+        switch self {
+        case let .URL(str):
+            predicateStr = "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"
+            currObject = str
+        }
+        
+        let predicate =  NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
+        return predicate.evaluate(with: currObject)
+    }
+}
