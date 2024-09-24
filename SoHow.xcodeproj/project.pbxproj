@@ -49,6 +49,7 @@
 		D695A165226EFBAA00871AAC /* XYZExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695A164226EFBAA00871AAC /* XYZExample.swift */; };
 		D6A02B3723E666ED00DEF883 /* XYZToCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */; };
 		D6A1D3282282CBB7000F6C96 /* XYZLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */; };
+		D6AD57DF2CA2CDA700F1B40A /* XYZStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AD57DE2CA2CDA000F1B40A /* XYZStoryboard.swift */; };
 		D6B5AB742239138E00E01695 /* XYZPodX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5AB732239138E00E01695 /* XYZPodX.swift */; };
 		D6BA36C4288131D400AD6A81 /* XYZDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA36C3288131D400AD6A81 /* XYZDistance.swift */; };
 		D6BAA79928090453003D894B /* XYZUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BAA79828090453003D894B /* XYZUIImage.swift */; };
@@ -118,6 +119,7 @@
 		D695A164226EFBAA00871AAC /* XYZExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZExample.swift; sourceTree = "<group>"; };
 		D6A02B3623E666ED00DEF883 /* XYZToCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZToCircle.swift; sourceTree = "<group>"; };
 		D6A1D3272282CBB7000F6C96 /* XYZLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZLearn.swift; sourceTree = "<group>"; };
+		D6AD57DE2CA2CDA000F1B40A /* XYZStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZStoryboard.swift; sourceTree = "<group>"; };
 		D6B5AB732239138E00E01695 /* XYZPodX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPodX.swift; sourceTree = "<group>"; };
 		D6BA36C3288131D400AD6A81 /* XYZDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZDistance.swift; sourceTree = "<group>"; };
 		D6BAA79828090453003D894B /* XYZUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZUIImage.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		D6B63DEF21C7E7590087B44D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6AD57DE2CA2CDA000F1B40A /* XYZStoryboard.swift */,
 				D695973B2473C19100856B24 /* DatePickerDialog.swift */,
 				D69407CD224C6F98009A2489 /* LearnX.swift */,
 				D653F36C21F70C1A00E6A990 /* UIDevice_Extension.swift */,
@@ -414,6 +417,7 @@
 				D6D6456122388A8100A9BD1A /* XYZArrayAndDic.swift in Sources */,
 				D6D6455F2238888600A9BD1A /* XYZNumberAndString.swift in Sources */,
 				D62AFBFA217726EB0013974F /* YSZoomView.swift in Sources */,
+				D6AD57DF2CA2CDA700F1B40A /* XYZStoryboard.swift in Sources */,
 				D6116E8C230BC1D600962BCD /* WeakProxy.swift in Sources */,
 				D6947D4623A7B5E400EBDF12 /* XYZNotification.swift in Sources */,
 				D63C5A2F22B3B09D0064C34E /* XYZAirPrint.swift in Sources */,
